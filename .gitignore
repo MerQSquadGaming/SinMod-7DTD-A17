@@ -263,3 +263,5 @@ __pycache__/
 # SinMod Old Files
 SinMod.sln
 *.png
+*.vcxproj
+*.filters

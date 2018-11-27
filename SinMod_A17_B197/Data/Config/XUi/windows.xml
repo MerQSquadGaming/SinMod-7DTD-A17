@@ -4,7 +4,6 @@
     <texture name="SinMod" depth="0" size="63,45" texture="@https://merqsquad.com/wp-content/uploads/2018/01/SinModUILogo.png" material="Materials/Transparent Colored" pos="-160,-6" />
     <label name="ServerName" depth="0" size="53,35" text="Worlds End PvEvP" font_size="20" effect="outline" color="[white]" justify="center" pos="-270,-15" overflow="resizeheight" />
     <label name="SinModVer" depth="0" size="53,35" text="SinMod v2.0" font_size="20" effect="outline" color="[white]" justify="center" pos="-220,-15" overflow="resizeheight" />
-  
   </window>
   
   <window name="HUDLeftStatBars">
