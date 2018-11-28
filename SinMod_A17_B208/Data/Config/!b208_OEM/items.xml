@@ -211,6 +211,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="LightSource" value="lightSource"/>
 	<property name="ActivateObject" value="lightSource"/>
 	<property name="LightValue" value="0.52"/>
+	<property name="DropScale" value="1.5"/>
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Sphere" value="0.1"/>
@@ -235,7 +236,7 @@ We _want_ players to specialise so we also have to make it feasible.
 </item>
 
 <item name="meleeToolClawHammer">
-	<property name="Tags" value="blunt,melee,light,tool,perkStayDown"/>
+	<property name="Tags" value="blunt,melee,hammer,light,tool,perkStayDown"/>
 	<property name="DisplayType" value="meleeRepairTool"/>
 	<property name="HoldType" value="32"/>
 	<property name="Meshfile" value="Items/Tools/hammerPrefab"/>
@@ -258,7 +259,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Repair_amount" value="250"/>
 		<property name="Upgrade_hit_offset" value="-3"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceSteelPolish,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceNail"/>
+		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceNail"/>
 		<property name="UsePowerAttackAnimation" value="false"/>
 	</property>
 	<effect_group name="Base Effects">
@@ -311,20 +312,21 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Repair_amount" value="100"/>
 		<property name="Upgrade_hit_offset" value="0"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceSteelPolish,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers"/>
+		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers"/>
 		<property name="UsePowerAttackAnimation" value="false"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3"/>
-		<!--passive_effect name="DamageFalloffRange" operation="base_set" value="2.1"/-->
+
 		<passive_effect name="EntityDamage" operation="base_set" value="11"/> <!-- meleeToolStoneAxe -->
-		<passive_effect name="BlockDamage" operation="base_set" value="26"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="18"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
 		<passive_effect name="HarvestCount" operation="base_set" value=".35" tags="butcherHarvest"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.3" tags="stone"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".45" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.27" tags="metal"/>
+
 		<passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="70,200" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
@@ -348,13 +350,15 @@ We _want_ players to specialise so we also have to make it feasible.
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+
 		<passive_effect name="EntityDamage" operation="base_set" value="12"/> <!-- meleeToolStoneAxeTazas -->
-		<passive_effect name="BlockDamage" operation="base_set" value="33"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="20"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
 		<passive_effect name="HarvestCount" operation="base_set" value=".35" tags="butcherHarvest"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.3" tags="stone"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".45" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.27" tags="metal"/>
+
 		<passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="100,250" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
@@ -694,7 +698,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Repair_amount" value="350"/>
 		<property name="Upgrade_hit_offset" value="-2"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceSteelPolish,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers"/>
+		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
@@ -722,7 +726,7 @@ We _want_ players to specialise so we also have to make it feasible.
 <!-- Base DPS Values: Stone Shovel = 9.4 / Iron Shovel = 11.75 / Steel Shovel = 13.31 -->
 
 <item name="meleeToolShovelStone">
-	<property name="Tags" value="melee,medium,tool,perkMotherLode"/>
+	<property name="Tags" value="melee,medium,tool,shovel,perkMotherLode"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="18"/>
 	<property name="Meshfile" value="Items/Tools/stone_shovelPrefab"/>
@@ -778,7 +782,7 @@ We _want_ players to specialise so we also have to make it feasible.
 </item>
 
 <item name="meleeToolShovelIron">
-	<property name="Tags" value="melee,medium,tool,perkMotherLode"/>
+	<property name="Tags" value="melee,medium,tool,shovel,perkMotherLode"/>
 	<property name="Extends" value="meleeToolShovelStone"/>
 	<property name="Meshfile" value="Items/Tools/shovel_ironPrefab"/>
 	<property name="Material" value="Mmetal"/>
@@ -813,7 +817,7 @@ We _want_ players to specialise so we also have to make it feasible.
 </item>
 
 <item name="meleeToolShovelSteel">
-	<property name="Tags" value="melee,medium,tool,perkMotherLode"/>
+	<property name="Tags" value="melee,medium,tool,shovel,perkMotherLode"/>
 	<property name="Extends" value="meleeToolShovelIron"/>
 	<property name="Meshfile" value="Items/Tools/shovel_steelPrefab"/>
 	<property name="CustomIcon" value="meleeToolShovelIron"/>
@@ -849,7 +853,7 @@ We _want_ players to specialise so we also have to make it feasible.
 <!-- Base DPS Values: Sledge = 15.33 / Iron Axe = 14.33 / Steel Axe = 15.05 / Steel Pickaxe = 14.0 / Hoe = 12.46 -->
 
 <item name="meleeToolSledgehammer">
-	<property name="Tags" value="blunt,melee,heavy,weapon,meleeWeapon,perkHeavyMetal,perkMotherLode"/>
+	<property name="Tags" value="blunt,melee,heavy,sledge,weapon,meleeWeapon,perkHeavyMetal,perkMotherLode"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="33"/>
 	<property name="Meshfile" value="Items/Tools/sledgehammer_steelPrefab"/>
@@ -882,9 +886,9 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="MaxRange" operation="base_set" value="2.9"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="23"/> <!-- meleeToolSledgehammer -->
-		<passive_effect name="BlockDamage" operation="base_set" value="50"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="33"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="34"/> <!-- A16 1.8 -->
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.18" tags="wood"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="20" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="200,800" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
@@ -1018,7 +1022,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="MaxRange" operation="base_set" value="2.9"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="20"/> <!-- meleeToolPickaxeSteel -->
-		<passive_effect name="BlockDamage" operation="base_set" value="28"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="33"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="47"/>
@@ -1351,7 +1355,7 @@ We _want_ players to specialise so we also have to make it feasible.
 
 	<property class="Action0">
 		<property name="Class" value="Ranged"/>
-		<property name="Magazine_items" value="ammo9mmBullet,ammo9mmBulletSteel,Unload"/>
+		<property name="Magazine_items" value="ammo9mmBullet,ammo9mmBulletSteel"/>
 		<property name="Sound_start" value="Pistol_Fire"/>
 		<property name="Sound_repeat" value=""/>
 		<property name="Sound_end" value=""/>
@@ -2343,7 +2347,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Upgrade_hit_offset" value="-3"/>
 		<property name="Repair_action_sound" value="nailgun_fire"/>
 		<property name="Upgrade_action_sound" value="nailgun_fire"/>
-		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceSteelPolish,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceNail"/>
+		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceNail"/>
 		<!--<property name="Restricted_upgrade_items" value="concrete"/>-->
 	</property>
 	<property name="Group" value="Tools/Traps"/>
@@ -2352,14 +2356,10 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="EconomicValue" value="1200"/>
 	<effect_group name="Base Effects"> <!-- gunToolNailgun -->
-		<passive_effect name="ProjectileVelocity" operation="perc_add" value="0"/>
-		<passive_effect name="DamageFalloffRange" operation="base_set" value="20"/>
-		<passive_effect name="MaxRange" operation="base_set" value="100"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="3"/>
+		<passive_effect name="MaxRange" operation="base_set" value="10"/>
 		<passive_effect name="MagazineSize" operation="base_set" value="10"/>
 		<!-- <passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>  does not work at all on the nailgun -->
-
-		<passive_effect name="EntityDamage" operation="base_set" value="1"/> <!-- xxxxxxxxxxxx -->
-		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
 
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.3"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.3"/>
@@ -2400,7 +2400,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Sphere" value="0.1"/>
 		<property name="Block_range" value="2.5"/>
 		<property name="DamageEntity" value="10"/>
-		<property name="DamageBlock" value="20"/>
+		<property name="DamageBlock" value="16"/>
 		<property name="Sound_start" value="swoosh"/>
 	</property>
 	<effect_group name="Base Effects">
@@ -2434,9 +2434,9 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="HarvestCount" operation="base_set" value="0" tags="allToolsHarvest"/> <!-- all tools but not player hands -->
 	</effect_group>
 	<effect_group name="Power Attack">
-		<passive_effect name="EntityDamage" operation="perc_add" value="1.3" tags="secondary"/>
-		<passive_effect name="BlockDamage" operation="perc_add" value="2" tags="secondary"/>
-		<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="1.4" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_add" value="12" tags="secondary"/>
 	</effect_group>
 	<property name="ActionSkillGroup" value="attAgility"/>
@@ -2471,8 +2471,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 	</effect_group>
 	<effect_group name="Power Attack">
-		<passive_effect name="EntityDamage" operation="perc_add" value="1.3" tags="secondary"/>
-		<passive_effect name="BlockDamage" operation="perc_add" value="2" tags="secondary"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="1.4" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_add" value="12" tags="secondary"/>
 	</effect_group>
@@ -2489,11 +2489,27 @@ We _want_ players to specialise so we also have to make it feasible.
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="10" tags="primary"/>
-		<passive_effect name="BlockDamage" operation="base_set" value="20" tags="primary"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
+		<passive_effect name="BlockDamage" operation="base_set" value="16" tags="primary"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryBleeding"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffIllInfection0"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryStunned1"/>
+	</effect_group>
+</item>
+
+<item name="meleeHandZombieFeral">
+	<property name="Extends" value="meleeHandZombie01"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action0">
+		<property name="DamageEntity" value="20"/>
+		<property name="DamageBlock" value="32"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.30" tags="buffInjuryBleeding"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffIllInfection0"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.25" tags="buffInjuryStunned1"/>
 	</effect_group>
 </item>
 
@@ -2507,9 +2523,24 @@ We _want_ players to specialise so we also have to make it feasible.
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="30"/> <!-- A16 2 -->
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="30"/>  A16 2 -->
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffLegSprained"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffIllInfection0"/>
+	</effect_group>
+</item>
+
+<item name="meleeHandZombie02Feral">
+	<property name="Extends" value="meleeHandZombie02"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action0">
+		<property name="DamageEntity" value="20"/>
+		<property name="DamageBlock" value="32"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="30"/>  A16 2 -->
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.30" tags="buffLegSprained"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffIllInfection0"/>
 	</effect_group>
 </item>
 
@@ -2525,10 +2556,45 @@ We _want_ players to specialise so we also have to make it feasible.
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.25" tags="buffBurningElement"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffIllInfection0"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryStunned1"/>
+	</effect_group>
+</item>
+
+<item name="meleeHandZombieBurningFeral">
+	<property name="Extends" value="meleeHandZombieBurning"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action0">
+		<property name="DamageEntity" value="24"/>
+		<property name="DamageBlock" value="4"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.40" tags="buffBurningElement"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffIllInfection0"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryStunned1"/>
+	</effect_group>
+</item>
+
+<item name="meleeHandZombieBurningCrawler">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="HoldType" value="24"/>
+	<property class="Action0">
+		<property name="DamageEntity" value="8"/>
+		<property name="DamageBlock" value="2"/>
+		<property name="Delay" value="2.0"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Buff" value="buffLegSprained,buffIllInfection0,buffBurningElement"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="30"/>  A16 2 -->
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.2" tags="buffLegSprained"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffIllInfection0"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.30" tags="buffBurningElement"/>
 	</effect_group>
 </item>
 
@@ -2539,7 +2605,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property class="Action0">
 		<property name="Range" value="1.75"/>
 		<property name="DamageEntity" value="20"/>
-		<property name="DamageBlock" value="250"/>
+		<property name="DamageBlock" value="200"/>
 		<property name="Buff" value="buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1"/>
 	</property>
 	<property class="Action1"> <!-- UseAction -->
@@ -2558,7 +2624,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
 		<passive_effect name="MaxRange" operation="base_set" value="100"/>
 		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
@@ -2579,15 +2645,13 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property class="Action1">
 		<property name="Class" value="Projectile"/>
 		<property name="DamageEntity" value="10"/>
-		<property name="DamageBlock" value="150"/>
+		<property name="DamageBlock" value="120"/>
 		<property name="Explosion.ParticleIndex" value="7"/>
 		<property name="Velocity" value="18"/>
 		<property name="FlyTime" value="2"/>
 		<property name="LifeTime" value="4"/>
 		<property name="CollisionRadius" value="0.5"/>
-		<property name="DamageBonus.earth" value="0"/>		<!--
-		<property name="Explosion.DamageBonus.metal" value="2"/>
-		-->
+		<property name="DamageBonus.earth" value="0"/>
 		<property name="Buff" value="buffIllInfection0"/>
 	</property>
 	<effect_group name="Base Effects">
@@ -2598,225 +2662,19 @@ We _want_ players to specialise so we also have to make it feasible.
 	</effect_group>
 </item>
 
-<item name="meleeHandAnimalZombieDog">
-	<property name="Extends" value="meleeHandMaster"/>
-	<property name="CreativeMode" value="None"/>
-	<property name="HoldType" value="35"/>
-	<property class="Action0">
-		<property name="Delay" value="0.7"/> <!-- obsolete if rounds per minute exists -->
-		<property name="DamageEntity" value="8"/>
-		<property name="DamageBlock" value="18"/>
-		<property name="Buff" value="buffInjuryBleeding,buffIllInfection0"/>
-	</property>
-	<effect_group name="Base Effects">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="85"/> <!-- A16 .7 -->
-		<passive_effect name="DamageModifier" operation="perc_add" value="3" tags="earth" match_all_tags="true"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.50" tags="buffInjuryBleeding"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffIllInfection0"/>
-	</effect_group>
-</item>
-
-<item name="meleeHandZombieStrong">
-	<property name="Extends" value="meleeHandMaster"/>
-	<property name="CreativeMode" value="None"/>
-	<property class="Action0">
-		<property name="DamageEntity" value="20"/>
-		<property name="DamageBlock" value="50"/>
-		<property name="Buff" value="buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1"/>
-	</property>
-	<effect_group name="Base Effects">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.75" tags="buffInjuryStunned1"/>
-
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffInjuryBleeding"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffIllInfection0"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffInjuryStunned1"/>
-	</effect_group>
-</item>
-
-<item name="meleeHandAnimalBear">
-	<property name="Extends" value="meleeHandMaster"/>
-	<property name="CreativeMode" value="None"/>
-	<property name="HoldType" value="46"/>
-	<property class="Action0">
-		<property name="Delay" value="1.5"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Range" value="3.75"/>
-		<property name="Sphere" value="0.4"/>
-		<property name="DamageEntity" value="30"/>
-		<property name="DamageBlock" value="50"/>
-		<property name="Buff" value="buffInjuryBleeding,buffInjuryStunned1"/>
-	</property>
-	<effect_group name="Base Effects">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="40"/> <!-- A16 1.5 -->
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.75" tags="buffInjuryBleeding"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.4" tags="buffInjuryStunned1"/>
-	</effect_group>
-</item>
-
-<item name="meleeHandAnimalZombieBear">
-	<property name="Extends" value="meleeHandAnimalBear"/>
-	<property name="CreativeMode" value="None"/>
-	<property class="Action0">
-		<property name="Range" value="2.75"/>
-		<property name="DamageEntity" value="50"/>
-		<property name="DamageBlock" value="100"/>
-		<property name="Buff" value="buffInjuryBleeding,buffInjuryStunned1,buffIllInfection0"/>
-	</property>
-	<effect_group name="Base Effects">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="40"/> <!-- A16 1.5 -->
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.75" tags="buffInjuryBleeding"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffIllInfection0"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.40" tags="buffInjuryStunned1"/>
-	</effect_group>
-</item>
-
-<item name="meleeHandZombieHazMat">
-	<property name="Extends" value="meleeHandMaster"/>
-	<property name="CreativeMode" value="None"/>
-	<property name="HoldType" value="9"/>
-	<property class="Action0">
-		<property name="Buff" value="buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1"/>
-	</property>
-	<effect_group name="Base Effects">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryBleeding"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="1" tags="buffIllInfection0"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryStunned1"/>
-	</effect_group>
-</item>
-
-<item name="meleeHandZombieWorker">
-	<property name="Extends" value="meleeHandMaster"/>
-	<property name="CreativeMode" value="None"/>
-	<property name="HoldType" value="9"/>
-	<property class="Action0">
-		<property name="DamageBlock" value="100"/>
-	</property>
-	<effect_group name="Base Effects">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryBleeding"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffIllInfection0"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryStunned1"/>
-	</effect_group>
-</item>
-
-<item name="meleeHandZombieFootballPlayer">
-	<property name="Extends" value="meleeHandMaster"/>
-	<property name="CreativeMode" value="None"/>
-	<property name="HoldType" value="9"/>
-	<property class="Action0">
-		<property name="Buff" value="buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1"/>
-	</property>
-	<effect_group name="Base Effects">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffInjuryBleeding"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.04" tags="buffIllInfection0"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.60" tags="buffInjuryStunned1"/>
-	</effect_group>
-</item>
-
-<item name="meleeHandZombieStripper">
-	<property name="Extends" value="meleeHandMaster"/>
-	<property name="CreativeMode" value="None"/>
-	<property class="Action0">
-		<property name="DamageEntity" value="8"/>
-		<property name="Buff" value="buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1"/>
-	</property>
-	<effect_group name="Base Effects">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffInjuryBleeding"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.40" tags="buffIllInfection0"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffInjuryStunned1"/>
-	</effect_group>
-</item>
-
-<item name="meleeHandZombieBurningCrawler">
-	<property name="Extends" value="meleeHandMaster"/>
-	<property name="CreativeMode" value="None"/>
-	<property name="HoldType" value="24"/>
-	<property class="Action0">
-		<property name="DamageEntity" value="8"/>
-		<property name="DamageBlock" value="2"/>
-		<property name="Delay" value="2.0"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Buff" value="buffLegSprained,buffIllInfection0,buffBurningElement"/>
-	</property>
-	<effect_group name="Base Effects">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="30"/> <!-- A16 2 -->
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.2" tags="buffLegSprained"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffIllInfection0"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.30" tags="buffBurningElement"/>
-	</effect_group>
-</item>
-
-<item name="meleeHandZombieFeral">
-	<property name="Extends" value="meleeHandZombie01"/>
-	<property name="CreativeMode" value="None"/>
-	<property class="Action0">
-		<property name="DamageEntity" value="20"/>
-		<property name="DamageBlock" value="40"/>
-	</property>
-	<effect_group name="Base Effects">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.30" tags="buffInjuryBleeding"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffIllInfection0"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.25" tags="buffInjuryStunned1"/>
-	</effect_group>
-</item>
-
-<item name="meleeHandZombie02Feral">
-	<property name="Extends" value="meleeHandZombie02"/>
-	<property name="CreativeMode" value="None"/>
-	<property class="Action0">
-		<property name="DamageEntity" value="20"/>
-		<property name="DamageBlock" value="40"/>
-	</property>
-	<effect_group name="Base Effects">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="30"/> <!-- A16 2 -->
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.30" tags="buffLegSprained"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffIllInfection0"/>
-	</effect_group>
-</item>
-
-<item name="meleeHandZombieBurningFeral">
-	<property name="Extends" value="meleeHandZombieBurning"/>
-	<property name="CreativeMode" value="None"/>
-	<property class="Action0">
-		<property name="DamageEntity" value="24"/>
-		<property name="DamageBlock" value="4"/>
-	</property>
-	<effect_group name="Base Effects">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.40" tags="buffBurningElement"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffIllInfection0"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryStunned1"/>
-	</effect_group>
-</item>
-
 <item name="meleeHandZombieCopFeral">
 	<property name="Extends" value="meleeHandZombieCop"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
 		<property name="DamageEntity" value="40"/>
-		<property name="DamageBlock" value="500"/>
+		<property name="DamageBlock" value="220"/>
 	</property>
 	<property class="Action1"> <!-- Fire action -->
 		<property name="Magazine_items" value="ammoProjectileZombieVomitFeral"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="MagazineSize" operation="base_set" value="4"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
 		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="4"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
@@ -2831,10 +2689,17 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
 		<property name="DamageEntity" value="20"/>
-		<property name="DamageBlock" value="150"/>
+		<property name="DamageBlock" value="1"/>
 		<property name="Velocity" value="18"/>
 		<property name="FlyTime" value="2"/>
 		<property name="LifeTime" value="4"/>
+		<property name="Explosion.ParticleIndex" value="7"/>
+		<property name="Explosion.RadiusBlocks" value="2"/>
+		<property name="Explosion.BlockDamage" value="105"/>
+		<property name="Explosion.RadiusEntities" value="1"/>
+		<property name="Explosion.EntityDamage" value="1"/>
+		<property name="Explosion.DamageBonus.water" value="0"/>
+		<property name="Explosion.DamageBonus.earth" value="0"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.40" tags="buffIllInfection0"/>
@@ -2848,7 +2713,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Magazine_items" value="ammoProjectileZombieVomitRadiated"/>
 	</property>
 	<effect_group name="Base Effects">
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
 		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="6"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
@@ -2864,13 +2729,39 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
 		<property name="DamageEntity" value="25"/>
-		<property name="DamageBlock" value="170"/>
+		<property name="DamageBlock" value="1"/>
 		<property name="Velocity" value="18"/>
 		<property name="FlyTime" value="2"/>
 		<property name="LifeTime" value="4"/>
+		<property name="Explosion.ParticleIndex" value="7"/>
+		<property name="Explosion.RadiusBlocks" value="2"/>
+		<property name="Explosion.BlockDamage" value="145"/>
+		<property name="Explosion.RadiusEntities" value="1"/>
+		<property name="Explosion.EntityDamage" value="1"/>
+		<property name="Explosion.DamageBonus.water" value="0"/>
+		<property name="Explosion.DamageBonus.earth" value="0"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.40" tags="buffIllInfection0"/>
+	</effect_group>
+</item>
+
+<item name="meleeHandAnimalZombieDog">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="HoldType" value="35"/>
+	<property class="Action0">
+		<property name="Delay" value="0.7"/> <!-- obsolete if rounds per minute exists -->
+		<property name="DamageEntity" value="8"/>
+		<property name="DamageBlock" value="14"/>
+		<property name="Buff" value="buffInjuryBleeding,buffIllInfection0"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="85"/>  A16 .7 -->
+		<passive_effect name="DamageModifier" operation="perc_add" value="3" tags="earth" match_all_tags="true"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.50" tags="buffInjuryBleeding"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffIllInfection0"/>
 	</effect_group>
 </item>
 
@@ -2879,13 +2770,32 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
 		<property name="DamageEntity" value="16"/>
-		<property name="DamageBlock" value="36"/>
+		<property name="DamageBlock" value="28"/>
 	</property>
 	<effect_group name="Base Effects">
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="85"/> <!-- A16 .7 -->
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="85"/>  A16 .7 -->
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.60" tags="buffInjuryBleeding"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffIllInfection0"/>
+	</effect_group>
+</item>
+
+<item name="meleeHandZombieStrong">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action0">
+		<property name="DamageEntity" value="20"/>
+		<property name="DamageBlock" value="40"/>
+		<property name="Buff" value="buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.75" tags="buffInjuryStunned1"/>
+
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffInjuryBleeding"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffIllInfection0"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffInjuryStunned1"/>
 	</effect_group>
 </item>
 
@@ -2894,14 +2804,52 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
 		<property name="DamageEntity" value="40"/>
-		<property name="DamageBlock" value="100"/>
+		<property name="DamageBlock" value="80"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.30" tags="buffInjuryBleeding"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffIllInfection0"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.30" tags="buffInjuryStunned1"/>
+	</effect_group>
+</item>
+
+<item name="meleeHandAnimalBear">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="HoldType" value="46"/>
+	<property class="Action0">
+		<property name="Delay" value="1.5"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Range" value="3.75"/>
+		<property name="Sphere" value="0.4"/>
+		<property name="DamageEntity" value="30"/>
+		<property name="DamageBlock" value="40"/>
+		<property name="Buff" value="buffInjuryBleeding,buffInjuryStunned1"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="40"/>  A16 1.5 -->
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.75" tags="buffInjuryBleeding"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.4" tags="buffInjuryStunned1"/>
+	</effect_group>
+</item>
+
+<item name="meleeHandAnimalZombieBear">
+	<property name="Extends" value="meleeHandAnimalBear"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action0">
+		<property name="Range" value="2.75"/>
+		<property name="DamageEntity" value="50"/>
+		<property name="DamageBlock" value="80"/>
+		<property name="Buff" value="buffInjuryBleeding,buffInjuryStunned1,buffIllInfection0"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="40"/>  A16 1.5 -->
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.75" tags="buffInjuryBleeding"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffIllInfection0"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.40" tags="buffInjuryStunned1"/>
 	</effect_group>
 </item>
 
@@ -2910,14 +2858,30 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
 		<property name="DamageEntity" value="70"/>
-		<property name="DamageBlock" value="150"/>
+		<property name="DamageBlock" value="120"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="40"/> <!-- A16 1.5 -->
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="40"/>  A16 1.5 -->
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.75" tags="buffInjuryBleeding"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffIllInfection0"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.40" tags="buffInjuryStunned1"/>
+	</effect_group>
+</item>
+
+<item name="meleeHandZombieHazMat">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="HoldType" value="9"/>
+	<property class="Action0">
+		<property name="Buff" value="buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryBleeding"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="1" tags="buffIllInfection0"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryStunned1"/>
 	</effect_group>
 </item>
 
@@ -2927,14 +2891,30 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="HoldType" value="9"/>
 	<property class="Action0">
 		<property name="DamageEntity" value="20"/>
-		<property name="DamageBlock" value="40"/>
+		<property name="DamageBlock" value="32"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.25" tags="buffInjuryBleeding"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="1" tags="buffIllInfection0"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.25" tags="buffInjuryStunned1"/>
+	</effect_group>
+</item>
+
+<item name="meleeHandZombieWorker">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="HoldType" value="9"/>
+	<property class="Action0">
+		<property name="DamageBlock" value="80"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryBleeding"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffIllInfection0"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryStunned1"/>
 	</effect_group>
 </item>
 
@@ -2944,14 +2924,30 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="HoldType" value="9"/>
 	<property class="Action0">
 		<property name="DamageEntity" value="20"/>
-		<property name="DamageBlock" value="250"/>
+		<property name="DamageBlock" value="200"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.25" tags="buffInjuryBleeding"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffIllInfection0"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.25" tags="buffInjuryStunned1"/>
+	</effect_group>
+</item>
+
+<item name="meleeHandZombieFootballPlayer">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="HoldType" value="9"/>
+	<property class="Action0">
+		<property name="Buff" value="buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffInjuryBleeding"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.04" tags="buffIllInfection0"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.60" tags="buffInjuryStunned1"/>
 	</effect_group>
 </item>
 
@@ -2961,14 +2957,30 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="HoldType" value="9"/>
 	<property class="Action0">
 		<property name="DamageEntity" value="20"/>
-		<property name="DamageBlock" value="40"/>
+		<property name="DamageBlock" value="32"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffInjuryBleeding"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.1" tags="buffIllInfection0"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.70" tags="buffInjuryStunned1"/>
+	</effect_group>
+</item>
+
+<item name="meleeHandZombieStripper">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action0">
+		<property name="DamageEntity" value="8"/>
+		<property name="Buff" value="buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffInjuryBleeding"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.40" tags="buffIllInfection0"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffInjuryStunned1"/>
 	</effect_group>
 </item>
 
@@ -2977,11 +2989,11 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
 		<property name="DamageEntity" value="16"/>
-		<property name="DamageBlock" value="40"/>
+		<property name="DamageBlock" value="32"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryBleeding"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.60" tags="buffIllInfection0"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryStunned1"/>
@@ -3000,7 +3012,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="40"/> <!-- A16 1.5 -->
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="40"/>  A16 1.5 -->
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.50" tags="buffInjuryBleeding"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.40" tags="buffIllInfection0"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.50" tags="buffInjuryStunned1"/>
@@ -3014,7 +3026,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property class="Action0">
 		<property name="Delay" value="0.7"/> <!-- obsolete if rounds per minute exists -->
 		<property name="DamageEntity" value="8"/>
-		<property name="DamageBlock" value="10"/>
+		<property name="DamageBlock" value="8"/>
 		<property name="Buff" value="buffInjuryBleeding,buffIllInfection0"/>
 	</property>
 	<property class="Action1">
@@ -3031,7 +3043,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="85"/> <!-- A16 .7 -->
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="55"/>  A16 .7,  50=1.2 -->
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
 		<passive_effect name="MaxRange" operation="base_set" value="50"/>
 		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
@@ -3040,7 +3052,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="5"/>
 		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
 
-		<passive_effect name="BuffProcChance" operation="base_set" value="0.30" tags="buffInjuryBleeding"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffInjuryBleeding"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffIllInfection0"/>
 	</effect_group>
 </item>
@@ -3052,7 +3064,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property class="Action1">
 		<property name="Class" value="Projectile"/>
 		<property name="DamageEntity" value="15"/>
-		<property name="DamageBlock" value="15"/>
+		<property name="DamageBlock" value="12"/>
 		<property name="Explosion.ParticleIndex" value="7"/>
 		<property name="Velocity" value="13"/>
 		<property name="FlyTime" value="6"/>
@@ -3081,7 +3093,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.05" tags="buffInjuryBleeding"/>
 	</effect_group>
 </item>
@@ -3094,17 +3106,16 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Delay" value="0.7"/> <!-- obsolete if rounds per minute exists -->
 		<property name="Range" value="2"/>
 		<property name="DamageEntity" value="22"/>
-		<property name="DamageBlock" value="22"/>
+		<property name="DamageBlock" value="17"/>
 		<property name="Buff" value="buffInjuryBleeding"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="85"/> <!-- A16 .7 -->
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="85"/>  A16 .7 -->
 		<passive_effect name="DamageModifier" operation="perc_add" value="3" tags="earth"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.50" tags="buffInjuryBleeding"/>
 	</effect_group>
 </item>
-
 
 
 
@@ -3406,6 +3417,9 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Ammo/Weapons"/>
+	<property class="Action1">
+		<property name="Gravity" value="-3.5"/>
+	</property>
 
 	<effect_group name="Base Effects" tiered="false"> <!-- ammoArrowIron -->
 		<passive_effect name="EntityDamage" operation="base_set" value="30"/>
@@ -3449,7 +3463,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="Damage_type" value="Heat"/>
 	<property name="StickyOffset" value="0.7"/>
 	<property class="Action1">
-		<property name="Gravity" value="-6"/>
+		<property name="Gravity" value="-5"/>
 		<property name="DamageBonus.wood" value="2"/>
 		<property name="Buff" value="buffBurningFlamingArrow"/>
 	</property>
@@ -3486,7 +3500,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property class="Action1">
 		<property name="Class" value="Projectile"/>
 		<property name="Explosion.ParticleIndex" value="0"/>
-		<property name="Gravity" value="-4"/>
+		<property name="Gravity" value="-3"/>
 		<property name="FlyTime" value="0"/>
 		<property name="LifeTime" value="17"/>
 		<!-- <property name="DamageBonus.earth" value="0"/>
@@ -3523,7 +3537,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property class="Action1">
 		<property name="Class" value="Projectile"/>
 		<property name="Explosion.ParticleIndex" value="0"/> <!-- no expl. -->
-		<property name="Gravity" value="-4"/>
+		<property name="Gravity" value="-2.5"/>
 		<property name="FlyTime" value="0"/>
 		<property name="LifeTime" value="12"/>
 	</property>
@@ -3578,7 +3592,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property class="Action1">
 		<property name="Explosion.ParticleIndex" value="0"/> <!-- no expl. -->
-		<property name="Gravity" value="-6"/>
+		<property name="Gravity" value="-5"/>
 		<property name="Explosion.BlockDamage" value="10"/>
 		<property name="Explosion.EntityDamage" value="80"/>
 		<property name="Explosion.ParticleIndex" value="1"/>
@@ -3853,7 +3867,8 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="Meshfile" value="Entities/Vehicles/minibike_Prefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="EconomicValue" value="220000"/>
+	<property name="EconomicValue" value="12000"/>
+	<property name="SellableToTrader" value="false"/>
 	<property class="Action1">
 		<property name="Class" value="SpawnVehicle"/>
 		<property name="Vehicle" value="vehicleMinibike"/>
@@ -3875,7 +3890,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="Extends" value="vehicleMinibikePlaceable"/>
 
 	<property name="Meshfile" value="Entities/Vehicles/bicycle_Prefab"/>
-	<property name="EconomicValue" value="220000"/>
+	<property name="EconomicValue" value="4000"/>
 	<property class="Action1">
 		<property name="Vehicle" value="vehicleBicycle"/>
 	</property>
@@ -3896,7 +3911,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="Extends" value="vehicleMinibikePlaceable"/>
 
 	<property name="Meshfile" value="Entities/Vehicles/motorcycle_Prefab"/>
-	<property name="EconomicValue" value="220000"/>
+	<property name="EconomicValue" value="20000"/>
 	<property class="Action1">
 		<property name="Vehicle" value="vehicleMotorcycle"/>
 		<property name="VehicleSize" value="1.3, 1.9, 3"/>
@@ -3918,7 +3933,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="Extends" value="vehicleMinibikePlaceable"/>
 
 	<property name="Meshfile" value="Entities/Vehicles/jeep_Prefab"/>
-	<property name="EconomicValue" value="220000"/>
+	<property name="EconomicValue" value="40000"/>
 	<property class="Action1">
 		<property name="Vehicle" value="vehicle4x4Truck"/>
 		<property name="VehicleSize" value="2.5, 2.1, 5"/>
@@ -3940,7 +3955,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="Extends" value="vehicleMinibikePlaceable"/>
 
 	<property name="Meshfile" value="Entities/Vehicles/gyrocopter_Prefab"/>
-	<property name="EconomicValue" value="220000"/>
+	<property name="EconomicValue" value="100000"/>
 	<property class="Action1">
 		<property name="Vehicle" value="vehicleGyrocopter"/>
 		<property name="VehicleSize" value="2.5, 2.5, 5.5"/>
@@ -4301,7 +4316,7 @@ We _want_ players to specialise so we also have to make it feasible.
 
 <item name="armorMilitaryVest">
 	<property name="Extends" value="armorMilitaryMaster" param1="CustomIcon"/>
-	<property name="Tags" value="upperbodychest,armor,armorChest,lightarmor"/>
+	<property name="Tags" value="upperbody,chest,armor,armorChest,lightarmor"/>
 	<property name="EquipSlot" value="Chest"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
@@ -4913,6 +4928,7 @@ We _want_ players to specialise so we also have to make it feasible.
 			<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="Spotlight" transform_path="tempPrefab_miningHelmetLightSource">
 				<requirement name="IsFPV" invert="true"/>
 			</triggered_effect>
+			<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="Spotlight" transform_path="tempPrefab_miningHelmetLightSource"/>
 	</effect_group>
 	<property class="UMA">
 		<property name="Mesh" value="gear_mining_helmet"/>
@@ -6809,13 +6825,13 @@ So no clothing dyes until that can be resolved. -->
 	<property name="PickupJournalEntry" value="firstAidTip"/>
 
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" target="self" cvar="maxHealthAmount" operation="add" value="10"/> <!-- X -->
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" target="self" cvar="maxHealthAmount" operation="add" value="15"/> <!-- X -->
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" target="self" cvar="maxHealthIncrease" operation="set" value="@medicPerkIncrease"/>
 
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="self" buff="buffInjuryBleeding"/>
 
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="maxHealthAmount" operation="add" value="10"/> <!-- X -->
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="maxHealthAmount" operation="add" value="15"/> <!-- X -->
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="maxHealthIncrease" operation="set" value="1.25">
 			<requirement name="CVarCompare" target="self" cvar="maxHealthIncrease" operation="Equals" value="1.25"/> </triggered_effect>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="maxHealthIncrease" operation="set" value="1.5">
@@ -6830,6 +6846,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="medicalFirstAidBandage">
 	<property name="Extends" value="medicalBandage"/>
+	<property name="Group" value="Science"/>
 	<property name="EconomicValue" value="15"/>
 	<property name="DescriptionKey" value="medicalFirstAidBandageDesc"/>
 	<property name="Stacknumber" value="10"/>
@@ -6838,7 +6855,7 @@ So no clothing dyes until that can be resolved. -->
 
 	<effect_group tiered="false">
 		<!-- used on self -->
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" target="self" cvar="maxHealthAmount" operation="add" value="15"/> <!-- X -->
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" target="self" cvar="maxHealthAmount" operation="add" value="25"/> <!-- X -->
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" target="self" cvar="maxHealthIncrease" operation="set" value="@medicPerkIncrease"/>
 
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" target="self" cvar="medicalHealthAmount" operation="add" value="30"/> <!-- X -->
@@ -6849,7 +6866,7 @@ So no clothing dyes until that can be resolved. -->
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="self" buff="buffInjuryBleeding"/>
 
 		<!-- used on other -->
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="maxHealthAmount" operation="add" value="15"/> <!-- X -->
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="maxHealthAmount" operation="add" value="25"/> <!-- X -->
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="maxHealthIncrease" operation="set" value="1.25">
 			<requirement name="CVarCompare" target="self" cvar="maxHealthIncrease" operation="Equals" value="1.25"/> </triggered_effect>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="maxHealthIncrease" operation="set" value="1.5">
@@ -6872,6 +6889,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="medicalFirstAidKit">
 	<property name="Extends" value="medicalBandage" param1="DescriptionKey"/>
+	<property name="Group" value="Science"/>
 	<property name="EconomicValue" value="200"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="Stacknumber" value="5"/>
@@ -6923,7 +6941,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Stacknumber" value="10"/> <!-- STK loot -->
 	<property name="FuelValue" value="40"/>
 	<property name="EconomicValue" value="10"/>
-	<property name="Group" value="Science"/>
+	<property name="Group" value="Science,Basics"/>
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
 
@@ -6965,6 +6983,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="CustomIcon" value="medicalSplint"/> <property name="CustomIconTint" value="afffaf"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="DescriptionKey" value="medicalSplintDesc"/>
+	<property name="Group" value="Science"/>
 	<effect_group name="Primary Action" tiered="false"> <!-- splint -->
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffLegCast">
 			<requirement name="HasBuff" target="self" buff="buffLegBroken"/>
@@ -7120,7 +7139,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Group" value="Science"/>
 
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffDrugdrugHerbalAntibiotics"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffDrugHerbalAntibiotics"/>
 	</effect_group>
 </item>
 
@@ -7224,6 +7243,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Extends" value="drugPainkillers"/>
 	<property name="DisplayType" value="drugSteroids"/>
 	<property name="Group" value="Food/Cooking"/>
+	<property name="EconomicValue" value="250"/>
 
 	<effect_group tiered="false">
 		<display_value name="dStrength" value="3"/>
@@ -7241,7 +7261,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Health/painkillersPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="EconomicValue" value="80"/>
+	<property name="EconomicValue" value="250"/>
 	<property name="Stacknumber" value="50"/> <!-- STK loot -->
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -7268,7 +7288,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="Items/Health/painkillersPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="EconomicValue" value="80"/>
+	<property name="EconomicValue" value="250"/>
 	<property name="Stacknumber" value="50"/> <!-- STK loot -->
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -9122,6 +9142,35 @@ So no clothing dyes until that can be resolved. -->
 	<property name="EconomicValue" value="500"/>
 </item>
 
+<item name="modMeleeGraveDiggerSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="500"/>
+
+	<property name="CustomIcon" value="schematicMaster"/> <!-- temp icon -->
+</item>
+
+<item name="modMeleeBunkerBusterSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="DescriptionKey" value="schematicMaster2Desc"/>
+	<property name="EconomicValue" value="500"/>
+
+	<property name="CustomIcon" value="schematicMaster"/> <!-- temp icon -->
+</item>
+
+<item name="modMeleeIronBreakerSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="DescriptionKey" value="schematicMaster3Desc"/>
+	<property name="EconomicValue" value="500"/>
+
+	<property name="CustomIcon" value="schematicMaster"/> <!-- temp icon -->
+</item>
+
+<item name="modMeleeWoodSplitterSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="500"/>
+
+	<property name="CustomIcon" value="schematicMaster"/> <!-- temp icon -->
+</item>
 
 <!--
 	add these schematics when these are functional
@@ -9160,6 +9209,8 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Extends" value="schematicMaster"/>
 	<property name="DescriptionKey" value="schematicMaster2Desc"/>
 	<property name="EconomicValue" value="500"/>
+
+	<property name="CustomIcon" value="schematicMaster"/> <!-- temp icon -->
 </item>
 
 <item name="modArmorInsulatedLinerSchematic">
@@ -9570,7 +9621,7 @@ So no clothing dyes until that can be resolved. -->
 <!-- * * * * * * * * * * recipe or perk unlocking books / magazines like for painting / short term buffs * * * * * * * * * * -->
 
 <item name="unlockBookMaster">
-	<property name="Extends" value="schematicMaster"/>
+	<property name="Extends" value="schematicMaster" param1="DescriptionKey"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="EconomicValue" value="200"/>
 	<property class="Action0">
@@ -11268,22 +11319,15 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Explosion.ParticleIndex" value="0"/>
 		<!-- no expl. -->
 		<property name="FlyTime" value="1"/>
-		<property name="LifeTime" value=".08"/>
-		<!-- <property name="DamageBonus.head" value="4"/>
-		<property name="DamageBonus.wood" value="0.1"/>
-		<property name="DamageBonus.earth" value="0"/>
-		<property name="DamageBonus.metal" value="0"/>
-		<property name="DamageBonus.cloth" value="0"/> -->
+		<property name="LifeTime" value=".5"/>
 	</property>
 	<effect_group name="Base Effects" tiered="false"> <!-- nail -->
 		<passive_effect name="EntityDamage" operation="base_set" value="5"/>
-		<passive_effect name="EntityDamage" operation="perc_add" value="1.5" tags="damagebonus,head" match_all_tags="true"/> <!-- tool -->
 		<passive_effect name="BlockDamage" operation="base_set" value="0.1"/>
-		<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="damagebonus,earth" match_all_tags="true"/>
-		<passive_effect name="BlockDamage" operation="perc_set" value="0.1" tags="damagebonus,wood" match_all_tags="true"/>
-		<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="damagebonus,metal" match_all_tags="true"/>
-		<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="damagebonus,cloth" match_all_tags="true"/>
-		<passive_effect name="ProjectileVelocity" operation="base_set" value="35"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="20"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
 	</effect_group>
 </item>
 
@@ -11329,18 +11373,6 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK resource -->
 	<property name="EconomicValue" value="100"/>
-	<property name="Group" value="Chemicals"/>
-	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-</item>
-
-<item name="resourceSteelPolish">
-	<property name="HoldType" value="45"/>
-	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
-	<property name="Weight" value="0"/>
-	<property name="Stacknumber" value="250"/> <!-- STK resource -->
-	<property name="EconomicValue" value="35"/>
 	<property name="Group" value="Chemicals"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
@@ -12163,6 +12195,20 @@ So no clothing dyes until that can be resolved. -->
 		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRingOfFire"/>
 		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRingOfFire"/>
 	</effect_group>
+</item>
+
+<item name="resourceSteelPolish"> <!-- deprecated -->
+	<property name="CreativeMode" value="None"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Msteel"/>
+	<property name="Weight" value="0"/>
+	<property name="Stacknumber" value="250"/>
+	<property name="EconomicValue" value="35"/>
+	<property name="Group" value="Chemicals"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="DescriptionKey" value="deprecatedBlockDesc"/>
 </item>
 
 
