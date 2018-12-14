@@ -12203,7 +12203,7 @@ So no clothing dyes until that can be resolved. -->
 	</effect_group>
 </item>
 
-<item name="ringOfFireAdmin">
+<!--<item name="ringOfFireAdmin">
 	<property name="Extends" value="armorClothGloves" param1="DescriptionKey"/>
 	<property name="CreativeMode" value="Dev"/>
 	<property name="CustomIcon" value="modGunBowPolymerString"/> <property name="CustomIconTint" value="250,50,20"/>
@@ -12215,7 +12215,7 @@ So no clothing dyes until that can be resolved. -->
 		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRingOfFire"/>
 		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRingOfFire"/>
 	</effect_group>
-</item>
+</item>-->
 
 <item name="resourceSteelPolish"> <!-- deprecated -->
 	<property name="CreativeMode" value="None"/>
