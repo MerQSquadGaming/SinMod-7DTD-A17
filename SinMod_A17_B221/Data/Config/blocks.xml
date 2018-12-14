@@ -25233,6 +25233,325 @@ ore block visualisation end -->
 	<property name="CreativeMode" value="None"/>
 </block>
 
+  
+  <!--SinMod Starts Here-->
+  <!--SinMod Admin Lobby Blocks-->
+  <block name="Admin_concreteRamp">
+    <property name="Extends" value="concreteMaster"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Shape" value="New"/>
+    <property name="Model" value="ramp"/>
+    <property name="Place" value="TowardsPlacerInverted"/>
+    <property name="MaxDamage" value="2000000000" />
+    <property name="CreativeMode" value="Dev"/>
+    <property class="RepairItems">
+      <property name="paper" value="6" />
+    </property>
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="woodFrameBlock" />
+      <property name="Item" value="gunToolDiggerAdmin" />
+      <property name="ItemCount" value="0" />
+      <property name="UpgradeHitCount" value="1" />
+    </property>
+  </block>
+
+  <block name="Admin_concreteBlock">
+    <property name="Extends" value="concreteMaster"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="MaxDamage" value="2000000000" />
+    <property name="CreativeMode" value="Dev"/>
+    <property class="RepairItems">
+      <property name="cobblestones" value="6" />
+    </property>
+    <!--property name="BuffsWhenWalkedOn" value="healblock"/-->
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="woodFrameBlock" />
+      <property name="Item" value="gunToolDiggerAdmin" />
+      <property name="ItemCount" value="0" />
+      <property name="UpgradeHitCount" value="1" />
+    </property>
+  </block>
+
+  <block name="Admin_concreteCNRRound">
+    <property name="Extends" value="concreteMaster"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Shape" value="New"/>
+    <property name="Model" value="corner_round1m"/>
+    <property name="MaxDamage" value="2000000000" />
+    <property name="CreativeMode" value="Dev"/>
+    <property class="RepairItems">
+      <property name="paper" value="6" />
+    </property>
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="woodFrameBlock" />
+      <property name="Item" value="gunToolDiggerAdmin" />
+      <property name="ItemCount" value="0" />
+      <property name="UpgradeHitCount" value="1" />
+    </property>
+  </block>
+
+  <block name="Admin_concreteCNRRoundTop">
+    <property name="Extends" value="concreteCNRRound"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Model" value="corner_rounded"/>
+    <property name="MaxDamage" value="2000000000" />
+    <property name="CreativeMode" value="Dev"/>
+    <property class="RepairItems">
+      <property name="paper" value="6" />
+    </property>
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="woodFrameBlock" />
+      <property name="Item" value="gunToolDiggerAdmin" />
+      <property name="ItemCount" value="0" />
+      <property name="UpgradeHitCount" value="1" />
+    </property>
+  </block>
+
+  <block name="Admin_concreteStairs25">
+    <property name="Extends" value="concreteMaster"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Shape" value="New"/>
+    <property name="Model" value="StairsFilledVerticalUV"/>
+    <property name="Place" value="TowardsPlacerInverted"/>
+    <property name="UseGlobalUV" value="Global"/>
+    <property name="Stairs"/>
+    <property name="ImposterExchange" value="imposterRamp" param1="2"/>
+    <property name="MaxDamage" value="2000000000" />
+    <property name="CreativeMode" value="Dev"/>
+    <property class="RepairItems">
+      <property name="paper" value="6" />
+    </property>
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="woodFrameBlock" />
+      <property name="Item" value="gunToolDiggerAdmin" />
+      <property name="ItemCount" value="0" />
+      <property name="UpgradeHitCount" value="1" />
+    </property>
+  </block>
+
+  <block name="Admin_concretePillar100">
+    <property name="Extends" value="concreteMaster"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Shape" value="New"/>
+    <property name="Model" value="Pole1m"/>
+    <property name="UseGlobalUV" value="Local"/>
+    <property name="ImposterExchange" value="imposterDontBlockBlock" param1="2"/>
+    <property name="MaxDamage" value="2000000000" />
+    <property name="CreativeMode" value="Dev"/>
+    <property class="RepairItems">
+      <property name="paper" value="6" />
+    </property>
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="woodFrameBlock" />
+      <property name="Item" value="gunToolDiggerAdmin" />
+      <property name="ItemCount" value="0" />
+      <property name="UpgradeHitCount" value="1" />
+    </property>
+  </block>
+
+  <block name="Admin_concretePillar50">
+    <property name="Extends" value="concreteMaster"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Shape" value="New"/>
+    <property name="LightOpacity" value="0"/>
+    <property name="Model" value="Pole0.5m"/>
+    <property name="UseGlobalUV" value="Local"/>
+    <property name="ImposterDontBlock" value="true"/>
+    <property name="MaxDamage" value="2000000000" />
+    <property name="CreativeMode" value="Dev"/>
+    <property class="RepairItems">
+      <property name="paper" value="6" />
+    </property>
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="woodFrameBlock" />
+      <property name="Item" value="gunToolDiggerAdmin" />
+      <property name="ItemCount" value="0" />
+      <property name="UpgradeHitCount" value="1" />
+    </property>
+  </block>
+
+  <block name="Admin_concreteArch">
+    <property name="Extends" value="concreteMaster"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Shape" value="New"/>
+    <property name="Model" value="Arch"/>
+    <property name="Place" value="TowardsPlacerInverted"/>
+    <property name="MaxDamage" value="2000000000" />
+    <property name="CreativeMode" value="Dev"/>
+    <property class="RepairItems">
+      <property name="paper" value="6" />
+    </property>
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="woodFrameBlock" />
+      <property name="Item" value="gunToolDiggerAdmin" />
+      <property name="ItemCount" value="0" />
+      <property name="UpgradeHitCount" value="1" />
+    </property>
+  </block>
+
+  <block name="Admin_concreteStairs25CornerCNR">
+    <property name="Extends" value="concreteMaster"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Shape" value="New"/>
+    <property name="Model" value="stairs_filled_corner"/>
+    <property name="Place" value="TowardsPlacerInverted"/>
+    <property name="ImposterExchange" value="imposterCNRFull" param1="2"/>
+    <property name="MaxDamage" value="2000000000" />
+    <property name="CreativeMode" value="Dev"/>
+    <property class="RepairItems">
+      <property name="paper" value="6" />
+    </property>
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="woodFrameBlock" />
+      <property name="Item" value="gunToolDiggerAdmin" />
+      <property name="ItemCount" value="0" />
+      <property name="UpgradeHitCount" value="1" />
+    </property>
+  </block>
+
+  <block name="Admin_concretePyramid">
+    <property name="Extends" value="concreteMaster"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Shape" value="New"/>
+    <property name="Model" value="pyramid"/>
+    <property name="MaxDamage" value="2000000000" />
+    <property name="CreativeMode" value="Dev"/>
+    <property class="RepairItems">
+      <property name="paper" value="6" />
+    </property>
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="woodFrameBlock" />
+      <property name="Item" value="gunToolDiggerAdmin" />
+      <property name="ItemCount" value="0" />
+      <property name="UpgradeHitCount" value="1" />
+    </property>
+  </block>
+
+  <block name="Admin_concreteCNRInside">
+    <property name="Extends" value="concreteMaster"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Shape" value="New"/>
+    <property name="Model" value="ramp_inside_corner"/>
+    <property name="MaxDamage" value="2000000000" />
+    <property name="CreativeMode" value="Dev"/>
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="woodFrameBlock" />
+      <property name="Item" value="gunToolDiggerAdmin" />
+      <property name="ItemCount" value="0" />
+      <property name="UpgradeHitCount" value="1" />
+    </property>
+  </block>
+
+  <block name="Admin_concreteCNRFull">
+    <property name="Extends" value="concreteMaster"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Shape" value="New"/>
+    <property name="Model" value="ramp_outside_corner"/>
+    <property name="MaxDamage" value="2000000000" />
+    <property name="CreativeMode" value="Dev"/>
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="woodFrameBlock" />
+      <property name="Item" value="gunToolDiggerAdmin" />
+      <property name="ItemCount" value="0" />
+      <property name="UpgradeHitCount" value="1" />
+    </property>
+  </block>
+
+  <block name="Admin_houseFrontDoor">
+    <property name="DescriptionKey" value="doorGroupDesc"/>
+    <property name="Class" value="DoorSecure"/>
+    <property name="Material" value="wood_regular"/>
+    <property name="PassThroughDamage" value="true"/>
+    <property name="LightOpacity" value="1"/>
+    <property name="Shape" value="ModelEntity"/>
+    <property name="Model" value="Entities/Doors/house_frontDoor2_v1Prefab"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="ModelOffset" value="0,0,0"/>
+    <property name="MultiBlockDim" value="1,2,1"/>
+    <property name="ImposterExchange" value="imposterCTRPlate" param1="25"/>
+    <!-- door replacer -->
+    <property name="Tag" value="Door"/>
+    <property name="Place" value="Door"/>
+    <!-- build restriction -->
+    <property name="PlaceEverywhere" value="true"/>
+    <property name="Mesh-Damage-1" value="Door/Door_DMG0"/>
+    <property name="Mesh-Damage-2" value="Door/Door_DMG1"/>
+    <property name="Mesh-Damage-3" value="Door/Door_DMG2"/>
+    <property name="Mesh-Damage-4" value="Door/Door_DMG3"/>
+    <property name="Mesh-Damage-5" value="Door/Door_DMG4"/>
+    <property name="OpenSound" value="open_door_wood"/>
+    <property name="CloseSound" value="close_door_wood"/>
+    <property class="RepairItems">
+      <property name="wood" value="10"/>
+    </property>
+    <property name="MaxDamage" value="2000000000" />
+    <property name="CreativeMode" value="Dev"/>
+    <property class="RepairItems">
+      <property name="wood" value="10"/>
+    </property>
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="woodFrameBlock" />
+      <property name="Item" value="gunToolDiggerAdmin" />
+      <property name="ItemCount" value="0" />
+      <property name="UpgradeHitCount" value="1" />
+    </property>
+    <property name="CustomUpgradeSound" value="place_block_wood"/>
+    <drop event="Harvest" name="wood" count="4" prob="1"/>
+    <drop event="Destroy" count="0"/>
+    <drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
+  </block>
+
+  <block name="Admin_glassBulletproofPlateCurved">
+    <property name="Extends" value="glassBulletproofMaster"/>
+    <property name="Model" value="plate_corner_round_1m"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="CreativeMode" value="Dev"/>
+    <property class="RepairItems">
+      <property name="glassBulletproofPlateCurved" value="1"/>
+    </property>
+    <property name="MaxDamage" value="2000000000" />
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="woodFrameBlock" />
+      <property name="Item" value="gunToolDiggerAdmin" />
+      <property name="ItemCount" value="0" />
+      <property name="UpgradeHitCount" value="1" />
+    </property>
+  </block>
+
+  <block name="Admin_glassBulletproofPlate">
+    <property name="Extends" value="glassBulletproofMaster"/>
+    <property name="Model" value="plate_glass"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Place" value="TowardsPlacerInverted"/>
+    <property name="CreativeMode" value="Dev"/>
+    <property class="RepairItems">
+      <property name="glassBulletproofPlate" value="1"/>
+    </property>
+    <property name="MaxDamage" value="2000000000" />
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="woodFrameBlock" />
+      <property name="Item" value="gunToolDiggerAdmin" />
+      <property name="ItemCount" value="0" />
+      <property name="UpgradeHitCount" value="1" />
+    </property>
+  </block>
+
+  <block name="Admin_ironBars">
+    <property name="Extends" value="ironBarsCentered"/>
+    <property name="Material" value="MrConcrete"/>
+    <property name="Model" value="iron_bars"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Place" value="TowardsPlacerInverted"/>
+    <property name="MaxDamage" value="2000000000" />
+    <property name="CreativeMode" value="Dev"/>
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="woodFrameBlock" />
+      <property name="Item" value="gunToolDiggerAdmin" />
+      <property name="ItemCount" value="0" />
+      <property name="UpgradeHitCount" value="1" />
+    </property>
+  </block>
+
 <!--
 Block replacements
 Search -> Replace

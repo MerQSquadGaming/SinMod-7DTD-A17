@@ -11988,7 +11988,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="450"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="0"/>
-		<passive_effect name="BlockDamage" operation="base_set" value="20000"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="2000000000"/>
 		<passive_effect name="MaxRange" operation="base_set" value="200"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="0"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="0"/>

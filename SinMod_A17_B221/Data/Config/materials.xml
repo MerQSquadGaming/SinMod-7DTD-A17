@@ -1166,5 +1166,4 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="MaxDamage" value="100" />
 	<property name="Experience" value="3.0"/>
 </material>
-
 </materials>
