@@ -1166,4 +1166,18 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="MaxDamage" value="100" />
 	<property name="Experience" value="3.0"/>
 </material>
+
+  <!--SinMod Starts Here-->
+  <!--Sinmod Materials-->
+  <material id="Madmin_mat">
+    <property name="damage_category" value="metal" />
+    <property name="surface_category" value="metal" />
+    <property name="Hardness" type="float" value="1" />
+    <property name="stepsound" value="wood" />
+    <property name="stability_glue" value="40" />
+    <property name="Mass" type="int" value="5" />
+    <property name="MaxDamage" value="2000000000" />
+    <property name="Experience" value="3.0"/>
+  </material>
+  
 </materials>
