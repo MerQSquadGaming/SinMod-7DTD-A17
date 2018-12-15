@@ -25242,9 +25242,8 @@ ore block visualisation end -->
     <property name="CustomIconTint" value="ff0000"/>
     <property name="Shape" value="New"/>
     <property name="Model" value="ramp"/>
-    <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
     <property name="Place" value="TowardsPlacerInverted"/>
-    <property name="MaxDamage" value="2000000000" />
+    <property name="MaxDamage" value="200000000" />
     <property name="CreativeMode" value="Dev"/>
     <property class="RepairItems">
       <property name="paper" value="1" />
@@ -25261,7 +25260,8 @@ ore block visualisation end -->
     <property name="Extends" value="concreteMaster"/>
     <property name="CustomIcon" value="rConcreteBlock"/>
     <property name="CustomIconTint" value="ff0000"/>
-    <property name="MaxDamage" value="2000000000" />
+    <property name="Path" value="solid"/>
+    <property name="MaxDamage" value="200000000" />
     <property name="CreativeMode" value="Dev"/>
     <property class="RepairItems">
       <property name="paper" value="1" />
@@ -25280,7 +25280,7 @@ ore block visualisation end -->
     <property name="CustomIconTint" value="ff0000"/>
     <property name="Shape" value="New"/>
     <property name="Model" value="corner_round1m"/>
-    <property name="MaxDamage" value="2000000000" />
+    <property name="MaxDamage" value="200000000" />
     <property name="CreativeMode" value="Dev"/>
     <property class="RepairItems">
       <property name="paper" value="1" />
@@ -25298,7 +25298,7 @@ ore block visualisation end -->
     <property name="CustomIcon" value="rConcreteCNRRoundTop"/>
     <property name="CustomIconTint" value="ff0000"/>
     <property name="Model" value="corner_rounded"/>
-    <property name="MaxDamage" value="2000000000" />
+    <property name="MaxDamage" value="200000000" />
     <property name="CreativeMode" value="Dev"/>
     <property class="RepairItems">
       <property name="paper" value="1" />
@@ -25321,7 +25321,7 @@ ore block visualisation end -->
     <property name="UseGlobalUV" value="Global"/>
     <property name="Stairs"/>
     <property name="ImposterExchange" value="imposterRamp" param1="2"/>
-    <property name="MaxDamage" value="2000000000" />
+    <property name="MaxDamage" value="200000000" />
     <property name="CreativeMode" value="Dev"/>
     <property class="RepairItems">
       <property name="paper" value="1" />
@@ -25339,10 +25339,11 @@ ore block visualisation end -->
     <property name="CustomIcon" value="rConcretePillar100"/>
     <property name="CustomIconTint" value="ff0000"/>
     <property name="Shape" value="New"/>
+    <property name="Path" value="solid"/>
     <property name="Model" value="Pole1m"/>
     <property name="UseGlobalUV" value="Local"/>
-    <property name="ImposterExchange" value="imposterDontBlockBlock" param1="2"/>
-    <property name="MaxDamage" value="2000000000" />
+    <property name="ImposterExchange" value="imposterBlock" param1="2"/>
+    <property name="MaxDamage" value="200000000" />
     <property name="CreativeMode" value="Dev"/>
     <property class="RepairItems">
       <property name="paper" value="1" />
@@ -25361,10 +25362,12 @@ ore block visualisation end -->
     <property name="CustomIconTint" value="ff0000"/>
     <property name="Shape" value="New"/>
     <property name="LightOpacity" value="0"/>
+    <property name="Path" value="solid"/>
     <property name="Model" value="Pole0.5m"/>
     <property name="UseGlobalUV" value="Local"/>
     <property name="ImposterDontBlock" value="true"/>
-    <property name="MaxDamage" value="2000000000" />
+    <property name="ImposterExchange" value="imposterDontBlockCTRQuarter" param1="2"/>
+    <property name="MaxDamage" value="200000000" />
     <property name="CreativeMode" value="Dev"/>
     <property class="RepairItems">
       <property name="paper" value="1" />
@@ -25384,7 +25387,7 @@ ore block visualisation end -->
     <property name="Shape" value="New"/>
     <property name="Model" value="Arch"/>
     <property name="Place" value="TowardsPlacerInverted"/>
-    <property name="MaxDamage" value="2000000000" />
+    <property name="MaxDamage" value="200000000" />
     <property name="CreativeMode" value="Dev"/>
     <property class="RepairItems">
       <property name="paper" value="1" />
@@ -25405,7 +25408,7 @@ ore block visualisation end -->
     <property name="Model" value="stairs_filled_corner"/>
     <property name="Place" value="TowardsPlacerInverted"/>
     <property name="ImposterExchange" value="imposterCNRFull" param1="2"/>
-    <property name="MaxDamage" value="2000000000" />
+    <property name="MaxDamage" value="200000000" />
     <property name="CreativeMode" value="Dev"/>
     <property class="RepairItems">
       <property name="paper" value="1" />
@@ -25424,8 +25427,7 @@ ore block visualisation end -->
     <property name="CustomIconTint" value="ff0000"/>
     <property name="Shape" value="New"/>
     <property name="Model" value="pyramid"/>
-    <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-    <property name="MaxDamage" value="2000000000" />
+    <property name="MaxDamage" value="200000000" />
     <property name="CreativeMode" value="Dev"/>
     <property class="RepairItems">
       <property name="paper" value="1" />
@@ -25444,7 +25446,7 @@ ore block visualisation end -->
     <property name="CustomIconTint" value="ff0000"/>
     <property name="Shape" value="New"/>
     <property name="Model" value="ramp_inside_corner"/>
-    <property name="MaxDamage" value="2000000000" />
+    <property name="MaxDamage" value="200000000" />
     <property name="CreativeMode" value="Dev"/>
         <property class="RepairItems">
       <property name="paper" value="1" />
@@ -25463,7 +25465,7 @@ ore block visualisation end -->
     <property name="CustomIconTint" value="ff0000"/>
     <property name="Shape" value="New"/>
     <property name="Model" value="ramp_outside_corner"/>
-    <property name="MaxDamage" value="2000000000" />
+    <property name="MaxDamage" value="200000000" />
     <property name="CreativeMode" value="Dev"/>
     <property class="RepairItems">
       <property name="paper" value="1" />
@@ -25525,7 +25527,7 @@ ore block visualisation end -->
     <property class="RepairItems">
       <property name="glassBulletproofPlateCurved" value="1"/>
     </property>
-    <property name="MaxDamage" value="2000000000" />
+    <property name="MaxDamage" value="200000000" />
     <property class="UpgradeBlock">
       <property name="ToBlock" value="woodFrameBlock" />
       <property name="Item" value="gunToolDiggerAdmin" />
@@ -25544,7 +25546,7 @@ ore block visualisation end -->
     <property class="RepairItems">
       <property name="glassBulletproofPlate" value="1"/>
     </property>
-    <property name="MaxDamage" value="2000000000" />
+    <property name="MaxDamage" value="200000000" />
     <property class="UpgradeBlock">
       <property name="ToBlock" value="woodFrameBlock" />
       <property name="Item" value="gunToolDiggerAdmin" />
@@ -25559,7 +25561,7 @@ ore block visualisation end -->
     <property name="Model" value="iron_bars"/>
     <property name="CustomIconTint" value="ff0000"/>
     <property name="Place" value="TowardsPlacerInverted"/>
-    <property name="MaxDamage" value="2000000000" />
+    <property name="MaxDamage" value="200000000" />
     <property name="CreativeMode" value="Dev"/>
     <property class="UpgradeBlock">
       <property name="ToBlock" value="woodFrameBlock" />
@@ -25587,15 +25589,15 @@ ore block visualisation end -->
 	<property name="StabilitySupport" value="false"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-  <property name="RequiredPower" value="1"/>
-  <property name="Model" value="Entities/Electrical/trap_spinning_bladePrefab"/> <property name="HandleFace" value="Bottom"/>
-  <property name="CustomIcon" value="bladeTrap"/>
-  <property name="CustomIconTint" value="ff0000"/>
+  	<property name="RequiredPower" value="1"/>
+	<property name="Model" value="Entities/Electrical/trap_spinning_bladePrefab"/> <property name="HandleFace" value="Bottom"/>
+	<property name="CustomIcon" value="bladeTrap"/>
+	<property name="CustomIconTint" value="ff0000"/>
 	<property name="DisplayType" value="blockElectricalMulti" />
 	<property name="MultiBlockDim" value="3,1,3"/>
 	<property name="ImposterExchange" value="imposterPlate" param1="111"/>
 	<property name="IsTerrainDecoration" value="true"/>
-  <property name="RuntimeSwitch" value="true" />
+	<property name="RuntimeSwitch" value="true" />
 	<property name="Group" value="Tools/Traps,Science"/>
 	<property name="ActivationDistance" value="6"/>
 	<property class="RepairItems">
