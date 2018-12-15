@@ -3754,6 +3754,28 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="flagstoneGableInvertedHalf" count="1">
 	<ingredient name="resourceCobblestones" count="4"/>
 </recipe>
+  
+  <!--SinMod Recipes Begins Here-->
+  <!--Sinmod Scrap Metal Tools-->
+  <recipe name="meleeToolPickaxeScrap" count="1">
+    <ingredient name="resourceScrapIron" count="15"/>
+    <ingredient name="resourceWood" count="5"/>
+    <ingredient name="resourceYuccaFibers" count="10"/>
+  </recipe>
+  <recipe name="meleeToolFireaxeScrap" count="1">
+    <ingredient name="resourceScrapIron" count="15"/>
+    <ingredient name="resourceWood" count="5"/>
+    <ingredient name="resourceYuccaFibers" count="10"/>
+  </recipe>
+  <recipe name="meleeToolShovelScrap" count="1">
+    <ingredient name="resourceScrapIron" count="15"/>
+    <ingredient name="resourceWood" count="5"/>
+    <ingredient name="resourceYuccaFibers" count="10"/>
+  </recipe>
+  <recipe name="meleeToolShivScrap" count="1">
+    <ingredient name="resourceScrapIron" count="3"/>
+    <ingredient name="resourceDuctTape" count="1"/>
+  </recipe>
 
 </recipes>
 <!-- To do (maybe / later)
