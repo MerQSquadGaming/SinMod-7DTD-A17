@@ -3414,6 +3414,116 @@
 	<property name="NPCID" value="traderTest"/>
 </entity_class>
 
+  
+  <!--SinMod Begins Here-->
+  <!--SinMod Custom Zombies-->
+  <!--
+  <entity_class name="zombieBaby" extends="zombieUMATemplateMale">
+    <property name="Archetype" value="zombieBaby"/>
+    <property name="MaxHealth" value="400"/>
+    <property name="ExperienceGain" value="675"/>
+    <property name="HandItem" value="handZombie"/>
+    <property name="WalkType" value="8"/>
+    <property name="CanClimbLadders" value="true"/>
+    <property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
+    <property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
+    <property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemalescoutattack"/>
+    <property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalescoutpain"/>
+    <property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemalescoutdeath"/>
+    <property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalescoutsense"/>
+    <property name="WanderSpeed" value="0.08"/>
+    <property name="ApproachSpeed" value="0.45"/>
+    <property name="NightWanderSpeed" value="0.08"/>
+    <property name="NightApproachSpeed" value="0.75"/>
+    <property name="CanClimbVertical" value="false" />
+    <property name="LootListOnDeath" value="38" />
+  </entity_class>
+  <entity_class name="zombieClown" extends="zombieUMATemplateMale" >
+    <property name="Archetype" value="zombieClown"/>
+    <property name="MaxHealth" value="500" />
+    <property name="ExperienceGain" value="2509"/>
+    <property name="WalkType" value="1" />
+    <property name="HandItem" value="handZombieStrong"/>
+    <property name="SoundDeath" value="Vehicles/Minibike/minibike_horn" />
+    <property name="LootListOnDeath" value="38"/>
+  </entity_class>
+  -->
+  
+  <!--SinMod Custom Boss Zombies-->
+  <!--
+  <entity_class name="zombieHulk" extends="zombieUMATemplateMale" >
+    <property name="Archetype" value="zombieHulk"/>
+    <property name="WalkType" value="2" />
+    <property name="ApproachSpeed" value="1.35" />
+    <property name="NightApproachSpeed" value="1.35" />
+    <property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam" />
+    <property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert" />
+    <property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack" />
+    <property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain" />
+    <property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath" />
+    <property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense" />
+    <property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep" />
+    <property name="HandItem" value="handBoss" />
+    <property name="MaxHealth" value="5000" />
+    <property name="LootListOnDeath" value="104" />
+    <property name="ExperienceGain" value="8982"/>
+  </entity_class>
+  <entity_class name="zombieBrute" extends="zombieUMATemplateMale" >
+    <property name="Archetype" value="zombieBrute"/>
+    <property name="SurfaceCategory" value="metal" />
+    <property name="HandItem" value="handBoss" />
+    <property name="WalkType" value="8" />
+    <property name="CanClimbLadders"  value="false" />
+    <property name="ExperienceGain" value="8982"/>
+    <property name="RootMotion" value="true" />
+    <property name="HasDeathAnim" value="false" />
+    <property name="MaxHealth"  value="5000" />
+    <property name="Weight" value="300" />
+    <property name="PushFactor" value="20" />
+    <property name="LootListOnDeath"  value="104" />
+    <property name="SoundRandom"  value="Enemies/Acid_Puking_Hulk/hulkroam" />
+    <property name="SoundAlert" value="Enemies/Acid_Puking_Hulk/hulkalert" />
+    <property name="SoundAttack"  value="Enemies/Acid_Puking_Hulk/hulkattack" />
+    <property name="SoundHurt"  value="Enemies/Acid_Puking_Hulk/hulkpain" />
+    <property name="SoundDeath" value="Enemies/Acid_Puking_Hulk/hulkdeath" />
+    <property name="SoundSense" value="Enemies/Acid_Puking_Hulk/hulksense" />
+    <property name="SoundFootstepModifier"  value="Animals/Bear/bear_footstep" />
+    <property name="HeadDismemberThreshold" value="0"/>
+    <property name="LowerLegDismemberThreshold" value="0"/>
+    <property name="UpperLegDismemberThreshold" value="0"/>
+    <property name="LowerArmDismemberThreshold" value="0"/>
+    <property name="UpperArmDismemberThreshold" value="0"/>
+    <property name="WanderSpeed"        value="0.08" />
+    <property name="ApproachSpeed"      value="0.2" />
+    <property name="NightWanderSpeed"   value="0.08" />
+    <property name="NightApproachSpeed" value="0.8" />
+    <property name="PanicSpeed"         value="0.55" />
+    <property name="CanClimbLadders"     value="false" />
+  </entity_class>
+  -->
+  
+  <!--SinMod Donor Crate-->
+  <!--entity_class name="DonorCrate">
+    <property name="Mesh" value="SupplyCrate/SupplyCrateEntityPrefab"/>
+    <property name="ModelType" value="SupplyCrate"/>
+    <property name="HasRagdoll" value="false"/>
+    <property name="Prefab" value="SupplyCrate"/>
+    <property name="Class" value="EntitySupplyCrate"/>
+    <property name="Parent" value="SupplyCrates"/>
+    <property name="Faction" value="none"/>
+    <property name="MaxHealth" value="200"/>
+    <property name="Weight" value="100"/>
+    <property name="SurfaceCategory" value="wood"/>
+    <property name="ParticleOnDeath" value="supply_crate_gib_Prefab"/>
+    <property name="LootListAlive" value="103"/>
+    <property name="LootListAliveMP" value="103"/>
+    <property name="IsEnemyEntity" value="false"/>
+    <property name="SoundParachuteOpen" value="SupplyDrops/Parachute_Opens"/>
+    <property name="SoundLanding" value="SupplyDrops/Supply_Crate_Land"/>
+    <property name="TimeStayAfterDeath" value="0"/>
+    <property name="MapIcon" value="map_supply_crate"/>
+  </entity_class
+  -->
 </entity_classes>
 
 <!--
