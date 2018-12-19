@@ -1,6 +1,5 @@
 <npc>
-
-	<npc_info
+    <npc_info
 		id="traitorjoel"
 		name="Traitor Joel"
 		name_key="npc_traitorJoel"
@@ -9,8 +8,7 @@
 		greeting_type="nearby"
 		stance="Like" voice_set="trader"
 		trader_id="1" dialog_id="trader" />
-
-	<npc_info
+    <npc_info
 		id="traderrekt"
 		name="Traitor Rekt"
 		name_key="npc_traderRekt"
@@ -19,8 +17,7 @@
 		greeting_type="nearby"
 		stance="Dislike" voice_set="trader"
 		trader_id="1" dialog_id="trader" />
-
-	<npc_info
+    <npc_info
 		id="traderhugh"
 		name="Trader Hugh"
 		name_key="npc_traderHugh"
@@ -29,8 +26,7 @@
 		greeting_type="nearby"
 		stance="Neutral" voice_set="trader"
 		trader_id="1" dialog_id="trader" />
-		
-	<npc_info
+    <npc_info
 		id="traderjen"
 		name="Trader Jen"
 		name_key="npc_traderJen"
@@ -39,8 +35,7 @@
 		greeting_type="nearby"
 		stance="Like" voice_set="trader"
 		trader_id="1" dialog_id="trader" />
-		
-	<npc_info
+    <npc_info
 		id="traderbob"
 		name="Trader Bob"
 		name_key="npc_traderBob"
@@ -49,8 +44,7 @@
 		greeting_type="nearby"
 		stance="Like" voice_set="trader"
 		trader_id="1" dialog_id="trader" />
-		
-	<npc_info
+    <npc_info
 		id="traderTest"
 		name="Trader Test"
 		name_key="Trader Test"
@@ -61,38 +55,35 @@
 		stance="Like" voice_set="trader"
 		dialog_id="traderTest"
 		quest_list="test_quests" />
-
-	
-		
-	<factions>
-		<faction name="none">
-			<relationship name="*" value="neutral"/>
-		</faction>
-		<faction name="animals">
-			<relationship name="*" value="neutral"/>
-		</faction>
-		<faction name="undead">
-			<relationship name="trader" value="neutral"/>
-			<relationship name="*" value="hate"/>
-		</faction>
-		<faction name="bandits">
-			<relationship name="*" value="hate"/>
-		</faction>
-		<faction name="whiteriver">
-			<relationship name="*" value="neutral"/>
-			<relationship name="undead" value="hate"/>
-			<relationship name="bandits" value="hate"/>
-		</faction>
-		<faction name="duke">
-			<relationship name="*" value="neutral"/>
-			<relationship name="whiteriver" value="dislike"/>
-			<relationship name="undead" value="hate"/>
-			<relationship name="bandits" value="dislike"/>
-		</faction>
-		<faction name="trader">
-			<relationship name="*" value="neutral"/>
-			<relationship name="bandits" value="dislike"/>
-			<relationship name="undead" value="hate"/>
-		</faction>
-	</factions>
+    <factions>
+        <faction name="none">
+            <relationship name="*" value="neutral"/>
+        </faction>
+        <faction name="animals">
+            <relationship name="*" value="neutral"/>
+        </faction>
+        <faction name="undead">
+            <relationship name="trader" value="neutral"/>
+            <relationship name="*" value="hate"/>
+        </faction>
+        <faction name="bandits">
+            <relationship name="*" value="hate"/>
+        </faction>
+        <faction name="whiteriver">
+            <relationship name="*" value="neutral"/>
+            <relationship name="undead" value="hate"/>
+            <relationship name="bandits" value="hate"/>
+        </faction>
+        <faction name="duke">
+            <relationship name="*" value="neutral"/>
+            <relationship name="whiteriver" value="dislike"/>
+            <relationship name="undead" value="hate"/>
+            <relationship name="bandits" value="dislike"/>
+        </faction>
+        <faction name="trader">
+            <relationship name="*" value="neutral"/>
+            <relationship name="bandits" value="dislike"/>
+            <relationship name="undead" value="hate"/>
+        </faction>
+    </factions>
 </npc>
