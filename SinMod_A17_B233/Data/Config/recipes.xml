@@ -756,6 +756,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceMechanicalParts" count="3"/>
 </recipe>
 
+
 <recipe name="cntGreenDrawerSecure" count="1" craft_area="workbench">
 	<ingredient name="resourceForgedIron" count="8"/>
 </recipe>
@@ -3785,6 +3786,27 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="unit_clay" count="1"/>
 </recipe>
 
+  <!--SinMod Recipes Begins Here-->
+  <!--Sinmod Scrap Metal Tools-->
+  <recipe name="meleeToolPickaxeScrap" count="1">
+    <ingredient name="resourceScrapIron" count="15"/>
+    <ingredient name="resourceWood" count="5"/>
+    <ingredient name="resourceYuccaFibers" count="10"/>
+  </recipe>
+  <recipe name="meleeToolFireaxeScrap" count="1">
+    <ingredient name="resourceScrapIron" count="15"/>
+    <ingredient name="resourceWood" count="5"/>
+    <ingredient name="resourceYuccaFibers" count="10"/>
+  </recipe>
+  <recipe name="meleeToolShovelScrap" count="1">
+    <ingredient name="resourceScrapIron" count="15"/>
+    <ingredient name="resourceWood" count="5"/>
+    <ingredient name="resourceYuccaFibers" count="10"/>
+  </recipe>
+  <recipe name="meleeToolShivScrap" count="1">
+    <ingredient name="resourceScrapIron" count="3"/>
+    <ingredient name="resourceDuctTape" count="1"/>
+  </recipe>
 </recipes>
 <!-- To do (maybe / later)
 <recipe name="resourceArrowHeadSteelAP" count="1" craft_area="forge" craft_tool="toolCalipers" material_based="true">

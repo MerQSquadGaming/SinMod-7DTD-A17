@@ -1,4 +1,11 @@
 <windows>
+
+  <window name="version">
+    <texture name="SinMod" depth="0" size="63,45" texture="@https://merqsquad.com/wp-content/uploads/2018/01/SinModUILogo.png" material="Materials/Transparent Colored" pos="-160,-6" />
+    <label name="ServerName" depth="0" size="53,35" text="Worlds End PvEvP" font_size="20" effect="outline" color="[white]" justify="center" pos="-270,-15" overflow="resizeheight" />
+    <label name="SinModVer" depth="0" size="53,35" text="SinMod v2.0" font_size="20" effect="outline" color="[white]" justify="center" pos="-220,-15" overflow="resizeheight" />
+  </window>
+
 	<window name="HUDLeftStatBars">
 		<rect name="hud" pos="9,147" rows="2" cols="1" width="168" side="right">
 		<!-- <grid name="hud" pos="9,52" rows="3" cols="1" width="171" cell_width="168" cell_height="47" repeat_content="false" side="left" pivot="BottomLeft"> -->
@@ -48,9 +55,81 @@
 				<filledsprite depth="8" name="background" color="0,0,0,255" width="171" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
 				<filledsprite depth="3" name="background" color="0,0,0,255" width="170" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
 			</rect>
-
-
 		</rect>
+
+    <rect name="hud1" pos="185,147" rows="2" cols="1" width="125" side="right">
+      <!--Hunger-->
+      <rect width="125" height="43" pos="0,-94" controller="PlayerStatsWindow">
+        <sprite depth="1" name="border" color="0,0,0,128" type="sliced" />
+        <sprite depth="2" name="background"  color="0,0,0,140" type="sliced" />
+        <filledsprite depth="3" name="background" color="110,110,110,128" width="124" type="filled" fill="{statmodifiedmax}" />
+        <filledsprite depth="5" name="BarContent" color="52,174,86" fill="{playerfoodfill}" type="filled" width="123"/>
+        <sprite depth="6" name="Icon" sprite="ui_game_symbol_fork" size="32,32" pos="8,-6" foregroundlayer="true"/>
+        <label depth="7" name="lblFood" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{playerfood}%[-]" height="30"/>
+        <sprite depth="8" name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
+        <filledsprite depth="8" name="background" color="0,0,0,255" width="126" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+        <filledsprite depth="3" name="background" color="0,0,0,255" width="125" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+      </rect>
+
+      <!--Thirst-->
+      <rect width="125" height="43" pos="0,-47" controller="PlayerStatsWindow">
+        <sprite depth="1" name="border" color="0,0,0,128" type="sliced" />
+        <sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+        <filledsprite depth="3" name="background" color="110,110,110,128" width="124" type="filled" fill="{statmodifiedmax}" />
+        <filledsprite depth="5" name="BarContent" color="52,137,167" fill="{playerwaterfill}" type="filled" width="123"/>
+        <sprite depth="6" name="Icon" sprite="ui_game_symbol_water" size="32,32" pos="8,-6" foregroundlayer="true"/>
+        <label depth="7" name="lblWater" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{playerwater}%[-]" height="30"/>
+        <sprite depth="8" name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
+        <filledsprite depth="8" name="background" color="0,0,0,255" width="126" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+        <filledsprite depth="3" name="background" color="0,0,0,255" width="125" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+      </rect>
+    </rect>
+
+    <rect name="hud2" pos="315,147" rows="2" cols="1" width="85" side="right">
+      <!--Zombie Kills-->
+      <rect width="88" height="43" pos="0,-47">
+        <sprite depth="1" name="border" color="0,0,0,128" type="sliced" />
+        <sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+        <sprite depth="4" name="icon" style="icon32px" pos="3,-5" sprite="ui_game_symbol_zombie" color="[iconColor]" foregroundlayer="true"/>
+        <label depth="6" height="30" pos="20,-8" font_size="22" text=" [DECEA3] {playerzombiekills}[-]" effect="outline" justify="center" controller="PlayerStatsWindow"/>
+        <filledsprite depth="8" name="background" color="0,0,0,255" width="88" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+        <filledsprite depth="3" name="background" color="0,0,0,255" width="87" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+      </rect>
+
+      <!--Player Level-->
+      <rect width="88" height="43" pos="0,-94" controller="PlayerStatsWindow">
+        <sprite depth="1" name="border" color="0,0,0,128" type="sliced" />
+        <sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+        <filledsprite depth="3" name="background" color="110,110,110,128" width="86" type="filled" fill="{statmodifiedmax}" />
+        <filledsprite depth="5" name="BarContent" color="255,167,0" fill="{playerlevelfill}" type="filled" width="85"/>
+        <sprite depth="6" name="Icon" sprite="ui_game_symbol_trophy" size="32,32" pos="3,-5" foregroundlayer="true"/>
+        <label depth="7" height="30" pos="20,-8" font_size="22" text=" [DECEA3] {playerlevel}[-]" effect="outline" justify="center" controller="PlayerStatsWindow" />
+        <filledsprite depth="8" name="background" color="0,0,0,255" width="88" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+        <filledsprite depth="3" name="background" color="0,0,0,255" width="87" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+      </rect>
+    </rect>
+
+    <rect name="hud3" pos="408,147" rows="2" cols="1" width="85" side="right">
+      <!--Elevation-->
+      <rect width="88" height="43" pos="0,-47">
+        <sprite depth="1" name="border" color="0,0,0,128" type="sliced" />
+        <sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+        <sprite depth="4" name="elevIcon" size="32,32" pos="3,-5" sprite="ui_game_symbol_climb" color="[iconColor]" foregroundlayer="true"/>
+        <label depth="6" height="30" pos="14,-8" font_size="22" text=" [DECEA3] {mapelevation} M[-]" effect="outline" justify="center" controller="MapStats" />
+        <filledsprite depth="8" name="background" color="0,0,0,255" width="88" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+        <filledsprite depth="3" name="background" color="0,0,0,255" width="87" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+      </rect>
+
+      <!--Core Temp-->
+      <rect width="88" height="43" pos="0,-94">
+        <sprite depth="1" name="border" color="0,0,0,128" type="sliced" />
+        <sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+        <sprite depth="4" name="tempIcon" size="32,32" pos="3,-6" sprite="ui_game_symbol_temperature" color="[iconColor]" foregroundlayer="true"/>
+        <label depth="6" height="30" pos="11,-8" font_size="22" text=" [DECEA3] {playercoretemp}[-]" effect="outline" justify="center" controller="PlayerStatsWindow" />
+        <filledsprite depth="8" name="background" color="0,0,0,255" width="88" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+        <filledsprite depth="3" name="background" color="0,0,0,255" width="87" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+      </rect>
+    </rect>
 
 		<rect name="hud" pos="90,124" side="left" controller="BuffPopoutList" pivot="BottomLeft" >
 			<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0" >
@@ -392,6 +471,8 @@
 			<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="603" height="346" color="[black]" type="sliced" fillcenter="false" />
 			<sprite color="[mediumGrey]" type="sliced" />
 			<label pos="0,-90" depth="3" name="descriptionText" width="100%" height="150" text="[LEFT CLICK] TO INSPECT AN ITEM, RECIPE OR ACTIVE EFFECT\n[LEFT CLICK] HOLD AND DRAG TO TAKE A STACK\n[LEFT CLICK] TO DROP OR SWAP A STACK\n[RIGHT CLICK] HOLD AND DRAG TO TAKE A HALF STACK\n[RIGHT CLICK] TO DROP ONE ITEM AT A TIME" text_key="xuiEmptyInfoPanelText"  justify="center" font_size="28" />
+			 <texture depth="9" name="ToolBeltBackground" texture="@https://merqsquad.com/wp-content/uploads/2018/01/SinModInventory.png" material="Materials/Transparent Colored"/>
+
 		</rect>
 	</window>
 
