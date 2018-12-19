@@ -25327,7 +25327,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteBlock">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcreteBlock"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Path" value="solid"/>
@@ -25335,7 +25335,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteCNRRound">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcreteCNRRound"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25345,7 +25345,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteCNRRoundTop">
-		<property name="Extends" value="concreteCNRRound"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcreteCNRRoundTop"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Model" value="corner_rounded"/>
@@ -25353,7 +25353,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteStairs25">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcreteStairs25"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25366,7 +25366,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concretePillar100">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcretePillar100"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25378,7 +25378,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concretePillar50">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcretePillar50"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25392,7 +25392,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteArch">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcreteArch"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25402,7 +25402,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteStairs25CornerCNR">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcreteStairs25CornerCNR"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25413,7 +25413,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concretePyramid">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcretePyramid"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25423,7 +25423,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteCNRInside">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcreteCNRInside"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25433,7 +25433,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteCNRFull">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcreteCNRFull"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25442,7 +25442,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteWedgeIncline">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcreteWedgeIncline"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25452,7 +25452,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteCTRPlate">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcreteCTRPlate"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25462,7 +25462,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteWedgeTipCNRFullTop">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcreteWedgeTipCNRFullTop"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25473,7 +25473,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteQuarter">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcreteQuarter"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25485,7 +25485,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteHalf">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcreteHalf"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25496,7 +25496,7 @@ ore block visualisation end -->
 
 
 	<block name="Admin_concreteHalfCentered">
-		<property name="Extends" value="concreteNoUpgradeMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="concreteHalfCentered"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25507,7 +25507,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteCNRRamp">
- 		 <property name="Extends" value="concreteMaster"/>
+ 		 <property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcreteCNRRamp"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25519,7 +25519,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concretePole">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcretePole"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25533,7 +25533,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concretePlate">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcretePlate"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25543,7 +25543,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteWedgeTipCNRFullBottom">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcreteWedgeTipCNRFullBottom"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25569,7 +25569,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteWedgeCNRInsideBottom">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcreteWedgeCNRInsideBottom"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25579,7 +25579,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteHalfRampStairs50">
-		<property name="Extends" value="concreteNoUpgradeMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="concreteHalfRampStairs50"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25589,7 +25589,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteHalfRampStairs50Filler">
-		<property name="Extends" value="concreteNoUpgradeMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="concreteHalfRampStairs50"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25598,7 +25598,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concretePoleSCTR">
-		<property name="Extends" value="concreteNoUpgradeMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="concretePoleSCTR"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25611,7 +25611,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteWedgeCNRInsideTop">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcreteWedgeCNRInsideTop"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25622,7 +25622,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteArrowSlitHalf">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="rConcreteArrowSlitHalf"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25635,7 +25635,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteStairsFilledRailingLeft">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="concreteStairsFilledRailingLeft"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="DisplayType" value="blockMulti" />
@@ -25653,7 +25653,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteStairsFilledRailingRight">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="concreteStairsFilledRailingRight"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="DisplayType" value="blockMulti" />
@@ -25671,7 +25671,7 @@ ore block visualisation end -->
 	</block>
 
 	<block name="Admin_concreteGableInvertedSteep">
-		<property name="Extends" value="concreteMaster"/>
+		<property name="Extends" value="Admin_concreteMaster"/>
 		<property name="CustomIcon" value="concreteGableInvertedSteep"/>
 		<property name="CustomIconTint" value="ff0000"/>
 		<property name="Shape" value="New"/>
@@ -25681,7 +25681,7 @@ ore block visualisation end -->
 	</block>
 
 <block name="Admin_concreteWedgeStairs">
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concreteWedgeStairs"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25693,7 +25693,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteQuarterCNR">
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
     <property name="CustomIcon" value="concreteQuarterCNR"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25704,7 +25704,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteWedge">
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="rConcreteWedge"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25715,7 +25715,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteCNRRampFiller">
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="rConcreteCNRRampFiller"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25728,7 +25728,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteWedgeTip">
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="rConcreteWedgeTip"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25739,7 +25739,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteWedgeCNRInsideSteepTop">
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
     <property name="CustomIcon" value="concreteWedgeCNRInsideSteepTop"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25749,7 +25749,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteWedgeTipStairs">
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concreteWedgeTipStairs"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25760,7 +25760,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteWedgeCNRSteepTop">
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concreteWedgeCNRSteepTop"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25771,7 +25771,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteGable1m">
-  <property name="Extends" value="concreteNoUpgradeMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concreteGable1m"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25781,7 +25781,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteQuarterTeeSCtr">
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concreteQuarterTeeSCtr"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25793,7 +25793,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteWedgeCNRSteepBase">
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concreteWedgeCNRSteepBase"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25803,7 +25803,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteQuarterSCtr">
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concreteQuarterSCtr"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25817,7 +25817,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concretePillar100Cap">
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concretePillar100Cap"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25828,7 +25828,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteWedgeCNRInsideSteepBase">
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concreteWedgeCNRInsideSteepBase"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25840,7 +25840,7 @@ ore block visualisation end -->
 
 <block name="Admin_concreteCTRpole">
   <!-- 782 -->
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="rConcreteCTRpole"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25854,7 +25854,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteGableQuarter">
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concreteGableQuarter"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25865,7 +25865,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteGableInvertedQuarter">
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concreteGableInvertedQuarter"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25876,7 +25876,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteGableInvertedHalf">
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concreteGableInvertedHalf"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25887,7 +25887,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteHalfPlate">
-  <property name="Extends" value="concreteNoUpgradeMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concreteHalfPlate"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25899,7 +25899,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concretePyramid1m">
-  <property name="Extends" value="concreteNoUpgradeMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concretePyramid1m"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25909,7 +25909,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteQuarterCNR3Way">
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concreteQuarterCNR3Way"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25920,7 +25920,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concretePlateOffset">
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concretePlateOffset"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25933,7 +25933,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteCornerstone">
-  <property name="Extends" value="concreteNoUpgradeMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concreteCornerstone"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25946,7 +25946,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteHalfCNRInside2">
-  <property name="Extends" value="concreteNoUpgradeMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concreteHalfCNRInside2"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25959,7 +25959,7 @@ ore block visualisation end -->
 
 
 <block name="Admin_concreteSupport">
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="rConcreteSupport"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25973,7 +25973,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteCNRInside">
-  <property name="Extends" value="concreteMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="rConcreteCNRInside"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25984,7 +25984,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteTubeCenter">
-  <property name="Extends" value="concreteNoUpgradeMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concreteTubeCenter"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -25994,7 +25994,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteTubeCorner">
-  <property name="Extends" value="concreteNoUpgradeMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concreteTubeCorner"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -26004,7 +26004,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteTunnelCenter">
-  <property name="Extends" value="concreteNoUpgradeMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concreteTunnelCenter"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -26014,7 +26014,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteTunnelCorner">
-  <property name="Extends" value="concreteNoUpgradeMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concreteTunnelCorner"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -26024,7 +26024,7 @@ ore block visualisation end -->
 </block>
 
 <block name="Admin_concreteCTRQuarter">
-  <property name="Extends" value="concreteNoUpgradeMaster"/>
+  <property name="Extends" value="Admin_concreteMaster"/>
   <property name="CustomIcon" value="concreteCTRQuarter"/>
   <property name="CustomIconTint" value="ff0000"/>
   <property name="Shape" value="New"/>
@@ -26041,9 +26041,8 @@ ore block visualisation end -->
     <property name="CustomIconTint" value="ff0000"/>
     <property name="CreativeMode" value="Dev"/>
     <property class="RepairItems">
-      <property name="glassBulletproofPlateCurved" value="1"/>
+      <property name="resourceBrokenGlass" value="1"/>
     </property>
-    <property name="MaxDamage" value="1000000" />
   </block>
 
   <block name="Admin_glassBulletproofPlate">
@@ -26054,10 +26053,8 @@ ore block visualisation end -->
     <property name="Place" value="TowardsPlacerInverted"/>
     <property name="CreativeMode" value="Dev"/>
     <property class="RepairItems">
-      <property name="glassBulletproofPlate" value="1"/>
+      <property name="resourceBrokenGlass" value="1"/>
     </property>
-    <property name="MaxDamage" value="1000000" />
-
   </block>
 
   <block name="Admin_ironBars">
@@ -26066,25 +26063,18 @@ ore block visualisation end -->
     <property name="Model" value="iron_bars"/>
     <property name="CustomIconTint" value="ff0000"/>
     <property name="Place" value="TowardsPlacerInverted"/>
-    <property name="MaxDamage" value="1000000" />
     <property name="CreativeMode" value="Dev"/>
-    <property class="UpgradeBlock">
-      <property name="ToBlock" value="woodFrameBlock" />
-      <property name="Item" value="gunToolDiggerAdmin" />
-      <property name="ItemCount" value="0" />
-      <property name="UpgradeHitCount" value="1" />
-    </property>
   </block>
   
-  <!-- <block name="Admin_bladeTrap">
+  <block name="Admin_bladeTrap">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Class" value="BladeTrap"/>
 	<property name="DisplayType" value="blockElectricalHardenedMulti" />
-	<property name="Material" value="MstainlessSteel"/>
+	<property name="Material" value="Madmin"/>
 	<property name="Damage" value="1000"/>
 	<property name="DamageReceived" value="4"/>
-	<property name="BreakingPercentage" value="0.5"/>
-	<property name="BrokenPercentage" value="0.25"/>
+	<property name="BreakingPercentage" value="0.1"/>
+	<property name="BrokenPercentage" value="0.1"/>
 	<property name="ImpactSound" value="bladetrap_impact"/>
 	<property name="StartSound" value="bladetrap_startup"/>
 	<property name="StopSound" value="bladetrap_stop"/>
@@ -26106,15 +26096,8 @@ ore block visualisation end -->
 	<property name="Group" value="Tools/Traps,Science"/>
 	<property name="ActivationDistance" value="6"/>
 	<property class="RepairItems">
-		<property name="paper" value="1"/>
+		<property name="resourceConcreteMix" value="1"/>
 	</property>
-    <property class="UpgradeBlock">
-      <property name="ToBlock" value="woodFrameBlock" />
-      <property name="Item" value="Admin_SuperDigger" />
-      <property name="ItemCount" value="0" />
-      <property name="UpgradeHitCount" value="1" />
-    </property>
-    <drop event="Destroy" count="0"/>
 	<property name="Stacknumber" value="100"/>
 	<property name="TakeDelay" value="1"/>
 	<property name="FilterTags" value="fdecor,felectrical,ftraps"/>
@@ -26124,7 +26107,7 @@ ore block visualisation end -->
     <property name="CreativeMode" value="Dev"/>
     <property name="Class" value="Generator"/>
     <property name="DisplayType" value="blockHardened" />
-    <property name="Material" value="MadminMstainlessSteel_mat"/>
+    <property name="Material" value="Madmin"/>
     <property name="StabilitySupport" value="false"/>
     <property name="Shape" value="ModelEntity"/>
     <property name="Mesh" value="models"/>
@@ -26144,27 +26127,16 @@ ore block visualisation end -->
     <property name="DisplayType" value="blockElectrical" />
     <property name="Group" value="Science"/>
     <property class="RepairItems">
-      <property name="resourceForgedIron" value="8"/>
-      <property name="resourceMechanicalParts" value="8"/>
-      <property name="resourceElectricParts" value="8"/>
-      <property name="resourceElectricParts" value="3"/>
+      <property name="resourceConcreteMix" value="1"/>
     </property>
-    <drop event="Harvest" name="resourceScrapIron" count="192" tag="allHarvest"/>
-    <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-    <drop event="Harvest" name="resourceForgedIron" count="3" tag="salvageHarvest"/>
-    <drop event="Harvest" name="resourceMechanicalParts" count="3" tag="salvageHarvest"/>
-    <drop event="Harvest" name="resourceElectricParts" count="3" tag="salvageHarvest"/>
-    <drop event="Harvest" name="resourceElectricParts" count="1,2" prob="0.6" tag="salvageHarvest"/>
-    <drop event="Destroy" count="0"/>
-    <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
     <property name="Stacknumber" value="1"/>
     <property name="TakeDelay" value="1"/>
   </block>
 
-  <block name="Admin_houseFrontDoor">
+  <!--<block name="Admin_houseFrontDoor">
     <property name="DescriptionKey" value="doorGroupDesc"/>
     <property name="Class" value="DoorSecure"/>
-    <property name="Material" value="MstainlessSteel"/>
+    <property name="Material" value="Madmin"/>
     <property name="PassThroughDamage" value="true"/>
     <property name="LightOpacity" value="1"/>
     <property name="Shape" value="ModelEntity"/>
@@ -26186,20 +26158,11 @@ ore block visualisation end -->
     <property name="OpenSound" value="open_door_wood"/>
     <property name="CloseSound" value="close_door_wood"/>
     <property class="RepairItems">
-      <property name="paper" value="1"/>
-    </property>
-    <property class="UpgradeBlock">
-      <property name="ToBlock" value="woodFrameBlock" />
-      <property name="Item" value="gunToolDiggerAdmin" />
-      <property name="ItemCount" value="0" />
-      <property name="UpgradeHitCount" value="1" />
+      <property name="resourceConcreteMix" value="1"/>
     </property>
     <property name="CustomUpgradeSound" value="place_block_wood"/>
-    <drop event="Harvest" name="wood" count="4" prob="1"/>
-    <drop event="Destroy" count="0"/>
-    <drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>    
     <property name="CreativeMode" value="Dev"/>
-  </block> -->
+  </block>-->
 
 <!--
 Block replacements
