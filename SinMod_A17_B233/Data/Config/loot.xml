@@ -2572,122 +2572,156 @@ treasureTemplate
         <item group="ammo" prob=".8"/>
         <item group="ammoSteel" prob="1"/>
     </lootcontainer>
-
-  <!--Donor Crate-->
-  <lootgroup name="DonorAmmo" count="2">
-    <item name="shotgunShell" count="100"/>
-    <item name="9mmBullet" count="100"/>
-    <item name="762mmBullet" count="100"/>
-    <item name="44MagBullet" count="100"/>
-    <item name="steelArrow" count="100"/>
-    <item name="ironArrow" count="100"/>
-    <item name="flamingArrow" count="100"/>
-    <item name="ironCrossbowBolt" count="100"/>
-    <item name="steelCrossbowBolt" count="100"/>
-    <item name="arrow" count="100"/>
-    <item name="762mmBulletHP" count="100"/>
-    <item name="9mmBulletHP" count="100"/>
-    <item name="SiegeShell" count="100"/>
-    <item name="shotgunSlug" count="100"/>
-  </lootgroup>
-  <lootgroup name="DonorMeal" count="4">
-    <item name="mealBreakfast" />
-    <item name="mealDinner" />
-  </lootgroup>
-  <lootgroup name="DonorLegendary" count="1">
-    <item name="legendaryClubSpiked" quality="450"/>
-    <item name="legendaryMachete" quality="450"/>
-    <item name="legendaryFireaxe" quality="450"/>
-    <item name="legendarySledgehammer" quality="450"/>
-    <item name="legendaryHuntingKnife" quality="450"/>
-    <item name="legendaryWrench" quality="450"/>
-    <item name="legendaryChainsaw" quality="450"/>
-  </lootgroup>
-  <lootgroup name="DonorSchematic" count="2">
-    <item name="ak47Schematic"/>
-    <item name="augerSchematic"/>
-    <item name="chainsawSchematic"/>
-    <item name="clubSpikedSchematic"/>
-    <item name="crossbowSchematic"/>
-    <item name="explodingCrossbowBoltSchematic"/>
-    <item name="firstAidKitSchematic"/>
-    <item name="flamingArrowSchematic"/>
-    <item name="gasCanSchematic"/>
-    <item name="huntingKnifeBook"/>
-    <item name="huntingRifleSchematic"/>
-    <item name="minibikesForDumbshits"/>
-    <item name="nailgunSchematic"/>
-    <item name="pistolBook"/>
-    <item name="pumpShotgunSchematic"/>
-    <item name="recipebookOven"/>
-    <item name="recipebookPottery"/>
-    <item name="recipebookSinks"/>
-    <item name="rocketLauncherSchematic"/>
-    <item name="shotgunSlugSchematic"/>
-    <item name="skillbookLockpick"/>
-    <item name="sledgehammerSchematic"/>
-    <item name="smgSchematics"/>
-    <item name="sniperRifleSchematic"/>
-  </lootgroup>
-  <lootgroup name="DonorMeds" count="4">
-    <item name="firstAidBandage"/>
-    <item name="firstAidKit"/>
-    <item name="vitamins"/>
-    <item name="herbalAntibiotics"/>
-    <item name="antibiotics"/>
-    <item name="survivorredPill"/>
-    <item name="survivorbluePill"/>
-  </lootgroup>
-  <lootgroup name="DonorDrinks" count="4">
-    <item name="coldbottledWater"/>
-    <item name="coldgoldenRodTea"/>
-    <item name="coldredTea"/>
-    <item name="waterPurified"/>
-    <item name="coldwaterPurified"/>
-    <item name="drinkHealth"/>
-    <item name="goldenRodTea"/>
-    <item name="bottledWater"/>
-    <item name="redTea"/>
-  </lootgroup>
-  <lootgroup name="DonorBowl" count="2">
-    <item name="stewChunkyMeat" />
-    <item name="soupChunkyBeef" />
-    <item name="soupChicken" />
-    <item name="soupLamb" />
-    <item name="bowlChili" />
-    <item name="bowlMiso" />
-    <item name="soupPea" />
-    <item name="bowlPasta" />
-    <item name="bowlSoup" />
-    <item name="bowlStock" />
-    <item name="creamedCorn" />
-    <item name="soupMushroom" />
-    <item name="warmsoupChunkyBeef" />
-    <item name="warmsoupChicken" />
-    <item name="warmsoupLamb" />
-    <item name="warmbowlChili" />
-    <item name="warmbowlMiso" />
-    <item name="warmsoupPea" />
-    <item name="warmbowlPasta" />
-    <item name="warmbowlSoup" />
-    <item name="warmbowlStock" />
-  </lootgroup>
-  <lootgroup name="DonorFruit" count="2">
-    <item name="bowlFruit" />
-  </lootgroup>
-  <lootgroup name="DonorCrate" count="all">
-    <item group="DonorAmmo" />
-    <item group="DonorMeal" />
-    <item group="DonorLegendary" />
-    <item group="DonorSchematic" />
-    <item group="DonorMeds" />
-    <item group="DonorDrinks" />
-    <item group="DonorBowl" />
-    <item group="DonorFruit" />
-  </lootgroup>
-  <lootcontainer id="103" count="1" size="8,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="legendaryTemplate" >
-    <item group="DonorCrate"/>
-  </lootcontainer>
+    <!--Donor Crate-->
+    <lootgroup name="DonorAmmo" count="2">
+        <item name="ammo9mmBullet" count="100"/>
+        <item name="ammo9mmBulletJHP" count="100"/>
+        <item name="ammo9mmBulletSteel" count="100"/>
+        <item name="ammo762mmBullet" count="100"/>
+        <item name="ammo44MagBullet" count="100"/>
+        <item name="ammo44MagnumBulletAP" count="100"/>
+        <item name="ammo44MagnumBulletSteel" count="100"/>
+        <item name="ammoArrowStone" count="100"/>
+        <item name="ammoArrowIron" count="100"/>
+        <item name="ammoArrowSteelAP" count="100"/>
+        <item name="ammoArrowFlaming" count="100"/>
+        <item name="ammoCrossbowBoltStone" count="100"/>
+        <item name="ammoCrossbowBoltIron" count="100"/>
+        <item name="ammoCrossbowBoltSteelAP" count="100"/>
+        <item name="ammoCrossbowBoltExploding" count="100"/>
+        <item name="ammo762mmBulletFMJ" count="100"/>
+        <item name="ammo762mmBulletAP" count="100"/>
+        <item name="ammo762mmBulletFMJSteel" count="100"/>
+        <item name="ammoShotgunShell" count="100"/>
+        <item name="ammoShotgunSlug" count="100"/>
+    </lootgroup>
+    <lootgroup name="DonorSchematic" count="2">
+        <item name="modGunBarrelExtenderSchematic"/>
+        <item name="modGunMuzzleBrakeSchematic"/>
+        <item name="modGunSoundSuppressorSilencerSchematic"/>
+        <item name="modGunLaserSightSchematic"/>
+        <item name="modGunFlashlightSchematic"/>
+        <item name="modGunScopeSmallSchematic"/>
+        <item name="modGunScopeMediumSchematic"/>
+        <item name="modGunScopeLargeSchematic"/>
+        <item name="modGunReflexSightSchematic"/>
+        <item name="modGunTriggerGroupSemiSchematic"/>
+        <item name="modGunTriggerGroupBurstSchematic"/>
+        <item name="modGunTriggerGroupAutomaticSchematic"/>
+        <item name="modGunRodAndSpringSchematic"/>
+        <item name="modGunBipodSchematic"/>
+        <item name="modGunBipodSchematic"/>
+        <item name="modGunRetractingStockSchematic"/>
+        <item name="modGunDuckbillSchematic"/>
+        <item name="modGunChokeSchematic"/>
+        <item name="modGunMagazineExtenderSchematic"/>
+        <item name="modShotgunSawedOffBarrelSchematic"/>
+        <item name="modGunMeleeFeelTheHeatSchematic"/>
+        <item name="modGunCrippleEmSchematic"/>
+        <item name="modGunBowPolymerStringSchematic"/>
+        <item name="modGunBowArrowRestSchematic"/>
+        <item name="modGunMeleeTheHunterSchematic"/>
+        <item name="modGunMeleeRadRemoverSchematic"/>
+        <item name="modGunMeleeBlessedMetalSchematic"/>
+        <item name="modMeleeTemperedBladeSchematic"/>
+        <item name="modMeleeSerratedBladeSchematic"/>
+        <item name="modMeleeWeightedHeadSchematic"/>
+        <item name="modMeleeStructuralBraceSchematic"/>
+        <item name="modMeleeErgonomicGripSchematic"/>
+        <item name="modMeleeFortifyingGripSchematic"/>
+        <item name="modMeleeClubBarbedWireSchematic"/>
+        <item name="modMeleeClubMetalSpikesSchematic"/>
+        <item name="modMeleeGraveDiggerSchematic"/>
+        <item name="modMeleeBunkerBusterSchematic"/>
+        <item name="modMeleeIronBreakerSchematic"/>
+        <item name="modMeleeWoodSplitterSchematic"/>
+        <item name="modMeleeClubBurningShaftSchematic"/>
+        <item name="modArmorInsulatedLinerSchematic"/>
+        <item name="modArmorImprovedFittingsSchematic"/>
+        <item name="modArmorCustomizedFittingsSchematic"/>
+        <item name="modArmorReinforcedPaddingSchematic"/>
+        <item name="modArmorPlasticPlatingSchematic"/>
+        <item name="modArmorMilitaryPlatingSchematic"/>
+        <item name="modArmorScrapPlatingSchematic"/>
+        <item name="modArmorIronPlatingSchematic"/>
+        <item name="modArmorSteelPlatingSchematic"/>
+        <item name="modArmorStoragePocketSchematic"/>
+        <item name="modArmorDoubleStoragePocketSchematic"/>
+        <item name="modArmorTripleStoragePocketSchematic"/>
+        <item name="modArmorSpikedKnucklesSchematic"/>
+        <item name="modArmorMuffledConnectorsSchematic"/>
+        <item name="modArmorAdvancedMuffledConnectorsSchematic"/>
+        <item name="modArmorImpactBracingSchematic"/>
+        <item name="modArmorBandolierSchematic"/>
+        <item name="modArmorWaterPurifierSchematic"/>
+        <item name="modArmorHelmetLightSchematic"/>
+    </lootgroup>
+    <lootgroup name="DonorMeds" count="4">
+        <item name="medicalBandage"/>
+        <item name="medicalFirstAidBandage"/>
+        <item name="medicalFirstAidKit"/>
+        <item name="medicalSplint"/>
+        <item name="medicalPlasterCast"/>
+        <item name="medicalBloodDrawKit"/>
+        <item name="medicalBloodBag"/>
+        <item name="drugVitamins"/>
+        <item name="drugPainkillers"/>
+        <item name="drugHerbalAntibiotics"/>
+        <item name="drugAntibiotics"/>
+        <item name="drugSteroids"/>
+        <item name="drugRecog"/>
+        <item name="drugFortBites"/>
+    </lootgroup>
+    <lootgroup name="DonorDrinks" count="4">
+        <item name="coldbottledWater"/>
+        <item name="coldgoldenRodTea"/>
+        <item name="coldredTea"/>
+        <item name="waterPurified"/>
+        <item name="coldwaterPurified"/>
+        <item name="drinkHealth"/>
+        <item name="goldenRodTea"/>
+        <item name="bottledWater"/>
+        <item name="redTea"/>
+    </lootgroup>
+    <lootgroup name="DonorBowl" count="2">
+        <item name="stewChunkyMeat" />
+        <item name="soupChunkyBeef" />
+        <item name="soupChicken" />
+        <item name="soupLamb" />
+        <item name="bowlChili" />
+        <item name="bowlMiso" />
+        <item name="soupPea" />
+        <item name="bowlPasta" />
+        <item name="bowlSoup" />
+        <item name="bowlStock" />
+        <item name="creamedCorn" />
+        <item name="soupMushroom" />
+        <item name="warmsoupChunkyBeef" />
+        <item name="warmsoupChicken" />
+        <item name="warmsoupLamb" />
+        <item name="warmbowlChili" />
+        <item name="warmbowlMiso" />
+        <item name="warmsoupPea" />
+        <item name="warmbowlPasta" />
+        <item name="warmbowlSoup" />
+        <item name="warmbowlStock" />
+    </lootgroup>
+    <lootgroup name="DonorFruit" count="2">
+        <item name="bowlFruit" />
+    </lootgroup>
+    <lootgroup name="DonorCrate" count="all">
+        <item group="DonorAmmo" />
+        <item group="DonorMeal" />
+        <item group="DonorLegendary" />
+        <item group="DonorSchematic" />
+        <item group="DonorMeds" />
+        <item group="DonorDrinks" />
+        <item group="DonorBowl" />
+        <item group="DonorFruit" />
+    </lootgroup>
+    <lootcontainer id="103" count="1" size="8,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="legendaryTemplate" >
+        <item group="DonorCrate"/>
+    </lootcontainer>
     <lootcontainer id="125" count="4" size="8,4" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="baseTemplate">
         <item group="cannedfood" count="3,5" prob="2"/>
         <item group="weaponsMilitaryGuns+ammo" loot_prob_template="probTemplate1.0"/>
@@ -2697,6 +2731,4 @@ treasureTemplate
         <item name="meleeToolFlashlight02" prob="0.2"/>
         <item group="ammo" count="2" prob="0.2"/>
     </lootcontainer>
-
-    
 </lootcontainers>
