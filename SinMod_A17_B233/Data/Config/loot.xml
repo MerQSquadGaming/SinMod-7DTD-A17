@@ -2572,15 +2572,18 @@ treasureTemplate
         <item group="ammo" prob=".8"/>
         <item group="ammoSteel" prob="1"/>
     </lootcontainer>
+
     <!--Donor Crate-->
     <lootgroup name="DonorAmmo" count="2">
         <item name="ammo9mmBullet" count="100"/>
         <item name="ammo9mmBulletJHP" count="100"/>
         <item name="ammo9mmBulletSteel" count="100"/>
-        <item name="ammo762mmBullet" count="100"/>
-        <item name="ammo44MagBullet" count="100"/>
+        <item name="ammo44MagnumBullet" count="100"/>
         <item name="ammo44MagnumBulletAP" count="100"/>
         <item name="ammo44MagnumBulletSteel" count="100"/>
+        <item name="ammo762mmBulletFMJ" count="100"/>
+        <item name="ammo762mmBulletAP" count="100"/>
+        <item name="ammo762mmBulletFMJSteel" count="100"/>
         <item name="ammoArrowStone" count="100"/>
         <item name="ammoArrowIron" count="100"/>
         <item name="ammoArrowSteelAP" count="100"/>
@@ -2589,9 +2592,6 @@ treasureTemplate
         <item name="ammoCrossbowBoltIron" count="100"/>
         <item name="ammoCrossbowBoltSteelAP" count="100"/>
         <item name="ammoCrossbowBoltExploding" count="100"/>
-        <item name="ammo762mmBulletFMJ" count="100"/>
-        <item name="ammo762mmBulletAP" count="100"/>
-        <item name="ammo762mmBulletFMJSteel" count="100"/>
         <item name="ammoShotgunShell" count="100"/>
         <item name="ammoShotgunSlug" count="100"/>
     </lootgroup>
@@ -2686,28 +2686,27 @@ treasureTemplate
         <item name="drinkJarGrandpasLearningElixir"/>
     </lootgroup>
     <lootgroup name="DonorFood" count="4">
-        <item name="foodMoldyBread" />
-        <item name="foodMeatStew" />
-        <item name="foodSteakAndPotato" />
-        <item name="foodShamChowder" />
-        <item name="foodHoboStew" />
-        <item name="foodFishTacos" />
-        <item name="foodChiliDog" />
-        <item name="foodBakedPotato" />
-        <item name="foodBlueberryPie" />
-        <item name="foodEggBoiled" />
-        <item name="foodBaconAndEggs" />
-        <item name="foodVegetableStew" />
+        <item name="foodMoldyBread"/>
+        <item name="foodMeatStew"/>
+        <item name="foodSteakAndPotato"/>
+        <item name="foodShamChowder"/>
+        <item name="foodHoboStew"/>
+        <item name="foodFishTacos"/>
+        <item name="foodChiliDog"/>
+        <item name="foodBakedPotato"/>
+        <item name="foodBlueberryPie"/>
+        <item name="foodEggBoiled"/>
+        <item name="foodBaconAndEggs"/>
+        <item name="foodVegetableStew"/>
     </lootgroup>
     <lootgroup name="DonorCrate" count="all">
-        <item group="DonorAmmo" />
-        <item group="DonorSchematic" />
-        <item group="DonorMeds" />
-        <item group="DonorDrinks" />
-        <item group="DonorFood" />
+        <item group="DonorAmmo"/>
+        <item group="DonorSchematic"/>
+        <item group="DonorMeds"/>
+        <item group="DonorDrinks"/>
+        <item group="DonorFood"/>
     </lootgroup>
-    <lootcontainer id="125" count="1" size="8,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="legendaryTemplate" >
+    <lootcontainer id="125" count="1" size="8,4" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="baseTemplate" >
         <item group="DonorCrate"/>
     </lootcontainer>
-
 </lootcontainers>
