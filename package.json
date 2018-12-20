@@ -1,0 +1,22 @@
+{
+  "name": "sinmod",
+  "version": "2.0.0",
+  "description": "Server mod for 7 days ",
+  "main": "index.js",
+  "keywords":[
+    "7D2D", "7 days to die", "SinMod", "Worlds End"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MerQSquadGaming/SinMod-7DTD-A17.git"
+  },
+  "author": "SinisterMind81",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MerQSquadGaming/SinMod-7DTD-A17/issues"
+  },
+  "homepage": "https://github.com/MerQSquadGaming/SinMod-7DTD-A17#readme"
+}

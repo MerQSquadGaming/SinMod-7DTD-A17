@@ -11257,41 +11257,5 @@ So no clothing dyes until that can be resolved. -->
         <property name="CraftingSkillGroup" value="craftSkillWeapons"/>
         <property name="RepairExpMultiplier" value="5.5"/>
     </item>
-    <item>
-        <item name="meleeToolShovelGold">
-        <property name="Tags" value="melee,medium,tool,shovel,perkDeepCuts,perkMotherLode"/>
-        <property name="Extends" value="meleeToolShovelStone"/>
-        <property name="Meshfile" value="Items/Tools/shovel_ironPrefab"/>
-        <property name="CustomIcon" value="meleeToolShovelIron"/>
-        <property name="CustomIconTint" value="ffb0b0"/>
-        <property name="Material" value="Miron_scrap"/>
-        <property name="RepairTools" value="resourceScrapIron"/>
-        <property name="FuelValue" value="100"/>
-        <property name="EconomicValue" value="120"/>
-        <property name="SellableToTrader" value="true"/>
-        <effect_group name="Base Effects">
-            <passive_effect name="MaxRange" operation="base_set" value="3.4"/>
-            <passive_effect name="BlockRange" operation="base_set" value="4"/>
-            <passive_effect name="EntityDamage" operation="base_set" value="12"/>
-            <passive_effect name="BlockDamage" operation="base_set" value="16"/>
-            <passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="wood"/>
-            <passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
-            <passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="metal"/>
-            <passive_effect name="DamageModifier" operation="perc_add" value="1" tags="earth"/>
-            <passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
-            <passive_effect name="StaminaLoss" operation="base_set" value="16" tags="primary"/>
-            <passive_effect name="DegradationMax" operation="base_set" value="130,600" tier="1,6"/>
-            <passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-            <passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
-            <passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-        </effect_group>
-        <effect_group name="Power Attack">
-            <passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
-            <passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-            <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
-            <passive_effect name="StaminaLoss" operation="base_add" value="30" tags="secondary"/>
-        </effect_group>
-        <property name="Group" value="Tools/Traps"/>
-    </item>
 </items>
 <!-- Item limit: There can be 32k items in the game. IDs are generated internally on loading the game/items. -->
