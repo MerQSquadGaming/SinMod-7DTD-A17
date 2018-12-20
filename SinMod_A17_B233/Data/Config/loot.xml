@@ -2673,62 +2673,41 @@ treasureTemplate
         <item name="drugFortBites"/>
     </lootgroup>
     <lootgroup name="DonorDrinks" count="4">
-        <item name="coldbottledWater"/>
-        <item name="coldgoldenRodTea"/>
-        <item name="coldredTea"/>
-        <item name="waterPurified"/>
-        <item name="coldwaterPurified"/>
-        <item name="drinkHealth"/>
-        <item name="goldenRodTea"/>
-        <item name="bottledWater"/>
-        <item name="redTea"/>
+        <item name="drinkJarSnowberryJuice"/>
+        <item name="drinkJarYuccaJuice"/>
+        <item name="drinkJarGoldenRodTea"/>
+        <item name="drinkJarRedTea"/>
+        <item name="drinkJarYuccaCocktail"/>
+        <item name="drinkYuccaJuiceSmoothie"/>
+        <item name="drinkCanMegaCrush"/>
+        <item name="drinkJarCoffee"/>
+        <item name="drinkJarGrandpasMoonshine"/>
+        <item name="drinkJarGrandpasAwesomeSauce"/>
+        <item name="drinkJarGrandpasLearningElixir"/>
     </lootgroup>
-    <lootgroup name="DonorBowl" count="2">
-        <item name="stewChunkyMeat" />
-        <item name="soupChunkyBeef" />
-        <item name="soupChicken" />
-        <item name="soupLamb" />
-        <item name="bowlChili" />
-        <item name="bowlMiso" />
-        <item name="soupPea" />
-        <item name="bowlPasta" />
-        <item name="bowlSoup" />
-        <item name="bowlStock" />
-        <item name="creamedCorn" />
-        <item name="soupMushroom" />
-        <item name="warmsoupChunkyBeef" />
-        <item name="warmsoupChicken" />
-        <item name="warmsoupLamb" />
-        <item name="warmbowlChili" />
-        <item name="warmbowlMiso" />
-        <item name="warmsoupPea" />
-        <item name="warmbowlPasta" />
-        <item name="warmbowlSoup" />
-        <item name="warmbowlStock" />
-    </lootgroup>
-    <lootgroup name="DonorFruit" count="2">
-        <item name="bowlFruit" />
+    <lootgroup name="DonorFood" count="4">
+        <item name="foodMoldyBread" />
+        <item name="foodMeatStew" />
+        <item name="foodSteakAndPotato" />
+        <item name="foodShamChowder" />
+        <item name="foodHoboStew" />
+        <item name="foodFishTacos" />
+        <item name="foodChiliDog" />
+        <item name="foodBakedPotato" />
+        <item name="foodBlueberryPie" />
+        <item name="foodEggBoiled" />
+        <item name="foodBaconAndEggs" />
+        <item name="foodVegetableStew" />
     </lootgroup>
     <lootgroup name="DonorCrate" count="all">
         <item group="DonorAmmo" />
-        <item group="DonorMeal" />
-        <item group="DonorLegendary" />
         <item group="DonorSchematic" />
         <item group="DonorMeds" />
         <item group="DonorDrinks" />
-        <item group="DonorBowl" />
-        <item group="DonorFruit" />
+        <item group="DonorFood" />
     </lootgroup>
-    <lootcontainer id="103" count="1" size="8,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="legendaryTemplate" >
+    <lootcontainer id="125" count="1" size="8,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="legendaryTemplate" >
         <item group="DonorCrate"/>
     </lootcontainer>
-    <lootcontainer id="125" count="4" size="8,4" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="baseTemplate">
-        <item group="cannedfood" count="3,5" prob="2"/>
-        <item group="weaponsMilitaryGuns+ammo" loot_prob_template="probTemplate1.0"/>
-        <item group="weaponsBasicGuns+ammo" prob=".6"/>
-        <item group="rareBooks" prob="0.2"/>
-        <item group="airdropMedicine" count="1,4" prob="0.2"/>
-        <item name="meleeToolFlashlight02" prob="0.2"/>
-        <item group="ammo" count="2" prob="0.2"/>
-    </lootcontainer>
+
 </lootcontainers>
