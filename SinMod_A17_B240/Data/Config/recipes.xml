@@ -3067,23 +3067,9 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
         <ingredient name="unit_iron" count="15"/>
         <ingredient name="unit_clay" count="1"/>
     </recipe>
-	    <!--SinMod Recipes Begins Here-->
+    <!--SinMod Recipes Begins Here-->
     <!--SinMod Classes Mod -->
-    <!--<recipe name="Marksman Class" count="1">
-        <ingredient name="professionSelection" count="1" />
-    </recipe>
-    <recipe name="Grunt Class" count="1">
-        <ingredient name="professionSelection" count="1" />
-    </recipe>
-    <recipe name="Brute Class" count="1">
-        <ingredient name="professionSelection" count="1" />
-    </recipe>
-    <recipe name="Ninja Class" count="1">
-        <ingredient name="professionSelection" count="1" />
-    </recipe>
-    <recipe name="Engineer Class" count="1">
-        <ingredient name="professionSelection" count="1" />
-    </recipe>-->
+    <!--<recipe name="Marksman Class" count="1"><ingredient name="professionSelection" count="1" /></recipe><recipe name="Grunt Class" count="1"><ingredient name="professionSelection" count="1" /></recipe><recipe name="Brute Class" count="1"><ingredient name="professionSelection" count="1" /></recipe><recipe name="Ninja Class" count="1"><ingredient name="professionSelection" count="1" /></recipe><recipe name="Engineer Class" count="1"><ingredient name="professionSelection" count="1" /></recipe>-->
     <!--Sinmod Scrap Metal Tools-->
     <recipe name="meleeToolPickaxeScrap" count="1">
         <ingredient name="resourceScrapIron" count="15"/>
@@ -3104,7 +3090,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
         <ingredient name="resourceScrapIron" count="3"/>
         <ingredient name="resourceDuctTape" count="1"/>
     </recipe>
-
 </recipes>
 <!-- To do (maybe / later)
 <recipe name="resourceArrowHeadSteelAP" count="1" craft_area="forge" craft_tool="toolCalipers" material_based="true"><recipe name="book" count="1"><ingredient name="resourcePaper" count="64"/></recipe>

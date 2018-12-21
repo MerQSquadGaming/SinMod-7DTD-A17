@@ -2576,7 +2576,7 @@ treasureTemplate
         <item group="ammo" prob=".8"/>
         <item group="ammoSteel" prob="1"/>
     </lootcontainer>
-	<!--SinMod Begins Here-->
+		<!--SinMod Begins Here-->
     <!--Donor Crate-->
     <lootgroup name="DonorAmmo" count="2">
         <item name="ammo9mmBullet" count="100"/>

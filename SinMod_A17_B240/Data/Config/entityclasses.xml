@@ -3033,7 +3033,7 @@
         <property name="Mesh" value="#Entities/Traders?JoelRagdoll.prefab"/>
         <property name="NPCID" value="traderTest"/>
     </entity_class>
-	<!-- Donor Crate -->
+		<!-- Donor Crate -->
     <entity_class name="DonorCrate">
         <property name="Class" value="EntitySupplyCrate"/>
         <property name="Parent" value="SupplyCrates"/>

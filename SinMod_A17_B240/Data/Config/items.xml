@@ -11022,7 +11022,7 @@ So no clothing dyes until that can be resolved. -->
         <property name="CraftingSkillGroup" value="craftSkillScience"/>
         <property name="DescriptionKey" value="deprecatedBlockDesc"/>
     </item>
-	    <!--SinMod Begin Here-->
+		    <!--SinMod Begin Here-->
     <!--SinMod Tools-->
     <item name="meleeToolPickaxeScrap">
         <property name="Tags" value="melee,medium,tool,perkDeepCuts,perkMotherLode"/>
