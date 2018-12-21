@@ -25701,7 +25701,7 @@ ore block visualisation end -->
     <property name="Material" value="wood+wood" />
     <property name="Shape" value="Ext3dModel" />
     <property name="Mesh" value="models" />
-    <property name="Model" value="LootContainers/munitions_box01" param1="main_mesh" />
+    <property name="Model" value="Entities/LootContainers/weapon_bags_largePrefab" param1="main_mesh" />
     <property name="Place" value="TowardsPlacer" />
     <drop event="Destroy" count="0" prob="1" />
     <property name="CanPickup" value="true" />
@@ -25721,7 +25721,7 @@ ore block visualisation end -->
     <!--		<property name="CustomIcon" value="suitcase" /> -->
     <property name="Shape" value="Ext3dModel" />
     <property name="Mesh" value="models" />
-    <property name="Model" value="LootContainers/munitions_box01" param1="main_mesh" />
+    <property name="Model" value="Entities/LootContainers/weapon_bags_largePrefab" param1="main_mesh" />
     <property name="Place" value="TowardsPlacer" />
     <property name="LootList" value="100" />
     <drop event="Destroy" count="0" />
