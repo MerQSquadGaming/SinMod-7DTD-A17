@@ -2444,21 +2444,21 @@
         <property name="shareable" value="false" />
         <action type="ShowTip" value="classTip01" />
         <property name="difficulty" value="hard"/>
-        <reward type="Item" id="ProfessionSelection" value="1" />
+        <reward type="Item" id="professionSelection" value="1" />
         <reward type="Item" id="keystoneBlock" value="1"/>
     </quest>
     <quest id="Marksman_Class">
         <property name="name_key" value="Im a Hunter"/>
-        <property name="subtitle" value="Im a Hunter"/>
-        <property name="description" value="This returns your items to you" />
+        <property name="subtitle_key" value="Im a Hunter"/>
+        <property name="description_key" value="This returns your items to you" />
         <property name="icon" value="ui_game_symbol_treasure"/>
         <property name="repeatable" value="false"/>
         <property name="category_key" value="challenge"/>
-        <property name="offer" value="By clicking accept you will collect yournbugout bag you left for the end of the world.Once you click accept you will recieve a TapedBugoutBag.Place TapedBugoutBox on stable ground and use the BugoutKey on Box to remove lockand then loot box. Be safe out there it's a dangerous World's End!!!." />
+        <property name="offer_key" value="By clicking accept you will collect yournbugout bag you left for the end of the world.Once you click accept you will recieve a TapedBugoutBag.Place TapedBugoutBox on stable ground and use the BugoutKey on Box to remove lockand then loot box. Be safe out there it's a dangerous World's End!!!." />
         <property name="difficulty" value="hard"/>
         <reward type="Item" id="TapedBugoutBag" value="1"/>
         <reward type="Item" id="BugoutKey" value="1" />
-        <reward type="Item" id="gunHuntingRifle" value="250-300"/>
+        <reward type="Item" id="gunHuntingRifle" value="2-3"/>
         <reward type="Item" id="762mmBullet" value="90"/>
         <reward type="Item" id="repairKit" value="4"/>
         <reward type="Item" id="huntingKnife" value="200"/>
@@ -2467,15 +2467,15 @@
         <reward type="Item" id="challengeClassHunter" value="1" />
         <reward type="Item" id="perkHunter" value="1" />
     </quest>
-    <quest id="Grunt_Class" 
-        name="Grunt Class" 
-        subtitle="Grunt Class" 
-        description="This returns your items to you" 
-        icon="ui_game_symbol_treasure"
-        repeatable="false" 
-        category_key="challenge" 
-        offer="By clicking accept you will collect your bugout bag you left for the end of the world. Be safe out there it's a dangerous World's End!!!." />
-        difficulty="hard">
+    <quest id="Grunt_Class" >
+        <property name="name_key" value="Grunt Class" />
+        <property name="subtitle_key" value="Grunt Class" />
+        <property name="description_key" value="This returns your items to you" />
+        <property name="icon" value="ui_game_symbol_treasure"/>
+        <property name="repeatable" value="false" />
+        <property name="category_key" value="challenge" />
+        <property name="offer_key" value="By clicking accept you will collect your bugout bag you left for the end of the world. Be safe out there it's a dangerous World's End!!!." />
+        <property name="difficulty" value="hard"/>
         <reward type="Item" id="armyPants" value="100-170"/>
         <reward type="Item" id="armyShirt" value="100-170"/>
         <reward type="Item" id="canBeef" value="2"/>

@@ -3061,19 +3061,19 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
     <!--SinMod Recipes Begins Here-->
     <!--SinMod Classes Mod -->
     <recipe name="Marksman Class" count="1">
-        <ingredient name="ProfessionSelection" count="1" />
+        <ingredient name="professionSelection" count="1" />
     </recipe>
     <recipe name="Grunt Class" count="1">
-        <ingredient name="ProfessionSelection" count="1" />
+        <ingredient name="professionSelection" count="1" />
     </recipe>
     <recipe name="Brute Class" count="1">
-        <ingredient name="ProfessionSelection" count="1" />
+        <ingredient name="professionSelection" count="1" />
     </recipe>
     <recipe name="Ninja Class" count="1">
-        <ingredient name="ProfessionSelection" count="1" />
+        <ingredient name="professionSelection" count="1" />
     </recipe>
     <recipe name="Engineer Class" count="1">
-        <ingredient name="ProfessionSelection" count="1" />
+        <ingredient name="professionSelection" count="1" />
     </recipe>
     <!--Sinmod Scrap Metal Tools-->
     <recipe name="meleeToolPickaxeScrap" count="1">

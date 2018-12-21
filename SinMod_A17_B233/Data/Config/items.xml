@@ -11265,7 +11265,7 @@ So no clothing dyes until that can be resolved. -->
         <property class="Action0">
             <property name="QuestGiven" value="StartWorldsEnd" /></property>
     </item>
-    <item name="ProfessionSelection">
+    <item name="professionSelection">
         <property name="DescriptionKey" value="classSelectionDesc"/>
         <property name="CustomIcon" value="professionSelection" />
         <property name="Meshfile" value="Items/Misc/Book" />
