@@ -2431,4 +2431,138 @@
         <!-- <reward type="Quest" id="quest_tier6complete" /> -->
         <!-- </quest_tier_reward> -->
     </quest_tier_rewards>
+    <!--SinMod Begin Here-->
+    <!--SinMod Class Selection-->
+    <quest id="StartWorldsEnd">
+        <property name="name_key" value="Welcome to Worlds End"/>
+        <property name="subtitle_key" value="WorldsEnd" />
+        <property name="description_key" value="Begin your journey!" />
+        <property name="icon" value="ui_game_symbol_treasure"/>
+        <property name="repeatable" value="false" />
+        <property name="category_key" value="challenge" />
+        <property name="offer_key" value="Welcome to Worlds End have fun. Type /commands or /help to get started. Feel free to ask for help in chat anytime. By accepting you agreed and understood the /rules if you have not please type /rules in chat now. After accepting this scroll you will receive your Profession Selection item, use recipes" />
+        <property name="shareable" value="false" />
+        <action type="ShowTip" value="classTip01" />
+        <property name="difficulty" value="hard"/>
+        <reward type="Item" id="ProfessionSelection" value="1" />
+        <reward type="Item" id="keystoneBlock" value="1"/>
+    </quest>
+    <quest id="Marksman_Class">
+        <property name="name_key" value="Im a Hunter"/>
+        <property name="subtitle" value="Im a Hunter"/>
+        <property name="description" value="This returns your items to you" />
+        <property name="icon" value="ui_game_symbol_treasure"/>
+        <property name="repeatable" value="false"/>
+        <property name="category_key" value="challenge"/>
+        <property name="offer" value="By clicking accept you will collect yournbugout bag you left for the end of the world.Once you click accept you will recieve a TapedBugoutBag.Place TapedBugoutBox on stable ground and use the BugoutKey on Box to remove lockand then loot box. Be safe out there it's a dangerous World's End!!!." />
+        <property name="difficulty" value="hard"/>
+        <reward type="Item" id="TapedBugoutBag" value="1"/>
+        <reward type="Item" id="BugoutKey" value="1" />
+        <reward type="Item" id="gunHuntingRifle" value="250-300"/>
+        <reward type="Item" id="762mmBullet" value="90"/>
+        <reward type="Item" id="repairKit" value="4"/>
+        <reward type="Item" id="huntingKnife" value="200"/>
+        <reward type="Item" id="animalHideHood" value="170"/>
+        <reward type="Item" id="huntingRifleSchematic" value="1" />
+        <reward type="Item" id="challengeClassHunter" value="1" />
+        <reward type="Item" id="perkHunter" value="1" />
+    </quest>
+    <quest id="Grunt_Class" 
+        name="Grunt Class" 
+        subtitle="Grunt Class" 
+        description="This returns your items to you" 
+        icon="ui_game_symbol_treasure"
+        repeatable="false" 
+        category_key="challenge" 
+        offer="By clicking accept you will collect your bugout bag you left for the end of the world. Be safe out there it's a dangerous World's End!!!." />
+        difficulty="hard">
+        <reward type="Item" id="armyPants" value="100-170"/>
+        <reward type="Item" id="armyShirt" value="100-170"/>
+        <reward type="Item" id="canBeef" value="2"/>
+        <reward type="Item" id="painkillers" value="1"/>
+        <reward type="Item" id="bottledWater" value="2"/>
+        <reward type="Item" id="bandage" value="1"/>
+        <reward type="Item" id="militaryBoots" value="100-170"/>
+        <reward type="Item" id="gunAK47" value="100-170"/>
+        <reward type="Item" id="huntingKnife" value="200"/>
+        <reward type="Item" id="militaryHelmet" value="100-170"/>
+        <reward type="Item" id="repairKit" value="4"/>
+        <reward type="Item" id="762mmBullet" value="120"/>
+        <reward type="Item" id="ak47Schematic" value="1"/>
+        <reward type="Item" id="challengeClassVeteran" count="1"/>
+        <reward type="Item" id="perkVeteran" value="1"/>
+    </quest>
+    <quest id="Brute_Class" 
+        name="Survivor Class" 
+        subtitle="Survivor Class" 
+        description="This returns your items to you" 
+        icon="ui_game_symbol_treasure"
+        repeatable="false" 
+  category_key="challenge" 
+  offer="By clicking accept you will collect your
+bugout bag you left for the end of the world.
+Once you click accept you will recieve a TapedBugoutBag.
+Place TapedBugoutBox on stable ground and 
+use the BugoutKey on Box to remove lock
+and then loot box. Be safe out there it's a dangerous 
+World's End!!!." difficulty="hard">
+        <reward type="Item" id="TapedBugoutBag" value="1"/>
+        <reward type="Item" id="BugoutKey" value="1" />
+        <reward type="Item" id="bandage" value="2"/>
+        <reward type="Item" id="flashlight02" value="1"/>
+        <reward type="Item" id="crossbow" value="170"/>
+        <reward type="Item" id="ironCrossbowBolt" value="100"/>
+        <reward type="Item" id="cookingPot" value="1"/>
+        <reward type="Item" id="firstAidKit" value="1"/>
+        <reward type="Item" id="clothHat" value="170"/>
+        <reward type="Item" id="huntingKnife" value="170"/>
+        <reward type="Item" id="crossbowSchematic" value="1"/>
+        <reward type="Item" id="challengeClassSurvivor" value="1"/>
+        <reward type="Item" id="perkSurvivor" value="1"/>
+    </quest>
+    <quest id="Ninja_Class" name="Gunman Class" subtitle="Gunman Class" description="This returns your items to you" icon="ui_game_symbol_treasure"
+  repeatable="false" category_key="challenge" offer="By clicking accept you will collect your
+bugout bag you left for the end of the world.
+Once you click accept you will recieve a TapedBugoutBag.
+Place TapedBugoutBox on stable ground and 
+use the BugoutKey on Box to remove lock
+and then loot box. Be safe out there it's a dangerous 
+World's End!!!." difficulty="hard">
+        <reward type="Item" id="TapedBugoutBag" value="1"/>
+        <reward type="Item" id="BugoutKey" value="1" />
+        <reward type="Item" id="leatherDuster" value="100-170"/>
+        <reward type="Item" id="huntingKnife" value="200"/>
+        <reward type="Item" id="cowboyHat" value="100-170"/>
+        <reward type="Item" id="gun44Magnum" value="100-170"/>
+        <reward type="Item" id="44MagBullet" value="70"/>
+        <reward type="Item" id="repairKit" value="4"/>
+        <reward type="Item" id="theEnforcerMagazine" value="1"/>
+        <reward type="Item" id="challengeClassGunman" value="1"/>
+        <reward type="Item" id="perkGunman" value="1"/>
+    </quest>
+    <quest id="Engineer_Class" name="Medic Class" subtitle="Medic Class" description="This returns your items to you" icon="ui_game_symbol_treasure"
+  repeatable="false" category_key="challenge" offer="By clicking accept you will collect your
+bugout bag you left for the end of the world.
+Once you click accept you will recieve a TapedBugoutBag.
+Place TapedBugoutBox on stable ground and 
+use the BugoutKey on Box to remove lock
+and then loot box. Be safe out there it's a dangerous 
+World's End!!!." difficulty="hard">
+        <reward type="Item" id="TapedBugoutBag" value="1"/>
+        <reward type="Item" id="BugoutKey" value="1" />
+        <reward type="Item" id="splint" value="1"/>
+        <reward type="Item" id="painkillers" value="4"/>
+        <reward type="Item" id="firstAidKit" value="3"/>
+        <reward type="Item" id="firstAidKitSchematic" value="1"/>
+        <reward type="Item" id="bloodDrawKit" value="1"/>
+        <reward type="Item" id="huntingKnife" value="100-170"/>
+        <reward type="Item" id="firstAidBandage" value="4"/>
+        <reward type="Item" id="herbalAntibiotics" value="1"/>
+        <reward type="Item" id="9mmBullet" value="72"/>
+        <reward type="Item" id="repairKit" value="4"/>
+        <reward type="Item" id="beaker" value="1"/>
+        <reward type="Item" id="pistolBook" value="1"/>
+        <reward type="Item" id="challengeClassMedic" value="1"/>
+        <reward type="Item" id="perkMedic" value="1"/>
+    </quest>
 </quests>

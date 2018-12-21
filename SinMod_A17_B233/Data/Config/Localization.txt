@@ -7130,5 +7130,6 @@ meleeToolShovelScrap,items,Tool,KgNone,Scrap Shovel,Pelle en fer,Eisenschaufel,,
 meleeToolShovelScrapDesc,items,Tool,KgNone,"The scrap shovel is great for digging through earth, sand or snow.\nRepair with Scrap Iron.","La pelle en fer est géniale pour creuser la terre, le sable ou la neige.","Die Eisenschaufel ist ein tolles Werkzeug, um sich durch Erde, Sand und Schnee zu graben.",,"La pala de hierro es excelente para cavar en la tierra, arena o nieve.",
 meleeScrapShiv,items,Melee,KgNone,Scrap Iron Shiv,Surin en os,Knochenklinge,,Pincho de hueso,
 meleeScrapShivDesc,items,Melee,KgNone,This primitive makeshift weapon is also useful for gutting animals.\n\nCrude weapons can not be modded.,Cette arme de fortune primitive sert également à étriper les animaux.,"Diese primitive, behelfsmäßige Waffe ist auch nützlich zum Ausweiden von Tieren.",,Esta arma primitiva improvisada también es útil para destripar animales.,
-
+ProfessionSelection,items,Item Tool,,Profession Selection,,
+ProfessionSelectionDesc,items,Item Tool,,Craft this item into the Profession you wish to start as.,,
 
