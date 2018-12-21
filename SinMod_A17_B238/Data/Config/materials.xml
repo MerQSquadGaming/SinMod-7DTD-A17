@@ -1307,7 +1307,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
         <property name="forge_category" value="leather"/>
         <property name="Experience" value="50"/>
     </material>
-	    <!--SinMod Begins Here-->
+    <!--SinMod Begins Here-->
     <!--Admin Materials-->
     <material id="Madmin">
         <property name="damage_category" value="stone"/>
@@ -1320,5 +1320,12 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
         <property name="explosionresistance" value="1.2"/>
         <property name="MaxDamage" value="1000000"/>
         <property name="Experience" value="2"/>
+    </material>
+    <!--Auto Respawner-->
+    <material id="airEnhanced">
+        <property name="collidable" value="false" />
+        <property name="lightopacity" value="0" />
+        <property name="Hardness" type="float" value="50000" />
+        <property name="Mass" type="int" value="30" />
     </material>
 </materials>
