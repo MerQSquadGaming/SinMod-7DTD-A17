@@ -11259,7 +11259,7 @@ So no clothing dyes until that can be resolved. -->
         <property name="RepairExpMultiplier" value="5.5"/>
     </item>
     <!--SinMod Class Selection-->
-    <item name="StartWorldsEnd(README)">
+    <!--<item name="StartWorldsEnd(README)">
         <property name="Extends" value="challengeQuestMaster" />
         <property name="CustomIconTint" value="ff0000"/>
         <property name="Description" value="startWorldsEndDesc"/>
@@ -11279,7 +11279,7 @@ So no clothing dyes until that can be resolved. -->
             <property name="Zoom" value="10" />
             <property name="Pos" value="0,-0.2" />
             <property name="Rot" value="90,45,0" /></property>
-    </item>
+    </item>-->
     <!--SinMod Class Mod-->
     <!--<item name="Marksman Class">
         <property name="Extends" value="questMaster" />
