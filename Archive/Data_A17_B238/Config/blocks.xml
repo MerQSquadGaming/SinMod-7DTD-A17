@@ -17145,7 +17145,7 @@ NOT the TextureNumber.
         <property name="Extends" value="rockResource" param1="DowngradeBlock"/>
         <property name="CreativeMode" value="Dev"/>
         <property name="Model" value="Entities/Resources/rock_resource_broke2Prefab"/>
-        <property name="DowngradeBlock" value="boulderairstage"/>
+        <property name="DowngradeBlock" value="boulderRespawner"/>
     </block>
     <block name="rockResource02">
         <!-- biome decoration -->
@@ -17167,7 +17167,7 @@ NOT the TextureNumber.
         <property name="CreativeMode" value="Dev"/>
         <property name="Model" value="Entities/Resources/rock_resource02_broke2Prefab"/>
         <property name="MultiBlockDim" value="1,2,1"/>
-        <property name="DowngradeBlock" value="boulderairstage"/>
+        <property name="DowngradeBlock" value="boulderRespawner"/>
     </block>
     <!-- not used in prefabs
 <block name="rockResource02Broke3"><property name="Extends" value="rockResource" param1="DowngradeBlock"/><property name="CreativeMode" value="Dev"/><property name="Model" value="Entities/Resources/rock_resource02_broke3Prefab"/><property name="MultiBlockDim" value="2,2,2"/>
@@ -25701,7 +25701,7 @@ ore block visualisation end -->
     <block name="carRespawner">
         <property name="CreativeMode" value="None"/>
         <property name="Class" value="PlantGrowing" />
-        <property name="Material" value="airEnhanced" />
+        <property name="Material" value="airRespawner" />
         <property name="Shape" value="Invisible" />
         <property name="Texture" value="250" />
         <property name="CanMobsSpawnOn" value="false" />
@@ -25712,10 +25712,10 @@ ore block visualisation end -->
         <property name="PlantGrowing.FertileLevel" value="0" />
         <property name="PlantGrowing.IsRandom" value="false" />
     </block>
-    <block name="boulderairstage">
+    <block name="boulderRespawner">
         <property name="CreativeMode" value="None"/>
         <property name="Class" value="PlantGrowing" />
-        <property name="Material" value="airEnhanced" />
+        <property name="Material" value="airRespawner" />
         <property name="Shape" value="Invisible" />
         <property name="Texture" value="250" />
         <property name="CanMobsSpawnOn" value="false" />
