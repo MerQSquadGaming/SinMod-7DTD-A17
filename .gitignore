@@ -267,5 +267,4 @@ SinMod.sln
 *.filters
 ToDo List.txt
 /CompareFiles-Trash.xml
-ServerConfigFiles/serverconfigA17b221.xml
-ServerConfigFiles/serverconfig.xml
+ServerConfigFiles/
