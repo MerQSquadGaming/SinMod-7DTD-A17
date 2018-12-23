@@ -25710,7 +25710,7 @@ ore block visualisation end -->
         <property name="ImposterDontBlock" value="true"/>
         <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
         <property name="DescriptionKey" value="powerSourceDesc"/>
-        <property name="MaxFuel" value="100000"/>
+        <property name="MaxFuel" value="6000"/>
         <property name="OutputPerFuel" value="56250"/>
         <property name="MaxPower" value="61250"/>
         <property name="OutputPerStack" value="56250"/>
