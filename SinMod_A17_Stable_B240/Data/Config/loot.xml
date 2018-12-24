@@ -361,6 +361,13 @@ A single player on default diff can have a GS of up to 480 without perks.
         </lootqualitytemplate>
     </lootqualitytemplates>
     <lootqualitytemplates>
+        <lootqualitytemplate name="classTemplate">
+            <qualitytemplate level="1,999999" default_quality="2,3">
+                <loot quality="2,3" prob="1"/>
+            </qualitytemplate>
+        </lootqualitytemplate>
+    </lootqualitytemplates>
+    <lootqualitytemplates>
         <lootqualitytemplate name="treasureTemplate">
             <qualitytemplate level="1,25" default_quality="1,2">
                 <loot quality="5,6" prob="0.004"/>
@@ -2576,7 +2583,44 @@ treasureTemplate
         <item group="ammo" prob=".8"/>
         <item group="ammoSteel" prob="1"/>
     </lootcontainer>
-	<!--SinMod Begins Here-->
+    <!--SinMod Begins Here-->
+    <!--SinMod Class Loot-->
+    <lootgroup name="Survival_Shirts" count="1" quality="1,3">
+        <item name="suitJacket"/>
+        <item name="shirt"/>
+        <item name="tshirt"/>
+        <item name="armyShirt"/>
+        <item name="tankTop"/>
+        <item name="sweatshirt"/>
+        <item name="tshirtZUWhite"/>
+        <item name="hoodedSweatshirt"/>
+        <item name="flannelShirt"/>
+        <item name="flannelShirtRed"/>
+    </lootgroup>
+    <lootgroup name="Survival_Pants" count="1" quality="1,3">
+        <item name="suitPants"/>
+        <item name="overalls"/>
+        <item name="gothicPants"/>
+        <item name="denimShortsPants"/>
+        <item name="skirt"/>
+        <item name="armyPants"/>
+        <item name="denimPants"/>
+        <item name="plantFiberPants"/>
+    </lootgroup>
+    <lootgroup name="SurvivalGear" count="all">
+        <item group="Survival_Shirts"/>
+        <item group="Survival_Pants"/>
+        <item name="wornBoots" quality="1,2" count="1"/>
+        <item name="canBeef" count="4"/>
+        <item name="painkillers" count="1"/>
+        <item name="bottledWater" count="4"/>
+        <item name="bandage" count="1"/>
+        <item name="bedroll"/>
+        <item name="meleeToolTorch"/>
+    </lootgroup>
+    <lootcontainer id="124" count="1" size="8,4" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="classTemplate">
+        <item group="SurvivalGear"/>
+    </lootcontainer>
     <!--Donor Crate-->
     <lootgroup name="DonorAmmo" count="2">
         <item name="ammo9mmBullet" count="100"/>

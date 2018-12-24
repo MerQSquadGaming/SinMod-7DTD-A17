@@ -1497,10 +1497,7 @@ We _want_ players to specialise so we also have to make it feasible.
             <passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8"/>
             <passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
             <passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2"/>
-            <!--
-		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="9"/><passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="9"/><passive_effect name="SpreadMultiplierAiming" operation="base_set" value="0.5"/><passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="0.8"/><passive_effect name="SpreadMultiplierWalking" operation="base_set" value=".3"/><passive_effect name="SpreadMultiplierRunning" operation="base_set" value=".5"/><passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
-
--->
+            <!--<passive_effect name="SpreadDegreesVertical" operation="base_set" value="9"/><passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="9"/><passive_effect name="SpreadMultiplierAiming" operation="base_set" value="0.5"/><passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="0.8"/><passive_effect name="SpreadMultiplierWalking" operation="base_set" value=".3"/><passive_effect name="SpreadMultiplierRunning" operation="base_set" value=".5"/><passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>-->
             <passive_effect name="KickDegreesVertical" operation="base_set" value="0.8"/>
             <!-- KickDegrees can have 2 values, the range for kicking up AND down -->
             <passive_effect name="KickDegreesHorizontal" operation="base_set" value="-.25,.25"/>
@@ -11249,16 +11246,16 @@ So no clothing dyes until that can be resolved. -->
         <property name="RepairExpMultiplier" value="5.5"/>
     </item>
     <!--SinMod Class Selection-->
-    <!--<item name="StartWorldsEnd(README)">
+    <item name="StartWorldsEnd(README)">
         <property name="Extends" value="challengeQuestMaster" />
         <property name="CustomIconTint" value="ff0000"/>
         <property name="Description" value="startWorldsEndDesc"/>
         <property class="Action0">
             <property name="QuestGiven" value="StartWorldsEnd" /></property>
     </item>
-    <item name="professionSelection">
+    <item name="classSelector">
         <property name="DescriptionKey" value="classSelectionDesc"/>
-        <property name="CustomIcon" value="professionSelection" />
+        <property name="CustomIcon" value="classSelector" />
         <property name="Meshfile" value="Items/Misc/Book" />
         <property name="Material" value="organic" />
         <property name="HoldType" value="21" />
@@ -11269,39 +11266,8 @@ So no clothing dyes until that can be resolved. -->
             <property name="Zoom" value="10" />
             <property name="Pos" value="0,-0.2" />
             <property name="Rot" value="90,45,0" /></property>
-    </item>-->
-    <!--SinMod Class Mod-->
-    <!--<item name="Marksman Class">
-        <property name="Extends" value="questMaster" />
-        <property name="CustomIcon" value="Class_Marksman"/>
-        <property class="Action1">
-            <property name="QuestGiven" value="Marksman_Class" /></property>
     </item>
-    <item name="Grunt Class">
-        <property name="Extends" value="questMaster" />
-        <property name="CustomIcon" value="Class_Grunt"/>
-        <property class="Action1">
-            <property name="QuestGiven" value="Grunt_Class" /></property>
-    </item>
-    <item name="Brute Class">
-        <property name="Extends" value="questMaster" />
-        <property name="CustomIcon" value="Class_Brute"/>
-        <property class="Action1">
-            <property name="QuestGiven" value="Brute_Class" /></property>
-    </item>
-    <item name="Ninja Class">
-        <property name="Extends" value="questMaster" />
-        <property name="CustomIcon" value="Class_Ninja"/>
-        <property class="Action1">
-            <property name="QuestGiven" value="Ninja_Class" /></property>
-    </item>
-    <item name="Engineer Class">
-        <property name="Extends" value="questMaster" />
-        <property name="CustomIcon" value="Class_Emgineer"/>
-        <property class="Action1">
-            <property name="QuestGiven" value="Engineer_Class" /></property>
-    </item>
-    <item name="BugoutKey">
+    <item name="classKey">
         <property name="CustomIcon" value="ProfessionKey" />
         <property name="Degradation" value="125" param1="true" />
         <property name="Meshfile" value="Items/Misc/paper" />
@@ -11316,7 +11282,39 @@ So no clothing dyes until that can be resolved. -->
             <property name="Sound_start" value="UseActions/repair_block" />
             <property name="Allowed_upgrade_items" value="BugoutKey" /></property>
         <property name="Group" value="Professions" />
+    </item>
+    <!--SinMod Class Mod-->
+    <item name="hitmanClass">
+        <property name="Extends" value="questMaster" />
+        <property name="CustomIcon" value="hitmanClass"/>
+        <property class="Action1">
+            <property name="QuestGiven" value="quest_classHitman" /></property>
+    </item>
+    <!--<item name="bruiserClass">
+        <property name="Extends" value="questMaster" />
+        <property name="CustomIcon" value="bruiserClass"/>
+        <property class="Action1">
+            <property name="QuestGiven" value="bruiserClass" /></property>
+    </item>
+    <item name="survivalistClass">
+        <property name="Extends" value="questMaster" />
+        <property name="CustomIcon" value="survivalistClass"/>
+        <property class="Action1">
+            <property name="QuestGiven" value="survivalistClass" /></property>
+    </item>
+    <item name="conartistClass">
+        <property name="Extends" value="questMaster" />
+        <property name="CustomIcon" value="conartistClass"/>
+        <property class="Action1">
+            <property name="QuestGiven" value="conartistClass" /></property>
+    </item>
+    <item name="engineerClass">
+        <property name="Extends" value="questMaster" />
+        <property name="CustomIcon" value="engineerClass"/>
+        <property class="Action1">
+            <property name="QuestGiven" value="engineerClass" /></property>
     </item>-->
+    
 	
 </items>
 <!-- Item limit: There can be 32k items in the game. IDs are generated internally on loading the game/items. -->

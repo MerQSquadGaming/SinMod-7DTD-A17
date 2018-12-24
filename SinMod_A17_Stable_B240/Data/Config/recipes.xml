@@ -3067,9 +3067,23 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
         <ingredient name="unit_iron" count="15"/>
         <ingredient name="unit_clay" count="1"/>
     </recipe>
-	<!--SinMod Recipes Begins Here-->
+    <!--SinMod Recipes Begins Here-->
     <!--SinMod Classes Mod -->
-    <!--<recipe name="Marksman Class" count="1"><ingredient name="professionSelection" count="1" /></recipe><recipe name="Grunt Class" count="1"><ingredient name="professionSelection" count="1" /></recipe><recipe name="Brute Class" count="1"><ingredient name="professionSelection" count="1" /></recipe><recipe name="Ninja Class" count="1"><ingredient name="professionSelection" count="1" /></recipe><recipe name="Engineer Class" count="1"><ingredient name="professionSelection" count="1" /></recipe>-->
+    <recipe name="classHitman" count="1">
+        <ingredient name="classSelector" count="1" />
+    </recipe>
+    <!--<recipe name="bruiserClass" count="1">
+        <ingredient name="classSelector" count="1" />
+    </recipe>
+    <recipe name="survivalistClass" count="1">
+        <ingredient name="classSelector" count="1" />
+    </recipe>
+    <recipe name="conartistClass" count="1">
+        <ingredient name="classSelector" count="1" />
+    </recipe>
+    <recipe name="engineerClass" count="1">
+        <ingredient name="classSelector" count="1" />
+    </recipe>-->
     <!--Sinmod Scrap Metal Tools-->
     <recipe name="meleeToolPickaxeScrap" count="1">
         <ingredient name="resourceScrapIron" count="15"/>

@@ -6501,6 +6501,7 @@ group desc for stuff like metal siding
     
     
     
+    
     </block>
     <block name="flagstoneCNRRamp">
         <property name="Extends" value="flagstoneMaster"/>
@@ -6518,6 +6519,7 @@ group desc for stuff like metal siding
     
     
     
+    
     </block>
     <block name="flagstonePyramid">
         <property name="Extends" value="flagstoneMaster"/>
@@ -6529,6 +6531,7 @@ group desc for stuff like metal siding
         <property class="UpgradeBlock">
             <property name="ToBlock" value="cobblestonePyramid"/></property>-
 
+    
     
     
     
@@ -20161,6 +20164,7 @@ NOT the TextureNumber.
         
         
         
+        
         <property name="Extends" value="woodNoUpgradeMaster"/>
         <property name="Shape" value="New"/>
         <property name="Model" value="wedge60_incline_corner"/>
@@ -25751,6 +25755,47 @@ ore block visualisation end -->
         <property name="PlantGrowing.GrowthRate" value="420" />
         <property name="PlantGrowing.FertileLevel" value="0" />
         <property name="PlantGrowing.IsRandom" value="false" />
+    </block>
+    <!--SinMod Classes-->
+    <block name="lockedClassCase">
+        <property name="Group" value="Building"/>
+        <property name="CustomIcon" value="BugoutBag" />
+        <property name="DescriptionKey" value="classHunterDesc"/>
+        <property name="DisplayType" value="blockHardenedMulti" />
+        <property name="Material" value="Mmetal_hard"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="Entities/LootContainers/super_chestPrefab" />
+        <property name="DisplayType" value="blockMulti" />
+        <property name="MultiBlockDim" value="2,1,1"/>
+        <property name="AllowAllRotations" value="true"/>
+        <property name="ImposterExchange" value="imposterBlock" param1="115"/>
+        <property name="Path" value="solid"/>
+        <property name="Place" value="TowardsPlacerInverted"/>
+        <drop event="Destroy" count="0"/>
+        <property name="CanPickup" value="true" />
+        <property name="DowngradeBlock" value="unlockedClassCase"/>
+        <property class="UpgradeBlock">
+            <property name="ToBlock" value="unlockedClassCase" />
+            <property name="Item" value="classKey" />
+            <property name="ItemCount" value="1" />
+            <property name="UpgradeHitCount" value="1" />
+            </property>
+    </block>
+    <block name="unlockedClassCase">
+        <property name="CreativeMode" value="Dev"/>
+        <property name="CustomIcon" value="cntHardenedChestSecure"/>
+        <property name="DisplayType" value="blockHardenedMulti" />
+        <property name="Material" value="Mmetal_hard"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="Entities/LootContainers/super_chestPrefab" />
+        <property name="DisplayType" value="blockMulti" />
+        <property name="MultiBlockDim" value="2,1,1"/>
+        <property name="AllowAllRotations" value="true"/>
+        <property name="ImposterExchange" value="imposterBlock" param1="115"/>
+        <property name="Path" value="solid"/>
+        <property name="Class" value="Loot"/>
+        <property name="LootList" value="124"/>
+        <drop event="Destroy" count="0"/>
     </block>
     <!--
 Block replacements
