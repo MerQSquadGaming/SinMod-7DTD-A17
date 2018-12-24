@@ -25759,10 +25759,10 @@ ore block visualisation end -->
     <!--SinMod Classes-->
     <block name="lockedClassCase">
         <property name="Group" value="Building"/>
-        <property name="CustomIcon" value="BugoutBag" />
+        <property name="CustomIcon" value="classCase" />
         <property name="DescriptionKey" value="classHunterDesc"/>
         <property name="DisplayType" value="blockHardenedMulti" />
-        <property name="Material" value="Mmetal_hard"/>
+        <property name="Material" value="Mwood_regular"/>
         <property name="Shape" value="ModelEntity"/>
         <property name="Model" value="Entities/LootContainers/super_chestPrefab" />
         <property name="DisplayType" value="blockMulti" />
@@ -25772,7 +25772,6 @@ ore block visualisation end -->
         <property name="Path" value="solid"/>
         <property name="Place" value="TowardsPlacerInverted"/>
         <drop event="Destroy" count="0"/>
-        <property name="CanPickup" value="true" />
         <property name="DowngradeBlock" value="unlockedClassCase"/>
         <property class="UpgradeBlock">
             <property name="ToBlock" value="unlockedClassCase" />

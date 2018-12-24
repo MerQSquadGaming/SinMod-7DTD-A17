@@ -48,9 +48,9 @@
         <property name="IsEnemyEntity" value="false"/>
         <!--<property name="DropInventoryBlock" value="cntBackpackDropped"/>-->
         <!-- deprecated. It's an entity now "Backpack" -->
-        <property name="ItemsOnEnterGame.GameModeSurvival" value="drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock"/>
-        <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock"/>
-        <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock"/>
+        <property name="ItemsOnEnterGame.GameModeSurvival" value="meleeToolTorch,keystoneBlock,StartWorldsEnd(README)"/>
+        <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeToolTorch,keystoneBlock,StartWorldsEnd(README)"/>
+        <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeToolTorch,keystoneBlock,StartWorldsEnd(README)"/>
         <property name="ExperienceGain" value="173"/>
         <property name="LegsExplosionDamageMultiplier" value="1"/>
         <property name="ArmsExplosionDamageMultiplier" value="1"/>

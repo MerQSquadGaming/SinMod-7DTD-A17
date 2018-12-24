@@ -262,10 +262,10 @@ __pycache__/
 
 # SinMod Old Files
 SinMod.sln
-*.png
+
 *.vcxproj
 *.filters
 ToDo List.txt
 /CompareFiles-Trash.xml
-ServerConfigFiles/
-SinMod_A17_Stable_B240/Mods/SinModIcons/ItemIcons/!SinModIcon.psd
+
+SinMod_A17_Stable_B240/Mods/SinMod/ItemIcons/!SinModIcon.psd

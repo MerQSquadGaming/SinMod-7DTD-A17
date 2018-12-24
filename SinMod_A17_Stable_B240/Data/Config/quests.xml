@@ -2431,44 +2431,32 @@
         <!-- <reward type="Quest" id="quest_tier6complete" /> -->
         <!-- </quest_tier_reward> -->
     </quest_tier_rewards>
-    <quest id="StartWorldsEnd">
-        <property name="name_key" value="Welcome to Worlds End" />
-        <property name="subtitle_key" value="WorldsEnd" />
-        <property name="description_key" value="Begin your journey!" />
-        <property name="icon" value="ui_game_symbol_treasure" />
-        <property name="repeatable" value="false" />
-        <property name="category_key" value="challenge" />
-        <property name="offer_key" value="Welcome to Worlds End have fun.
-		Type /commands or /help to get started. Feel free to ask for help in chat anytime.
-		By accepting you agreed and understood the /rules if you have not please go to merqsquad.com.
-		After accepting this scroll you will receive your Class Selector item, use recipes" />
-        <property name="difficulty" value=="hard"/>
-        <property name="shareable" value="false" />
-        <!--reward type="Item" id="Daily Quest(Empty)" value="1" /-->
-        <!--Have not made the dailiy quests yet-->
-        <reward type="Item" id="classSelector" value="1" />
-        <reward type="Item" id="keystoneBlock" value="1"/>
+    <quest id="quest_StartWorldsEnd">
+        <property name="name" value="Welcome to Worlds End" />
+        <property name="subtitle" value="Worlds End" />
+        <property name="description" value="Begin your journey!" />
+		<property name="offer" value="Welcome to Worlds End have fun.Type /commands or /help to get started. Feel free to ask for help in chat anytime. By accepting you agreed and understood the /rules if you have not please go to merqsquad.com. After accepting this scroll you will receive your Class Selector item, use recipes" />
+		<property name="group_name" value="Class"/>
+        <property name="category" value="quest" />
+        <property name="icon" value="ui_game_symbol_loot_sack" />
+	    <reward type="Item" id="classSelector" value="1"/>
     </quest>
     <quest id="quest_classHitman">
-        <property name="name_key" value="Hitman Class" />
-        <property name="subtitle_key" value="Hitman Class" />
-        <property name="description_key" value="A hired gun" />
+        <property name="name" value="Hitman Class" />
+        <property name="subtitle" value="Hitman Class" />
+        <property name="description" value="A hired gun" />
         <property name="icon" value="ui_game_symbol_treasure" />
         <property name="repeatable" value="false" />
-        <property name="category_key" value="challenge" />
-        <property name="offer_key" value="Be a person who is skilled in ranged weapons and accuracy, a zombie assassin." />
-        <property name="difficulty" value=="hard"/>
-        <property name="shareable" value="false" />
-        <!--reward type="Item" id="Daily Quest(Empty)" value="1" /-->
-        <!--Have not made the dailiy quests yet-->
-        <reward type="Attribute" id="attPerception" value="3" />
+        <property name="offer" value="You have selected Hitman you're a person who is skilled in ranged weapons and accuracy, a zombie assassin." />
+        <property name="group_name" value="Class"/>
+        <reward type="Skill" id="attPerception" value="3" />
         <reward type="SkillPoints" value="2"/>
         <reward type="Item" id="lockedClassCase" value="1"/>
         <reward type="Item" id="classKey" value="1" />
-		<reward type="LootItem" id="questAmmo" ischosen="true" value="1" />
-        <reward type="LootItem" id="questSchematics" ischosen="true" value="1" />
-        <reward type="LootItem" id="questMods" ischosen="true" value="1" />
-        <reward type="Item" id="repairKit" value="4"/>
+        <reward type="Item" id="gunHuntingRifle" value="3"/>
+        <reward type="Item" id="modGunSoundSuppressorSilencer" value="1"/>
+        <reward type="Item" id="resourceRepairKit" value="4"/>
+        <reward type="Item" id="ammo762mmBulletFMJ" value="50"/>
     </quest>
 
 </quests>

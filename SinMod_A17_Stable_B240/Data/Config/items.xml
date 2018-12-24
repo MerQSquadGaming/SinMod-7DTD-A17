@@ -11251,13 +11251,13 @@ So no clothing dyes until that can be resolved. -->
         <property name="CustomIconTint" value="ff0000"/>
         <property name="Description" value="startWorldsEndDesc"/>
         <property class="Action0">
-            <property name="QuestGiven" value="StartWorldsEnd" /></property>
+            <property name="QuestGiven" value="quest_StartWorldsEnd" /></property>
     </item>
     <item name="classSelector">
         <property name="DescriptionKey" value="classSelectionDesc"/>
         <property name="CustomIcon" value="classSelector" />
         <property name="Meshfile" value="Items/Misc/Book" />
-        <property name="Material" value="organic" />
+        <property name="Material" value="Mpaper" />
         <property name="HoldType" value="21" />
         <property name="Stacknumber" value="1" />
         <property name="FuelValue" value="20" />
@@ -11268,26 +11268,29 @@ So no clothing dyes until that can be resolved. -->
             <property name="Rot" value="90,45,0" /></property>
     </item>
     <item name="classKey">
-        <property name="CustomIcon" value="ProfessionKey" />
+        <property name="CustomIcon" value="classKey" />
         <property name="Degradation" value="125" param1="true" />
-        <property name="Meshfile" value="Items/Misc/paper" />
+        <property name="Meshfile" value="Items/Tools/wrenchPrefab" />
         <property name="DescriptionKey" value="classKeyDesc"/>
-        <property name="Material" value="paper" />
-        <property name="HoldType" value="23" />
+        <property name="Material" value="Mmetal" />
+        <property name="HoldType" value="29" />
         <property name="Stacknumber" value="1" />
         <property class="Action1">
             <property name="Class" value="Repair" />
-            <property name="Delay" value="0.4" />
+            <property name="Delay" value="1" />
+            <property name="Repair_amount" value="350"/>
             <property name="Upgrade_hit_offset" value="-2" />
             <property name="Sound_start" value="UseActions/repair_block" />
-            <property name="Allowed_upgrade_items" value="BugoutKey" /></property>
-        <property name="Group" value="Professions" />
+            <property name="Allowed_upgrade_items" value="classKey" /></property>
+        <property name="Group" value="Class" />
+        <property name="ActionSkillGroup" value="Construction Tools"/>
+        <property name="CraftingSkillGroup" value="craftSkillTools"/>
     </item>
     <!--SinMod Class Mod-->
-    <item name="hitmanClass">
+    <item name="classHitman">
         <property name="Extends" value="questMaster" />
-        <property name="CustomIcon" value="hitmanClass"/>
-        <property class="Action1">
+        <property name="CustomIcon" value="classHitman"/>
+        <property class="Action0">
             <property name="QuestGiven" value="quest_classHitman" /></property>
     </item>
     <!--<item name="bruiserClass">
