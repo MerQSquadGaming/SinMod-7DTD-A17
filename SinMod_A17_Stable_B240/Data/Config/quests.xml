@@ -2431,6 +2431,9 @@
         <!-- <reward type="Quest" id="quest_tier6complete" /> -->
         <!-- </quest_tier_reward> -->
     </quest_tier_rewards>
+
+<!--SinMod Begins Here-->
+<!--SinMod Starter Quests-->
     <quest id="quest_StartWorldsEnd">
         <property name="name" value="Welcome to Worlds End" />
         <property name="subtitle" value="Worlds End" />
@@ -2447,7 +2450,7 @@
         <property name="description" value="A hired gun" />
         <property name="icon" value="ui_game_symbol_treasure" />
         <property name="repeatable" value="false" />
-        <property name="offer" value="You have selected Hitman you're a person who is skilled in ranged weapons and accuracy, a zombie assassin." />
+        <property name="offer" value="You have selected Bruiser you're a person who is skilled in ranged weapons and accuracy, a zombie assassin." />
         <property name="group_name" value="Class"/>
         <reward type="Skill" id="attPerception" value="3" />
         <reward type="SkillPoints" value="2"/>
@@ -2458,5 +2461,88 @@
         <reward type="Item" id="resourceRepairKit" value="4"/>
         <reward type="Item" id="ammo762mmBulletFMJ" value="50"/>
     </quest>
+    <quest id="quest_classBruiser">
+        <property name="name" value="Bruiser Class" />
+        <property name="subtitle" value="Bruiser Class" />
+        <property name="description" value="Melee combat specialist" />
+        <property name="icon" value="ui_game_symbol_treasure" />
+        <property name="repeatable" value="false" />
+        <property name="offer" value="You have selected Bruiser you're a person who is skilled in melee combat, you prefer upclose and personal." />
+        <property name="group_name" value="Class"/>
+        <reward type="Skill" id="attStrength" value="3" />
+        <reward type="SkillPoints" value="2"/>
+        <reward type="Item" id="lockedClassCase" value="1"/>
+        <reward type="Item" id="classKey" value="1" />
+        <reward type="Item" id="meleeToolSledgehammer" value="3"/>
+        <reward type="Item" id="modGunMeleeBlessedMetal" value="1"/>
+        <reward type="Item" id="resourceForgedIron" value="4"/>
+    </quest>
+    <quest id="quest_classSurvivalist">
+        <property name="name" value="Survivalist Class" />
+        <property name="subtitle" value="Survivalist Class" />
+        <property name="description" value="Living off the Land" />
+        <property name="icon" value="ui_game_symbol_treasure" />
+        <property name="repeatable" value="false" />
+        <property name="offer" value="You have selected Survivalist you're a person who knows how to survive off the land, a skilled naturalist ." />
+        <property name="group_name" value="Class"/>
+        <reward type="Skill" id="attFortitude" value="3" />
+        <reward type="SkillPoints" value="2"/>
+        <reward type="Item" id="lockedClassCase" value="1"/>
+        <reward type="Item" id="classKey" value="1" />
+        <reward type="Item" id="gunCompoundBow" value="3"/>
+        <reward type="Item" id="modArmorImprovedFittings" value="1"/>
+        <reward type="Item" id="modArmorCustomizedFittings" value="1"/>
+        <reward type="Item" id="resourceRepairKit" value="4"/>
+        <reward type="Item" id="ammoArrowIron" value="150"/>
+    </quest>
+    <quest id="quest_classConartist">
+        <property name="name" value="Conartist Class" />
+        <property name="subtitle" value="Conartist Class" />
+        <property name="description" value="Hides in the shadows" />
+        <property name="icon" value="ui_game_symbol_treasure" />
+        <property name="repeatable" value="false" />
+        <property name="offer" value="You have selected Conartist you're a person who is skilled in movement and stealth, a shadow hunter." />
+        <property name="group_name" value="Class"/>
+        <reward type="Skill" id="attAgility" value="3" />
+        <reward type="SkillPoints" value="2"/>
+        <reward type="Item" id="lockedClassCase" value="1"/>
+        <reward type="Item" id="classKey" value="1" />
+        <reward type="Item" id="gun44Magnum" value="3"/>
+        <reward type="Item" id="modArmorStoragePocket" value="1"/>
+        <reward type="Item" id="modGunLaserSight" value="1"/>
+        <reward type="Item" id="resourceRepairKit" value="4"/>
+        <reward type="Item" id="ammo44MagnumBullet" value="50"/>
+    </quest>
+    <quest id="quest_classEngineer">
+        <property name="name" value="Engineer Class" />
+        <property name="subtitle" value="Engineer Class" />
+        <property name="description" value="A Jerry-Rigger" />
+        <property name="icon" value="ui_game_symbol_treasure" />
+        <property name="repeatable" value="false" />
+        <property name="offer" value="You have selected Engineer you're a person who is skilled in crafting and modifying, a classic Jerry-Rigger." />
+        <property name="group_name" value="Class"/>
+        <reward type="Skill" id="attIntellect" value="3" />
+        <reward type="SkillPoints" value="2"/>
+        <reward type="Item" id="lockedClassCase" value="1"/>
+        <reward type="Item" id="classKey" value="1" />
+        <reward type="Item" id="gunPistol" value="3"/>
+        <reward type="Item" id="modGunTriggerGroupBurst" value="1"/>
+        <reward type="Item" id="resourceRepairKit" value="4"/>
+        <reward type="Item" id="ammo9mmBullet" value="50"/>
+    </quest>
+
+    <!--SinMod Class Quests-->
+    <!--
+        <quest id="quest_hitman1of3">
+        <property name="name" value="Hitman Class" />
+        <property name="subtitle" value="Hitman Class" />
+        <property name="description" value="A hired gun" />
+        <property name="icon" value="ui_game_symbol_treasure" />
+        <property name="repeatable" value="false" />
+        <property name="offer" value="You have selected Bruiser you're a person who is skilled in ranged weapons and accuracy, a zombie assassin." />
+        <property name="group_name" value="Class"/>
+        <reward type="SkillPoints" value="2"/>
+    
+    -->
 
 </quests>

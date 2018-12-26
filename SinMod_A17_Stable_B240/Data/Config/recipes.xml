@@ -3072,18 +3072,18 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
     <recipe name="classHitman" count="1">
         <ingredient name="classSelector" count="1" />
     </recipe>
-    <!--<recipe name="bruiserClass" count="1">
+    <recipe name="classBruiser" count="1">
         <ingredient name="classSelector" count="1" />
     </recipe>
-    <recipe name="survivalistClass" count="1">
+    <recipe name="classSurvivalist" count="1">
         <ingredient name="classSelector" count="1" />
     </recipe>
-    <recipe name="conartistClass" count="1">
+    <recipe name="classConartist" count="1">
         <ingredient name="classSelector" count="1" />
     </recipe>
-    <recipe name="engineerClass" count="1">
+    <recipe name="classEngineer" count="1">
         <ingredient name="classSelector" count="1" />
-    </recipe>-->
+    </recipe>
     <!--Sinmod Scrap Metal Tools-->
     <recipe name="meleeToolPickaxeScrap" count="1">
         <ingredient name="resourceScrapIron" count="15"/>

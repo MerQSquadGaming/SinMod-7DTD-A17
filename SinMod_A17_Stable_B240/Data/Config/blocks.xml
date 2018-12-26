@@ -25759,7 +25759,8 @@ ore block visualisation end -->
     <!--SinMod Classes-->
     <block name="lockedClassCase">
         <property name="Group" value="Building"/>
-        <property name="CustomIcon" value="classCase" />
+        <property name="CreativeMode" value="Dev"/>
+        <property name="CustomIcon" value="lockedClassCase" />
         <property name="DescriptionKey" value="classHunterDesc"/>
         <property name="DisplayType" value="blockHardenedMulti" />
         <property name="Material" value="Mwood_regular"/>
@@ -25781,8 +25782,7 @@ ore block visualisation end -->
             </property>
     </block>
     <block name="unlockedClassCase">
-        <property name="CreativeMode" value="Dev"/>
-        <property name="CustomIcon" value="cntHardenedChestSecure"/>
+        <property name="CreativeMode" value="None"/>
         <property name="DisplayType" value="blockHardenedMulti" />
         <property name="Material" value="Mmetal_hard"/>
         <property name="Shape" value="ModelEntity"/>

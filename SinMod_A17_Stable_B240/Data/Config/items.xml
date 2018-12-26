@@ -11248,6 +11248,7 @@ So no clothing dyes until that can be resolved. -->
     <!--SinMod Class Selection-->
     <item name="StartWorldsEnd(README)">
         <property name="Extends" value="challengeQuestMaster" />
+        <property name="CustomIcon" value="StartWorldsEnd(README)" />
         <property name="CustomIconTint" value="ff0000"/>
         <property name="Description" value="startWorldsEndDesc"/>
         <property class="Action0">
@@ -11293,30 +11294,30 @@ So no clothing dyes until that can be resolved. -->
         <property class="Action0">
             <property name="QuestGiven" value="quest_classHitman" /></property>
     </item>
-    <!--<item name="bruiserClass">
+    <item name="classBrusier">
         <property name="Extends" value="questMaster" />
-        <property name="CustomIcon" value="bruiserClass"/>
-        <property class="Action1">
-            <property name="QuestGiven" value="bruiserClass" /></property>
+        <property name="CustomIcon" value="classBrusier"/>
+        <property class="Action0">
+            <property name="QuestGiven" value="quest_classBrusier" /></property>
     </item>
-    <item name="survivalistClass">
+    <item name="classSurvivalist">
         <property name="Extends" value="questMaster" />
-        <property name="CustomIcon" value="survivalistClass"/>
-        <property class="Action1">
-            <property name="QuestGiven" value="survivalistClass" /></property>
+        <property name="CustomIcon" value="classSurvivalist"/>
+        <property class="Action0">
+            <property name="QuestGiven" value="quest_classSurvivalist" /></property>
     </item>
-    <item name="conartistClass">
+    <item name="classConartist">
         <property name="Extends" value="questMaster" />
-        <property name="CustomIcon" value="conartistClass"/>
-        <property class="Action1">
-            <property name="QuestGiven" value="conartistClass" /></property>
+        <property name="CustomIcon" value="classConartist"/>
+        <property class="Action0">
+            <property name="QuestGiven" value="quest_classConartist" /></property>
     </item>
-    <item name="engineerClass">
+    <item name="classEngineer">
         <property name="Extends" value="questMaster" />
-        <property name="CustomIcon" value="engineerClass"/>
-        <property class="Action1">
-            <property name="QuestGiven" value="engineerClass" /></property>
-    </item>-->
+        <property name="CustomIcon" value="classEngineer"/>
+        <property class="Action0">
+            <property name="QuestGiven" value="quest_classEngineer" /></property>
+    </item>
     
 	
 </items>
