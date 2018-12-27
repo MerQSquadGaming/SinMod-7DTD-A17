@@ -2519,7 +2519,7 @@
         <property name="description" value="A Jerry-Rigger" />
         <property name="icon" value="ui_game_symbol_treasure" />
         <property name="repeatable" value="false" />
-        <property name="offer" value="You have selected Engineer you're a person who is skilled in crafting and modifying, a classic Jerry-Rigger." />
+        <property name="offer" value="Note to Self: I've been a working body all my life - having the skill to engineer any idea into reality has always been my strong point. If I can think it, I can make it. I am prepared for the worlds end." />
         <property name="group_name" value="Class"/>
         <reward type="Skill" id="attIntellect" value="3" />
         <reward type="SkillPoints" value="2"/>

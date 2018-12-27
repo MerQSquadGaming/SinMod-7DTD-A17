@@ -11023,6 +11023,7 @@ So no clothing dyes until that can be resolved. -->
     <!--SinMod Tools-->
     <item name="meleeToolPickaxeScrap">
         <property name="Tags" value="melee,medium,tool,perkDeepCuts,perkMotherLode"/>
+        <property name="DescriptionKey" value="meleeToolPickaxeScrapDesc"/>
         <property name="DisplayType" value="melee"/>
         <property name="HoldType" value="12"/>
         <property name="Meshfile" value="Items/Tools/pickaxe_ironPrefab"/>
@@ -11084,6 +11085,7 @@ So no clothing dyes until that can be resolved. -->
     </item>
     <item name="meleeToolShovelScrap">
         <property name="Tags" value="melee,medium,tool,shovel,perkDeepCuts,perkMotherLode"/>
+        <property name="DescriptionKey" value="meleeToolShovelScrapDesc"/>
         <property name="Extends" value="meleeToolShovelStone"/>
         <property name="Meshfile" value="Items/Tools/shovel_ironPrefab"/>
         <property name="CustomIcon" value="meleeToolShovelIron"/>
@@ -11119,6 +11121,7 @@ So no clothing dyes until that can be resolved. -->
     </item>
     <item name="meleeToolFireaxeScrap">
         <property name="Tags" value="knife,melee,medium,tool,perkDeepCuts,perkMotherLode"/>
+        <property name="DescriptionKey" value="meleeToolFireaxeScrapDesc"/>
         <property name="DisplayType" value="melee"/>
         <property name="HoldType" value="17"/>
         <property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab"/>
@@ -11184,6 +11187,7 @@ So no clothing dyes until that can be resolved. -->
     </item>
     <item name="meleeToolShivScrap">
         <property name="Tags" value="knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
+        <property name="DescriptionKey" value="meleeToolShivScrapDesc"/>
         <property name="DisplayType" value="melee"/>
         <property name="HoldType" value="36"/>
         <property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShivPrefab"/>
@@ -11249,7 +11253,7 @@ So no clothing dyes until that can be resolved. -->
     <item name="StartWorldsEnd(README)">
         <property name="Extends" value="challengeQuestMaster" />
         <property name="CustomIcon" value="StartWorldsEnd(README)" />
-        <property name="CustomIconTint" value="ff0000"/>
+        <property name="DescriptionKey" value="StartWorldsEnd(README)Desc"/>
         <property name="Description" value="startWorldsEndDesc"/>
         <property class="Action0">
             <property name="QuestGiven" value="quest_StartWorldsEnd" /></property>
@@ -11291,30 +11295,35 @@ So no clothing dyes until that can be resolved. -->
     <item name="classHitman">
         <property name="Extends" value="questMaster" />
         <property name="CustomIcon" value="classHitman"/>
+        <property name="DescriptionKey" value="classHitmanDesc"/>
         <property class="Action0">
             <property name="QuestGiven" value="quest_classHitman" /></property>
     </item>
-    <item name="classBrusier">
+    <item name="classBruiser">
         <property name="Extends" value="questMaster" />
-        <property name="CustomIcon" value="classBrusier"/>
+        <property name="CustomIcon" value="classBruiser"/>
+        <property name="DescriptionKey" value="classBrusierDesc"/>
         <property class="Action0">
             <property name="QuestGiven" value="quest_classBrusier" /></property>
     </item>
     <item name="classSurvivalist">
         <property name="Extends" value="questMaster" />
         <property name="CustomIcon" value="classSurvivalist"/>
+        <property name="DescriptionKey" value="classSurvivalistDesc"/>
         <property class="Action0">
             <property name="QuestGiven" value="quest_classSurvivalist" /></property>
     </item>
     <item name="classConartist">
         <property name="Extends" value="questMaster" />
         <property name="CustomIcon" value="classConartist"/>
+        <property name="DescriptionKey" value="classConartistDesc"/>
         <property class="Action0">
             <property name="QuestGiven" value="quest_classConartist" /></property>
     </item>
     <item name="classEngineer">
         <property name="Extends" value="questMaster" />
         <property name="CustomIcon" value="classEngineer"/>
+        <property name="DescriptionKey" value="classEngineerDesc"/>
         <property class="Action0">
             <property name="QuestGiven" value="quest_classEngineer" /></property>
     </item>
