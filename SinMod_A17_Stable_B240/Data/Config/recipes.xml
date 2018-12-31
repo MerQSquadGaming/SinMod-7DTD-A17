@@ -3104,6 +3104,31 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
         <ingredient name="resourceScrapIron" count="3"/>
         <ingredient name="resourceDuctTape" count="1"/>
     </recipe>
+    <!--SinMod Ammo Dismantle -->
+    <recipe name="dismantle9mmBullets" count="1" craft_area="workbench">
+        <ingredient name="ammo9mmBullet" count="10"/>
+    </recipe>
+    <recipe name="dismantle9mmSteelBullets" count="1" craft_area="workbench">
+        <ingredient name="ammo9mmBulletSteel" count="10"/>
+    </recipe>
+    <recipe name="dismantle44MagBullets" count="1" craft_area="workbench">
+        <ingredient name="ammo44MagnumBullet" count="10"/>
+    </recipe>
+    <recipe name="dismantle44MagSteelBullets" count="1" craft_area="workbench">
+        <ingredient name="ammo44MagnumBulletSteel" count="10"/>
+    </recipe>
+    <recipe name="dismantle762mmFMJBullets" count="1" craft_area="workbench">
+        <ingredient name="ammo762mmBulletFMJ" count="10"/>
+    </recipe>
+    <recipe name="dismantle762mmFMJSteelBullets" count="1" craft_area="workbench">
+        <ingredient name="ammo762mmBulletFMJSteel" count="10"/>
+    </recipe>
+    <recipe name="dismantleShotgunShells" count="1" craft_area="workbench">
+        <ingredient name="ammoShotgunShell" count="10"/>
+    </recipe>
+    <recipe name="dismantleShotgunSlugs" count="1" craft_area="workbench">
+        <ingredient name="ammoShotgunSlug" count="10"/>
+    </recipe>
 </recipes>
 <!-- To do (maybe / later)
 <recipe name="resourceArrowHeadSteelAP" count="1" craft_area="forge" craft_tool="toolCalipers" material_based="true"><recipe name="book" count="1"><ingredient name="resourcePaper" count="64"/></recipe>

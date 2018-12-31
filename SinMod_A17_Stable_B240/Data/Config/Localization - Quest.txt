@@ -392,3 +392,9 @@ quest_tier5_complete_description,,Quest Info,New,Special reward for unlocking th
 quest_tier6_complete_description,,Quest Info,New,Special reward for completing all tiers of quests.,,,,
 quest_tier_complete_competion,,Quest Info,New,THANK YOU SURVIVOR FOR FINISHING SOME OF THOSE TASKS FOR ME. HERE IS A REWARD FOR ALL YOUR HARD WORK. CHECK BACK TOMORROW AND I WILL HAVE SOME HARDER JOBS FOR YOU THAT SHOULD BE MORE REWARDING.,,,,
 quest_tier6_complete_competion,,Quest Info,New,THANK YOU SURVIVOR FOR FINISHING SOME OF THOSE TASKS FOR ME. HERE IS A REWARD FOR ALL YOUR HARD WORK. WE HAVE NO HARDER QUESTS FOR YOU NOW.,,,,
+
+requirementGroupRifle,,Requirement Group,KgNone,Using a Hunting Rifle,Tenir une hache de pompier,Feueraxt halten,,Sostener un hacha de incendio
+requirementGroupSledge,,Requirement Group,KgNone,Using a Sledgehammer,Tenir une hache de pompier,Feueraxt halten,,Sostener un hacha de incendio
+requirementGroupCompoundBow,,Requirement Group,KgNone,Using a Compoundbow,Tenir une hache de pompier,Feueraxt halten,,Sostener un hacha de incendio
+requirementGroupPistol,,Requirement Group,KgNone,Using a Pistol,Tenir une hache de pompier,Feueraxt halten,,Sostener un hacha de incendio
+requirementGroupMagnum,,Requirement Group,KgNone,Using a 44 Magnum,Tenir une hache de pompier,Feueraxt halten,,Sostener un hacha de incendio

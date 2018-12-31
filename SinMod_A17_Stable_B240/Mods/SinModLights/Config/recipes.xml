@@ -1,0 +1,217 @@
+    
+
+<Config>
+    <append xpath="/recipes">
+        <recipe name="ceilingLight01_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="2"/>
+        </recipe>
+        <recipe name="endTableLamp" count="1" craft_area="workbench">
+            <ingredient name="resourceWood" count="5"/>
+            <ingredient name="resourceHeadlight" count="1"/>
+            <ingredient name="resourceElectricParts" count="3"/>
+            <ingredient name="resourceDuctTape" count="4"/>
+            <ingredient name="resourceScrapPolymers" count="4"/>
+        </recipe>
+        <recipe name="spotlightPlayer" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceHeadlight" count="1"/>
+            <ingredient name="resourceElectricParts" count="8"/>
+            <ingredient name="resourceDuctTape" count="2"/>
+            <ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+        <recipe name="porchLight01_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceElectricParts" count="2"/>
+            <ingredient name="resourceDuctTape" count="6"/>
+            <ingredient name="resourceScrapIron" count="1"/>
+        </recipe>
+        <recipe name="porchLight04_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="2"/>
+        </recipe>
+        <recipe name="porchLight04Brass_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceScrapBrass" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="2"/>
+        </recipe>
+        <recipe name="ceilingLight01_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="2"/>
+        </recipe>
+        <recipe name="ceilingLight02_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="2"/>
+        </recipe>
+        <recipe name="ceilingLight02Brass_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceScrapBrass" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="2"/>
+        </recipe>
+        <recipe name="ceilingLight04_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="2"/>
+        </recipe>
+        <recipe name="ceilingLight05_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="2"/>
+        </recipe>
+        <recipe name="ceilingLight05Brass_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceScrapBrass" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="2"/>
+        </recipe>
+        <recipe name="wallLight01_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="2"/>
+        </recipe>
+        <recipe name="ceilingLight07_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="2"/>
+        </recipe>
+        <recipe name="streetLight01_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="2"/>
+        </recipe>
+        <recipe name="streetLightClassic_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="2"/>
+        </recipe>
+        <recipe name="industrialLight01_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="2"/>
+        </recipe>
+        <recipe name="sconce1Light_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="2"/>
+        </recipe>
+        <recipe name="sconce1LightShadow_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="2"/>
+        </recipe>
+        <recipe name="lanternDecorLight_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="2"/>
+        </recipe>
+        <recipe name="flashlightDecor_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="2"/>
+        </recipe>
+        <recipe name="industrialLight02_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="1"/>
+            <ingredient name="resourceScrapIron" count="1"/>
+        </recipe>
+        <recipe name="industrialLight02Red_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="1"/>
+            <ingredient name="resourceScrapIron" count="1"/>
+        </recipe>
+        <recipe name="ceilingFanLight_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="3"/>
+            <ingredient name="resourceScrapIron" count="1"/>
+        </recipe>
+        <recipe name="signExitLight_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="3"/>
+            <ingredient name="resourceScrapIron" count="1"/>
+        </recipe>
+        <recipe name="roadBarricadeLight_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="3"/>
+            <ingredient name="resourceScrapIron" count="1"/>
+        </recipe>
+        <recipe name="deskLampLight_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="3"/>
+            <ingredient name="resourceScrapIron" count="1"/>
+        </recipe>
+        <recipe name="tableLampLight_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="3"/>
+            <ingredient name="resourceScrapIron" count="1"/>
+        </recipe>
+        <recipe name="tableLampTippedOverLight_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="3"/>
+            <ingredient name="resourceScrapIron" count="1"/>
+        </recipe>
+        <recipe name="workLightPOI_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="3"/>
+            <ingredient name="resourceScrapIron" count="1"/>
+        </recipe>
+        <recipe name="spotlightNailedDownPOI_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="3"/>
+            <ingredient name="resourceScrapIron" count="1"/>
+        </recipe>
+        <recipe name="xRayDisplayLight1_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="3"/>
+            <ingredient name="resourceScrapIron" count="1"/>
+        </recipe>
+        <recipe name="xRayDisplayLight2_player" count="1" craft_area="workbench" tags="learnable">
+            <ingredient name="resourceForgedIron" count="2"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceDuctTape" count="3"/>
+            <ingredient name="resourceScrapPolymers" count="3"/>
+            <ingredient name="resourceScrapIron" count="1"/>
+        </recipe>
+    </append>
+</Config>
+

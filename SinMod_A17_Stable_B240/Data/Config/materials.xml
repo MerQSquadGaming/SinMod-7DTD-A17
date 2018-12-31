@@ -1307,25 +1307,4 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
         <property name="forge_category" value="leather"/>
         <property name="Experience" value="50"/>
     </material>
-	<!--SinMod Begins Here-->
-    <!--Admin Materials-->
-    <material id="Madmin">
-        <property name="damage_category" value="stone"/>
-        <property name="surface_category" value="stone"/>
-        <property name="forge_category" value="stone"/>
-        <property name="Hardness" type="float" value="1"/>
-        <property name="stepsound" value="stone"/>
-        <property name="stability_glue" value="240"/>
-        <property name="Mass" type="int" value="10"/>
-        <property name="explosionresistance" value="1.1"/>
-        <property name="MaxDamage" value="750000"/>
-        <property name="Experience" value="2"/>
-    </material>
-    <!--Auto Respawner-->
-    <material id="airRespawner">
-        <property name="collidable" value="false" />
-        <property name="lightopacity" value="0" />
-        <property name="Hardness" type="float" value="50000" />
-        <property name="Mass" type="int" value="30" />
-    </material>
-	</materials>
+</materials>

@@ -1,0 +1,41 @@
+<Config>
+    <insertAfter xpath="/blocks/block[@name='rockResourceBroke2']/property[@name='Model']">
+        <property name="DowngradeBlock" value="boulderRespawner"/>
+    </insertAfter>
+    <insertAfter xpath="/blocks/block[@name='rockResource02Broke2']/property[@name='Model']">
+        <property name="DowngradeBlock" value="boulderRespawner"/>
+    </insertAfter>
+    <insertAfter xpath="/blocks/block[@name='cntCar03SedanDamage2']/drop[@event='Fall']">
+        <property name="DowngradeBlock" value="carRespawner"/>
+    </insertAfter>
+    <append xpath="/blocks">
+        <block name="carRespawner">
+            <property name="CreativeMode" value="None"/>
+            <property name="Class" value="PlantGrowing" />
+            <property name="Material" value="airRespawner" />
+            <property name="Shape" value="Invisible" />
+            <property name="Texture" value="250" />
+            <property name="CanMobsSpawnOn" value="false" />
+            <drop event="Destroy" count="0" />
+            <property name="IsTerrainDecoration" value="true" />
+            <property name="PlantGrowing.Next" value="cntCar03SedanDamage0" />
+            <property name="PlantGrowing.GrowthRate" value="460" />
+            <property name="PlantGrowing.FertileLevel" value="0" />
+            <property name="PlantGrowing.IsRandom" value="false" />
+        </block>
+        <block name="boulderRespawner">
+            <property name="CreativeMode" value="None"/>
+            <property name="Class" value="PlantGrowing" />
+            <property name="Material" value="airRespawner" />
+            <property name="Shape" value="Invisible" />
+            <property name="Texture" value="250" />
+            <property name="CanMobsSpawnOn" value="false" />
+            <drop event="Destroy" count="0" />
+            <property name="IsTerrainDecoration" value="true" />
+            <property name="PlantGrowing.Next" value="rockResource" />
+            <property name="PlantGrowing.GrowthRate" value="460" />
+            <property name="PlantGrowing.FertileLevel" value="0" />
+            <property name="PlantGrowing.IsRandom" value="false" />
+        </block>
+    </append>
+</Config>

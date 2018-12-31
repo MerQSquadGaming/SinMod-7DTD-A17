@@ -1,0 +1,109 @@
+<configs>
+    <append xpath="/quests" >
+        <!-- Ammo Dismantling -->
+        <quest id="9mmDismantle" >
+            <property name="name" value="Dismantle 9mm Bullets" />
+            <property name="subtitle" value="Dismantle 9mm Bullets" />
+            <property name="description" value="Dismantle your ammo to get their raw components." />
+            <property name="icon" value="misc_crafting"/>
+            <property name="repeatable" value="true" />
+            <property name="category_key" value="challenge" />
+            <property name="offer" value="You've dismantled some ammo for its raw materials." />
+            <property name="difficulty" value="easy"/>
+            <reward type="Item" id="resourceBulletCasing" value="10" />
+            <reward type="Item" id="resourceGunPowder" value="10" />
+            <reward type="Item" id="resourceBulletTip" value="10" />
+        </quest>
+        <quest id="9mmSteelDismantle" >
+            <property name="name" value="Dismantle 9mm Steel Bullets" />
+            <property name="subtitle" value="Dismantle 9mm Steel Bullets" />
+            <property name="description" value="Dismantle your ammo to get their raw components." />
+            <property name="icon" value="misc_crafting"/>
+            <property name="repeatable" value="true" />
+            <property name="category_key" value="challenge" />
+            <property name="offer" value="You've dismantled some ammo for its raw materials." />
+            <property name="difficulty" value="easy"/>
+            <reward type="Item" id="resourceBulletCasingSteel" value="10" />
+            <reward type="Item" id="resourceGunPowder" value="10" />
+            <reward type="Item" id="resourceBulletTip" value="10" />
+        </quest>
+        <quest id="44MagDismantle" >
+            <property name="name" value="Dismantle 44Mag Bullets" />
+            <property name="subtitle" value="Dismantle 44Mag Bullets" />
+            <property name="description" value="Dismantle your ammo to get their raw components." />
+            <property name="icon" value="misc_crafting"/>
+            <property name="repeatable" value="true" />
+            <property name="category_key" value="challenge" />
+            <property name="offer" value="You've dismantled some ammo for its raw materials." />
+            <property name="difficulty" value="easy"/>
+            <reward type="Item" id="resourceBulletCasing" value="10" />
+            <reward type="Item" id="resourceGunPowder" value="30" />
+            <reward type="Item" id="resourceBulletTip" value="10" />
+        </quest>
+        <quest id="44MagSteelDismantle" >
+            <property name="name" value="Dismantle 44Mag Steel Bullets" />
+            <property name="subtitle" value="Dismantle 44Mag Steel Bullets" />
+            <property name="description" value="Dismantle your ammo to get their raw components." />
+            <property name="icon" value="misc_crafting"/>
+            <property name="repeatable" value="true" />
+            <property name="category_key" value="challenge" />
+            <property name="offer" value="You've dismantled some ammo for its raw materials." />
+            <property name="difficulty" value="easy"/>
+            <reward type="Item" id="resourceBulletCasingSteel" value="10" />
+            <reward type="Item" id="resourceGunPowder" value="30" />
+            <reward type="Item" id="resourceBulletTip" value="10" />
+        </quest>
+        <quest id="762mmDismantle" >
+            <property name="name" value="Dismantle 762MM Bullets" />
+            <property name="subtitle" value="Dismantle 762MM Bullets" />
+            <property name="description" value="Dismantle your ammo to get their raw components." />
+            <property name="icon" value="misc_crafting"/>
+            <property name="repeatable" value="true" />
+            <property name="category_key" value="challenge" />
+            <property name="offer" value="You've dismantled some ammo for its raw materials." />
+            <property name="difficulty" value="easy"/>
+            <reward type="Item" id="resourceBulletCasing" value="10" />
+            <reward type="Item" id="resourceGunPowder" value="30" />
+            <reward type="Item" id="resourceBulletTip" value="10" />
+        </quest>
+        <quest id="762mmFMJSteelDismantle" >
+            <property name="name" value="Dismantle 762mm Steel Bullets" />
+            <property name="subtitle" value="Dismantle 762mm Steel Bullets" />
+            <property name="description" value="Dismantle your ammo to get their raw components." />
+            <property name="icon" value="misc_crafting"/>
+            <property name="repeatable" value="true" />
+            <property name="category_key" value="challenge" />
+            <property name="offer" value="You've dismantled some ammo for its raw materials." />
+            <property name="difficulty" value="easy"/>
+            <reward type="Item" id="resourceBulletCasing" value="10" />
+            <reward type="Item" id="resourceGunPowder" value="30" />
+            <reward type="Item" id="resourceBulletTip" value="10" />
+        </quest>
+        <quest id="ShotgunShellDismantle" >
+            <property name="name" value="Dismantle Shotgun Shells" />
+            <property name="subtitle" value="Dismantle Shotgun Shells" />
+            <property name="description" value="Dismantle your ammo to get their raw components." />
+            <property name="icon" value="misc_crafting"/>
+            <property name="repeatable" value="true" />
+            <property name="category_key" value="challenge" />
+            <property name="offer" value="You've dismantled some ammo for its raw materials." />
+            <property name="difficulty" value="easy"/>
+            <reward type="Item" id="resourcePaper" value="10" />
+            <reward type="Item" id="resourceGunPowder" value="20" />
+            <reward type="Item" id="resourceBuckshot" value="10" />
+        </quest>
+        <quest id="ShotgunSlugDismantle" >
+            <property name="name" value="Dismantle Shotgun Shells" />
+            <property name="subtitle" value="Dismantle Shotgun Shells" />
+            <property name="description" value="Dismantle your ammo to get their raw components." />
+            <property name="icon" value="misc_crafting"/>
+            <property name="repeatable" value="true" />
+            <property name="category_key" value="challenge" />
+            <property name="offer" value="You've dismantled some ammo for its raw materials." />
+            <property name="difficulty" value="easy"/>
+            <reward type="Item" id="resourceBulletTip" value="10" />
+            <reward type="Item" id="resourceGunPowder" value="20" />
+            <reward type="Item" id="resourceBuckshot" value="10" />
+        </quest>
+    </append>
+</configs>

@@ -1,0 +1,14 @@
+<config>
+    <remove xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='DropInventoryBlock']"/>
+    <!-- Bigger Does and Bucks -->
+    <!--Buck-->
+    <append xpath="/entity_classes/entity_class[@name='animalStag']">
+        <!-- 10% bigger -->
+        <property name="SizeScale" value="1.1"/>
+    </append>
+    <!-- Doe -->
+    <append xpath="/entity_classes/entity_class[@name='animalDoe']">
+        <!-- 25% bigger -->
+        <property name="SizeScale" value="1.25"/>
+    </append>
+</config>
