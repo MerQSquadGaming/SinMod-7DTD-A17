@@ -1,4 +1,0 @@
-<Config>
-    <set xpath="/items/item[@name='gunToolDiggerAdmin']/effect_group/passive_effect[@name='BlockDamage']/@value">500000000</set>
-
-</Config>
