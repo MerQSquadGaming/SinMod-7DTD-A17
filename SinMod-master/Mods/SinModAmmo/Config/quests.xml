@@ -75,7 +75,7 @@
             <property name="category_key" value="challenge" />
             <property name="offer" value="You've dismantled some ammo for its raw materials." />
             <property name="difficulty" value="easy"/>
-            <reward type="Item" id="resourceBulletCasing" value="10" />
+            <reward type="Item" id="resourceBulletCasingSteel" value="10" />
             <reward type="Item" id="resourceGunPowder" value="30" />
             <reward type="Item" id="resourceBulletTip" value="10" />
         </quest>
