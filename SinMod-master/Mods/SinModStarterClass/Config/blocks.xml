@@ -1,0 +1,37 @@
+<Config>
+    <append xpath="/blocks">
+        <block name="lockedClassCase">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="lockedClassCase" />
+            <property name="DescriptionKey" value="lockedClassCaseDesc"/>
+            <property name="Class" value="PlantGrowing" />
+            <property name="Material" value="Mwood_regular"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="Entities/LootContainers/super_chestPrefab" />
+            <property name="Displayinfo" value="Name" />
+            <property name="Path" value="solid"/>
+            <property name="Place" value="TowardsPlacerInverted"/>
+            <drop event="Destroy" count="0"/>
+            <property name="IsTerrainDecoration" value="true" />
+            <property name="PlantGrowing.Next" value="unlockedClassCase" />
+            <property name="PlantGrowing.GrowthRate" value="0.1" />
+            <property name="PlantGrowing.FertileLevel" value="0" />
+            <property name="PlantGrowing.IsRandom" value="false" />
+        </block>
+        <block name="unlockedClassCase">
+            <property name="CreativeMode" value="None"/>
+            <property name="DisplayType" value="blockHardenedMulti" />
+            <property name="Material" value="Mwood_regular"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="Entities/LootContainers/super_chestPrefab" />
+            <property name="DisplayType" value="blockMulti" />
+            <property name="MultiBlockDim" value="2,1,1"/>
+            <property name="AllowAllRotations" value="true"/>
+            <property name="ImposterExchange" value="imposterBlock" param1="115"/>
+            <property name="Path" value="solid"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="124"/>
+            <drop event="Destroy" count="0"/>
+        </block>
+    </append>
+</Config>

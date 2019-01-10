@@ -1,0 +1,15 @@
+How to Install SinMod
+
+If you're reading this then congradulations you have downloaded and unzipped SinMod
+
+Now maybe you're having issues installing well I'm here to help!!! 
+
+First, go to steam and right click on 7 Days to Die and select properties.
+
+Now you should select the tab marked Local Files, and click on browse local files.
+
+Here is the easy part drag and drop the Mods folder right here!!!
+
+Not open the Data folder and then the Config folder and drop in the 2 "localization" text files and overwrite.
+
+Congrats!!! you have installed SinMod
