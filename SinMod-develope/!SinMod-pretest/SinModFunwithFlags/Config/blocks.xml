@@ -62,5 +62,11 @@
             <property name="Model" value="#@modfolder:Resources/Flags.unity3d?FlagLooted_X" />
             <property name="CustomIcon" value="FlagLooted" />
         </block>
+        <block name="FlagMerqSquad">
+            <property name="Extends" value="FlagUSA"/>
+            <property name="Shape" value="ModelEntity" />
+            <property name="Model" value="#@modfolder:Resources/MerQSquadFlag.unity3d?FlagMerQSquad" />
+            <property name="CustomIcon" value="FlagMerQSquad" />
+        </block>
     </append>
 </Config>
