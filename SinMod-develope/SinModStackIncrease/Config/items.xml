@@ -7,7 +7,7 @@
 </append>
 -->
 
-<set xpath="/items/item/property[@name='Stacknumber' and @value &gt; 2 and @value &lt; 1000 ]/@value">1000</set>
+<set xpath="/items/item/property[@name='Stacknumber' and @value &gt; 2 and @value &lt; 1000 ]/@value">5000</set>
 </configs>
 
 
