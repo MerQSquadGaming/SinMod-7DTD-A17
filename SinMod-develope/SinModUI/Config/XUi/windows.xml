@@ -1,7 +1,12 @@
 <Config>
+
+    <!-- This will log as a WRN for not able to remove -->
+    <!-- This is done on purpose to have a log entry showing this file was read -->
+    <remove xpath="/Successfully_Loaded[@modname='SinModUI'][@version='1.0.0'][@filename='\Config\XUi\windows.xml']" />
+
     <append xpath="/windows">
         <window name="version">
-            <texture name="SinMod" depth="0" size="63,45" texture="@https://merqsquad.com/wp-content/uploads/2018/01/SinModUILogo.png" material="Materials/Transparent Colored" pos="-160,-6" />
+            <texture name="SinMod" depth="0" size="63,45" texture="@https://imgur.com/DQaDu9E" material="Materials/Transparent Colored" pos="-160,-6" />
             <label name="ServerName" depth="0" size="53,35" text="Worlds End PvE" font_size="20" effect="outline" color="[white]" justify="center" pos="-270,-15" overflow="resizeheight" />
             <label name="SinModVer" depth="0" size="53,35" text="SinMod v2.0.1" font_size="20" effect="outline" color="[white]" justify="center" pos="-220,-15" overflow="resizeheight" />
         </window>
@@ -11,7 +16,7 @@
             <!--Hunger-->
             <rect width="125" height="43" pos="0,-94" controller="PlayerStatsWindow">
                 <sprite depth="1" name="border" color="0,0,0,128" type="sliced" />
-                <sprite depth="2" name="background"  color="0,0,0,140" type="sliced" />
+                <sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
                 <filledsprite depth="3" name="background" color="110,110,110,128" width="124" type="filled" fill="{statmodifiedmax}" />
                 <filledsprite depth="5" name="BarContent" color="52,174,86" fill="{playerfoodfill}" type="filled" width="123"/>
                 <sprite depth="6" name="Icon" sprite="ui_game_symbol_fork" size="32,32" pos="8,-6" foregroundlayer="true"/>
@@ -77,6 +82,6 @@
         </rect>
     </insertAfter>
     <insertAfter xpath="/windows/window[@name='emptyInfoPanel']/rect[@name='contentCraftingInfo']/label">
-        <texture depth="9" name="ToolBeltBackground" texture="@https://merqsquad.com/wp-content/uploads/2018/01/SinModInventory.png" material="Materials/Transparent Colored"/>
+        <texture depth="9" name="ToolBeltBackground" texture="@https://imgur.com/sTCL2Sv" material="Materials/Transparent Colored"/>
     </insertAfter>
 </Config>
